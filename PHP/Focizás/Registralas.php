@@ -54,7 +54,7 @@
     ?>
 </div>
 <body>
-<a class="btn btn-primary" href="PHP/Focizás/Registralas.php"></a>
+<a class="btn btn-primary" href="Registralas.php"></a>
 <table class="table">
     <thead>
         <tr>
@@ -76,8 +76,8 @@
             <td>NewYorkUSA</td>
             <td>18/05/2022</td>
             <td>
-                <a class="btn btn-primary btn-sm" href="PHP/Focizás/edit.php">Edit</a>
-                <a class="btn btn-danger btn-sm" href="PHP/Focizás/detele.php">Detele</a>
+                <a class="btn btn-primary btn-sm" href="edit.php">Edit</a>
+                <a class="btn btn-danger btn-sm" href="detele.php">Detele</a>
             </td>
         </tr>
     </thead>

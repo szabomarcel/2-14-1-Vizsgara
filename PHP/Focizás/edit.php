@@ -19,7 +19,7 @@ $successMessage = "";
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
     // GET method: Show the data of the client
     if(!isset($_GET["id"])){
-        header("location: PHP/Focizás/registralas.php");
+        header("location: registralas.php");
         exit;
     }
     $id = $_GET["id"];
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
     $row = $result -> fetch_assoc();
 
     if (!$row){
-        header("location: PHP/Focizás/registralas.php");
+        header("location: registralas.php");
         exit;
     }
 
@@ -61,7 +61,7 @@ else{
         }
 
         $successMessage = "Client updated corretly";
-        header("location: PHP/Focizás/registralas.php");
+        header("location: registralas.php");
     }while (true);
 }
 ?>
