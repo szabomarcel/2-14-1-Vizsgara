@@ -35,6 +35,9 @@ section{
     font-size: 1em;
 }
 
+footer{
+    border-radius: 12px;
+}
 .gomb{
     background:rgba(0,0,0,0.3);
     font-size: 2em;
@@ -43,6 +46,7 @@ section{
     padding: 20px;
     margin: 20px 0;
     border: 1px;
+    border-radius: 12px;
 }
 
 a:hover{
@@ -80,20 +84,24 @@ nav .logo{
 .navbar {
     background-color: #007BFF; /* Háttérszín */
     border-bottom: 2px solid #0056b3; /* Alsó határ */
+    border-radius: 12px;
 }
 
 .navbar-brand {
     color: black !important; /* Cím szín */
     font-weight: bold; /* Betű vastagság */
+    border-radius: 12px;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav .nav-link .gomb1{
     color: #333; /* Menüpont szövegszín */
     font-weight: bold; /* Betű vastagság */
+    border-radius: 12px;
 }
 
 .navbar-nav .nav-link:hover {
     color: #007BFF; /* Hover állapot szövegszín */
+    border-radius: 12px;
 }
 
 /* CSS stílus a rejtett szöveghez */
@@ -102,20 +110,23 @@ nav .logo{
     color: #c7c7c7; /* A rejtett szöveg színe (opcionális) */
     font-size: 16px; /* A szöveg mérete (opcionális) */
     font-weight: bold; /* A szöveg vastagsága (opcionális) */
+    border-radius: 12px;
     
 }
 
 /* CSS stílus a gombhoz */
 button{
-    /*background-color: #007bff; /* Gomb háttérszíne */
+    background-color: navajowhite; /* Gomb háttérszíne */
     color: black; /* Gomb szövegszíne */
     padding: 10px 20px; /* Gomb belső térkitöltése */
-    /*border: none; /* Gomb kerete nélküli */
+    border: none; /* Gomb kerete nélküli */
     cursor: pointer; /* Mutató kurzor, amikor ráviszed a kurzort */
+    border-radius: 12px;
 }
 
 button:hover{
     background-color: #FFFFE0; /* Gomb háttérszíne hover állapotban */
+    border-radius: 12px;
 }
 .sponzorok {
     display: flex; /* A tartalom vízszintes elrendezése */
@@ -134,4 +145,5 @@ button:hover{
 img{
     width: auto;
     height: auto;
+    border-radius: 12px;
 }
