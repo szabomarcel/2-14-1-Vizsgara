@@ -14,19 +14,20 @@ html{
 body{
     /*background-color: rgba(0, 0, 255, 0.5); /* Példa: kék hátteret 50%-os átlátszósággal */
     padding: 20px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     /*background-color:   #3399ff;*/
     font-family: sans-serif;
     margin: 0;
 }
 
 section, header, footer{
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.6);
     font-size: 2em;
-    color: white;
+    color: aquamarine;
     text-align: center;
     padding: 20px;
     margin: 20px 0;
+    border: 1px;
 }
 
 section{
@@ -37,7 +38,7 @@ p{
     color: black;
 }
 a{
-    color: #c7c7c7;
+    color: aquamarine;
     text-decoration: none;
     display: inline-block;
     padding: 20px 5px;
@@ -46,8 +47,18 @@ a{
 
 }
 
+#gomb{
+    background:rgba(0,0,0,0.6);
+    font-size: 2em;
+    color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px;
+}
+
 a:hover{
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.6);
     text-shadow: 2px 2px 1px black;
 }
 
@@ -67,7 +78,7 @@ nav ul{
     margin: 0;
     padding: 0;
     border:1px solid gray;
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.6);
 }
 
 nav li{
@@ -131,6 +142,7 @@ nav .logo{
     color: #c7c7c7; /* A rejtett szöveg színe (opcionális) */
     font-size: 16px; /* A szöveg mérete (opcionális) */
     font-weight: bold; /* A szöveg vastagsága (opcionális) */
+    
 }
 
 /* CSS stílus a gombhoz */
@@ -138,7 +150,7 @@ button{
     /*background-color: #007bff; /* Gomb háttérszíne */
     color: black; /* Gomb szövegszíne */
     padding: 10px 20px; /* Gomb belső térkitöltése */
-    border: none; /* Gomb kerete nélküli */
+    /*border: none; /* Gomb kerete nélküli */
     cursor: pointer; /* Mutató kurzor, amikor ráviszed a kurzort */
 }
 
@@ -158,4 +170,8 @@ button:hover{
     max-width: 100px; /* Maximális szélesség a logóknak */
     height: auto; /* Automatikus magasság, hogy az arányok megmaradjanak */
     margin: 10px; /* Térköz az egyes logók között */
+}
+img{
+    width: auto;
+    height: auto;
 }

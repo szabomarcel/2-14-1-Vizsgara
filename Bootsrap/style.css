@@ -1,0 +1,33 @@
+#c{
+    background-color: #f9f9f9;
+}
+#v{
+    background-color: #f9f9f9;
+}
+#t{
+    background-color: olive;
+}
+#tt{
+    background-color: red;
+}
+#tb{
+    background-color:blue;
+}
+#th{
+    background-color: green;
+}
+#tg{
+    background-color: goldenrod;
+}
+#tn{
+    background-color: brown;
+}
+#d,#dd,#ddd,#dddd{
+    background-color:cadetblue;
+}
+#a, #ab, #abc{
+    background-color: lightblue;
+}
+#bc, #bcd{
+    background-color: lightcyan;
+}
