@@ -22,7 +22,7 @@
                     <a class="nav-link" href="fooldal.html">Főoldal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="jegyvasarlas.html">Jegyvásárlás</a>
+                    <a class="nav-link" href="jegyvasarlas.php">Jegyvásárlás</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="atigazolasi hirek.html">Átigazolási hírek</a>
@@ -48,22 +48,22 @@
 
     <div class="container">
         <div class="gomb">
-            <h4><span class="kattint"><a href="#">Kecskemeti TE és Mezökövesd az ára 2000ft</a></span></h4> 
+            <h4><span class="kattint"><a href="regisztracio.php">Kecskemeti TE és Mezökövesd az ára 2000ft</a></span></h4> 
          </div>
          <div class="gomb">
-            <h4><span class="kattint"><a href="#">Puskás Akadémia és Paks az ára 2300ft</a></span></h4> 
+            <h4><span class="kattint"><a href="regisztracio.php">Puskás Akadémia és Paks az ára 2300ft</a></span></h4> 
          </div>
          <div class="gomb">
-            <h4><span class="kattint"><a href="#">Diósgyőri VTK és Debreceni VSC az ára 2500ft</a></span></h4> 
+            <h4><span class="kattint"><a href="regisztracio.php">Diósgyőri VTK és Debreceni VSC az ára 2500ft</a></span></h4> 
          </div>
          <div class="gomb">
-            <h4><span class="kattint"><a href="#">Újpest és MTK Budapest az ára 2100ft</a></span></h4> 
+            <h4><span class="kattint"><a href="regisztracio.php">Újpest és MTK Budapest az ára 2100ft</a></span></h4> 
          </div>
          <div class="gomb">
-            <h4><span class="kattint"><a href="#">Fehérvár FC és Zalaegerszeg az ára 1900ft</a></span></h4>  
+            <h4><span class="kattint"><a href="regisztracio.php">Fehérvár FC és Zalaegerszeg az ára 1900ft</a></span></h4>  
          </div>
          <div class="gomb">
-            <h4><span class="kattint"><a href="#">Ferencvárosi TC és Kisvárda az ára 2100ft</a></span></h4> 
+            <h4><span class="kattint"><a href="regisztracio.php">Ferencvárosi TC és Kisvárda az ára 2100ft</a></span></h4> 
          </div>
     </div>
     <footer>
