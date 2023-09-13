@@ -171,3 +171,8 @@ hr{
     background-color: white;
     border-radius: 12px;
 }
+
+.card{
+    margin: 10px auto;
+    float: left;    
+}
