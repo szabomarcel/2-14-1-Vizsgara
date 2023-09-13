@@ -42,11 +42,11 @@
     </nav>
 
     <!-- Bootstrap JavaScript fájl importálása (opcionális, ha használunk dropdown menüket vagy más Bootstrap komponenseket) -->
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="gomb">
             <h4><span class="kattint"><a href="regisztracio.php">Kecskemeti TE és Mezökövesd az ára 2000ft</a></span></h4> 
          </div>
@@ -67,7 +67,7 @@
          </div>
     </div>
     <footer>
-        &COPY; Tasnádi Ricsi és Szabó Marcell
+        &COPY; Tasnádi Richárd és Szabó Marcell 2023.
     </footer>
 </body>
 </html>

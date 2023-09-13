@@ -1,6 +1,5 @@
 html{
     background-image: url(https://th.bing.com/th/id/R.9ffb17e153ee63841c2fe3b754f19062?rik=UKf5TpH7llEU9g&pid=ImgRaw&r=0);
-    font-family: sans-serif;
     padding: 5px;
     box-sizing:  border-box;
     background-repeat: no-repeat;
@@ -16,9 +15,10 @@ body{
     padding: 20px;
     /*border: 1px solid #000;*/
     /*background-color:   #3399ff;*/
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     background:rgba(0,0,0,0.4);
+    border-radius: 12px;
 }
 
 section, header, footer{
@@ -48,10 +48,24 @@ footer{
     border: 1px;
     border-radius: 12px;
 }
+h2{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+a{
+    text-align: center;
+}
+
+#c{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
 
 a:hover{
     background:rgba(0,0,0,0.6);
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 1px white;
 }
 
 .container{
@@ -73,14 +87,14 @@ nav ul{
     background:rgba(0,0,0,0.1);
 }
 
-nav .logo{
+nav, .logo{
     flex: 1;
 }
 
 .toggleNav {
     display: none;
 }
-/* Testreszabott stílusok a navbarhoz */
+
 .navbar {
     background-color: #007BFF; /* Háttérszín */
     border-bottom: 2px solid #0056b3; /* Alsó határ */
@@ -88,23 +102,23 @@ nav .logo{
 }
 
 .navbar-brand {
-    color: black !important; /* Cím szín */
+    color: wheat !important; /* Cím szín */
     font-weight: bold; /* Betű vastagság */
     border-radius: 12px;
+    text-align: center;
 }
 
 .navbar-nav .nav-link .gomb1{
-    color: #333; /* Menüpont szövegszín */
+    color: wheat; /* Menüpont szövegszín */
     font-weight: bold; /* Betű vastagság */
     border-radius: 12px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007BFF; /* Hover állapot szövegszín */
+    color: black; /* Hover állapot szövegszín */
     border-radius: 12px;
 }
 
-/* CSS stílus a rejtett szöveghez */
 #elrejtett-szoveg {
     display: none; /* Az alapértelmezett állapotban a szöveg el van rejtve */
     color: #c7c7c7; /* A rejtett szöveg színe (opcionális) */
@@ -114,14 +128,14 @@ nav .logo{
     
 }
 
-/* CSS stílus a gombhoz */
-button{
+button, .logo{
     background-color: navajowhite; /* Gomb háttérszíne */
     color: black; /* Gomb szövegszíne */
     padding: 10px 20px; /* Gomb belső térkitöltése */
     border: none; /* Gomb kerete nélküli */
     cursor: pointer; /* Mutató kurzor, amikor ráviszed a kurzort */
     border-radius: 12px;
+    text-align: center;
 }
 
 button:hover{
@@ -133,10 +147,9 @@ button:hover{
     justify-content: space-around; /* A tartalom középre igazítása és térközök az elemek között */
     align-items: center; /* Az elemek középre igazítása függőlegesen */
     padding: 20px; /* Külső térkitöltés az elem körül */    
-    color: #c7c7c7;
+    color: white;
 }
 
-/* CSS stílus a sponzor logókhoz */
 .sponzorok img {
     max-width: 100px; /* Maximális szélesség a logóknak */
     height: auto; /* Automatikus magasság, hogy az arányok megmaradjanak */
@@ -145,5 +158,16 @@ button:hover{
 img{
     width: auto;
     height: auto;
+    border-radius: 12px;
+}
+
+hr{
+    background-color:rgba(255,255,255);
+    padding: 3px;
+
+}
+
+#lg2, #lg3, #lg6, #lg8, #lg12{
+    background-color: white;
     border-radius: 12px;
 }
