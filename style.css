@@ -44,10 +44,7 @@ footer{
     border-radius: 12px;
 }
 h2{
-    color: rgba(255, 255, 255, 0.3);
-}
-
-a{
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
 
@@ -120,6 +117,7 @@ nav, .logo{
     font-size: 16px; /* A szöveg mérete (opcionális) */
     font-weight: bold; /* A szöveg vastagsága (opcionális) */
     border-radius: 12px;
+    text-align: center;
     
 }
 
@@ -136,8 +134,9 @@ button, .logo{
 button:hover{
     background-color: #FFFFE0; /* Gomb háttérszíne hover állapotban */
     border-radius: 12px;
+    text-align: center;
 }
-.sponzorok {
+.sponzorok{
     display: flex; /* A tartalom vízszintes elrendezése */
     justify-content: space-around; /* A tartalom középre igazítása és térközök az elemek között */
     align-items: center; /* Az elemek középre igazítása függőlegesen */
@@ -145,10 +144,11 @@ button:hover{
     color: white;
 }
 
-.sponzorok img {
+.sponzorok img{
     max-width: 100px; /* Maximális szélesség a logóknak */
     height: auto; /* Automatikus magasság, hogy az arányok megmaradjanak */
     margin: 10px; /* Térköz az egyes logók között */
+    text-align: center;
 }
 img{
     width: auto;
