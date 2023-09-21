@@ -33,8 +33,9 @@ section{
 footer{
     border-radius: 12px;
 }
+
 .gomb{
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.6);
     /*font-size: 2em;*/
     color: aquamarine;
     text-align: center;
@@ -43,8 +44,13 @@ footer{
     border: 1px;
     border-radius: 12px;
 }
+
 h2{
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+h4{
     text-align: center;
 }
 
@@ -54,10 +60,16 @@ h2{
     text-align: center;
     border-radius: 12px;
 }
-
+  
+a:visited {
+    color: rgba(1,200,255,0.6);
+}
+  
 a:hover{
-    background:rgba(0,0,0,0.6);
-    text-shadow: 2px 2px 1px white;
+    background:rgba(255,255,255,0.3);
+}
+a:active {
+    color: rgba(255,0,0,0.3);
 }
 
 .container{
@@ -76,7 +88,7 @@ nav ul{
     margin: 0;
     padding: 0;
     border:1px solid gray;
-    background:rgba(0,0,0,0.1);
+    background:rgba(0,0,0,0.2);
 }
 
 nav, .logo{
@@ -94,14 +106,14 @@ nav, .logo{
 }
 
 .navbar-brand {
-    color: wheat !important; /* Cím szín */
+    color: rgba(1,200,255,0.6) !important; /* Cím szín */
     font-weight: bold; /* Betű vastagság */
     border-radius: 12px;
     text-align: center;
 }
 
 .navbar-nav .nav-link .gomb1{
-    color: wheat; /* Menüpont szövegszín */
+    /*color: wheat; /* Menüpont szövegszín */
     font-weight: bold; /* Betű vastagság */
     border-radius: 12px;
 }
@@ -118,11 +130,10 @@ nav, .logo{
     font-weight: bold; /* A szöveg vastagsága (opcionális) */
     border-radius: 12px;
     text-align: center;
-    
 }
 
 button, .logo{
-    background-color: navajowhite; /* Gomb háttérszíne */
+    background-color: rgba(0,0,0,0.1); /* Gomb háttérszíne */
     color: black; /* Gomb szövegszíne */
     padding: 10px 20px; /* Gomb belső térkitöltése */
     border: none; /* Gomb kerete nélküli */
@@ -132,7 +143,7 @@ button, .logo{
 }
 
 button:hover{
-    background-color: #FFFFE0; /* Gomb háttérszíne hover állapotban */
+    background-color: rgba(0,0,0,0.1); /* Gomb háttérszíne hover állapotban */
     border-radius: 12px;
     text-align: center;
 }
@@ -159,7 +170,6 @@ img{
 hr{
     background-color:rgba(255,255,255);
     padding: 3px;
-
 }
 
 #lg2, #lg3, #lg6, #lg8, #lg12{
@@ -179,7 +189,6 @@ hr{
 
 /* Lapozó gombok testreszabása */
 .carousel-control-prev, .carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     padding: 10px;
 }
@@ -188,11 +197,13 @@ hr{
     color: #fff; /* Lapozó ikon színe */
 }
 
-  /* Képek méretének testreszabása */
+/* Képek méretének testreszabása */
 .carousel-inner img {
     width: 100%;
     height: auto;
 }
-.link:hover:active{
- background: bisque;
+
+#t{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
 }
