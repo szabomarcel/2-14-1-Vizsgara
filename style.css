@@ -13,7 +13,7 @@ html{
 body{    
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
-    background:rgba(0,0,0,0.4);
+    background:rgba(255,255,255,0.4);
     border-radius: 12px;
 }
 
@@ -75,6 +75,7 @@ a:active {
 .container{
     max-width: 992px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 input{
@@ -143,7 +144,7 @@ button, .logo{
 }
 
 button:hover{
-    background-color: rgba(0,0,0,0.1); /* Gomb háttérszíne hover állapotban */
+    background-color: rgba(0,0,0,0.6); /* Gomb háttérszíne hover állapotban */
     border-radius: 12px;
     text-align: center;
 }
@@ -206,4 +207,20 @@ hr{
 #t{
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 12px;
+}
+
+#name {
+    background-color: #f0f0f0;
+}
+
+
+/* Küldés gomb stílusa */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
