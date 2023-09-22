@@ -26,7 +26,7 @@
                     <a class="nav-link" href="fooldal.html">Főoldal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="jegyvasarlas.html">Jegyvásárlás</a>
+                    <a class="nav-link" href="regisztracio.html">Jegyvásárlás</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="atigazolasi hirek.html">Átigazolási hírek</a>
@@ -48,20 +48,34 @@
         <div class="container">
             <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
             <form>
-                <div class="form-group">
-                    <label for="name">Név:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="name" class="col-form-label">Nev: </label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="name" id="inputname" class="form-control" aria-describedby="name">
+                    </div>
+                    <div class="col-auto">
+                      <span id="passwordHelpInline" class="form-text">
+                        8-20 characteres hosszú kérünk.
+                      </span>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="email">Email cím:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                <br>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="inputEmail" class="col-form-label">Email cim: </label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="email" id="inputEmail" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                      <span id="passwordHelpInline" class="form-text">
+                        8-20 characteres hosszú kérünk.
+                      </span>
+                    </div>
                 </div>
-    
-                <div class="form-group">
-                    <label for="message">Üzenet:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
+                <br>
                 <div class="row g-3 align-items-center">
                     <div class="col-auto">
                       <label for="inputPassword6" class="col-form-label">Password</label>
@@ -71,10 +85,28 @@
                     </div>
                     <div class="col-auto">
                       <span id="passwordHelpInline" class="form-text">
-                        Must be 8-20 characters long.
+                        8-20 characteres hosszú kérünk.
                       </span>
                     </div>
-                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message">Üzenet:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <h4>Mérközésekre a Jegyvásárlás</h4>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="TE">
+                <label for="vehicle1"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Akadenia">
+                <label for="vehicle2"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
                 <button type="submit" class="btn btn-primary">Küldés</button>
             </form>
         </div>
