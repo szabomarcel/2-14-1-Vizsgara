@@ -154,7 +154,7 @@ nav, .logo{
     text-align: center;
 }
 
-button, .logo{
+button, .logo, .submit{
     background-color: rgba(0,0,0,0.1); /* Gomb háttérszíne */
     color: black; /* Gomb szövegszíne */
     padding: 10px 20px; /* Gomb belső térkitöltése */
@@ -245,4 +245,53 @@ hr{
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+
+.calendar {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#current-month {
+    font-size: 24px;
+    margin: 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#age-verification {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#age-input {
+    width: 50px;
+}
+
+#content {
+    text-align: center;
+    margin-top: 50px;
 }

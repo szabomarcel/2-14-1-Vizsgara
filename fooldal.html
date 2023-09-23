@@ -11,88 +11,107 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="fooldal.html">Főoldal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="fooldal.html">Főoldal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="regisztracio.html">Jegyvásárlás</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="atigazolasi hirek.html">Átigazolási hírek</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Napi kwiz</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Mérkőzések</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="forraskodok.html">Forrás kódok</a>
-            </li>
-        </ul>
-        <ul class="nav-item">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        </ul>
-        <ul class="nav-item">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-    </div>
-</nav>
-<hr>
-<div class="container-fluid">       
-    <div class="row">
-        <div class="col-lg-3">
-            <h3 id="lg3" align="center">Hírdetések egy adott témában.
-                <div class="container mt-5">
-                    <!-- Bootstrap Carousel létrehozása -->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                      <!-- Képek -->
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img src="kepek/kep1.png" alt="Kép 1" class="d-block w-100">
+    <h1>Kérem, adja meg a felhasználói nevét:</h1>
+    <input type="text" id="nevInput">
+    <button id="ellenorzesGomb">Ellenőrzés</button>
+
+    <script>
+        // Ellenőrizzük, hogy a felhasználó megadta-e a nevét
+        function ellenorzes() {
+            var nevInput = document.getElementById("nevInput").value;
+
+            if (nevInput === "") {
+                alert("Kérem, adja meg a felhasználói nevét!");
+            } else {
+                alert("Üdvözöljük, " + nevInput + "!");
+                // További műveletek itt
+            }
+        }
+
+        // Az ellenőrzés gomb eseménykezelőjének hozzáadása
+        var ellenorzesGomb = document.getElementById("ellenorzesGomb");
+        ellenorzesGomb.addEventListener("click", ellenorzes);
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="fooldal.html">Főoldal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="fooldal.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="regisztracio.html">Jegyvásárlás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="atigazolasi hirek.html">Átigazolási hírek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Napi kwiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mérkőzések</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="forraskodok.html">Forrás kódok</a>
+                </li>
+            </ul>
+            <ul class="nav-item">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            </ul>
+            <ul class="nav-item">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <div class="container-fluid">       
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 id="lg3" align="center">Hírdetések egy adott témában.
+                    <div class="container mt-5">
+                        <!-- Bootstrap Carousel létrehozása -->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Képek -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="kepek/kep1.png" alt="Kép 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="kepek/kep2.png" alt="Kép 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="kepek/kep3.png" alt="Kép 3" class="d-block w-100">
+                            </div>
+                        </div>                                    
                         </div>
-                        <div class="carousel-item">
-                          <img src="kepek/kep2.png" alt="Kép 2" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="kepek/kep3.png" alt="Kép 3" class="d-block w-100">
-                        </div>
-                      </div>                                    
                     </div>
-                  </div>
-                <p id="elrejtett-szoveg" align="center"><a href="https://www.tippmixpro.hu/">Ha akkar tippelni az adott mecsre az itt tuja megoldani...</a></p>
-                <button onclick="toggleSzoveg()">Tippelési lehetőségek egy adot oldalra</button>
-            </h3>
-        </div>
-        <div class="col-lg-6">
-            <h3 id="lg6" align="justify">Hírek a fociról napról napra.
-                
-            </h3>            
-        </div>
-        <div class="col-lg-3" align="justify">
-            <h3 id="lg3">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
-                <div class="ratio ratio-16x9">
-                    <video src="" controls></video>
-                </div>
-            </h3>
+                    <p id="elrejtett-szoveg" align="center"><a href="https://www.tippmixpro.hu/">Ha akkar tippelni az adott mecsre az itt tuja megoldani...</a></p>
+                    <button onclick="toggleSzoveg()">Tippelési lehetőségek egy adot oldalra</button>
+                </h3>
+            </div>
+            <div class="col-lg-6">
+                <h3 id="lg6" align="justify">Hírek a fociról napról napra.
+                    
+                </h3>            
+            </div>
+            <div class="col-lg-3" align="justify">
+                <h3 id="lg3">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
+                    <div class="ratio ratio-16x9">
+                        <video src="" controls></video>
+                    </div>
+                </h3>
+            </div>
         </div>
     </div>
-</div>
-<hr>
-<!-- Bootstrap JavaScript fájl importálása (opcionális, ha használunk dropdown menüket vagy más Bootstrap komponenseket) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+    <hr>
+    <!-- Bootstrap JavaScript fájl importálása (opcionális, ha használunk dropdown menüket vagy más Bootstrap komponenseket) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         $(function () {
             $('.toggleNav').on('click', function () {
@@ -128,5 +147,6 @@
     <footer>
         &COPY; Tasnádi Richárd és Szabó Marcell 2023.
     </footer>
+    <script src="program.js"></script>
 </body>
 </html>

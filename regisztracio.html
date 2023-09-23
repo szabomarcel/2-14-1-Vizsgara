@@ -47,13 +47,14 @@
     <form action="" method="post">
         <div class="container">
             <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
+            <h4>1. Következő időpont foglalása</h4>
             <form>
                 <div class="row g-3 align-items-center">
                     <div class="col-auto">
                       <label for="name" class="col-form-label">Nev: </label>
                     </div>
                     <div class="col-auto">
-                      <input type="name" id="inputname" class="form-control" aria-describedby="name">
+                      <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
                     </div>
                     <div class="col-auto">
                       <span id="passwordHelpInline" class="form-text">
@@ -74,6 +75,29 @@
                         8-20 characteres hosszú kérünk.
                       </span>
                     </div>
+                </div>
+                <br>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="date" class="form-control" aria-describedby="dataHelpInline">Dátum:</label>
+                  </div>
+                  <div class="col-auto">
+                    <input type="date" id="date" name="date" required><br>
+                  </div>
+                </div>
+                <br>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="ticket-type">Jegy típusa:</label>
+                    <select id="ticket-type" name="ticket-type">
+                      <option value="egyedi">Egyedi jegy</option>
+                      <option value="csoportos">Csoportos jegy</option>
+                    </select><br>
+                  </div>
+                  <div class="col-auto">
+                    <label for="quantity">Mennyiség:</label>
+                          <input type="number" id="quantity" name="quantity" required><br>
+                  </div>
                 </div>
                 <br>
                 <div class="row g-3 align-items-center">
@@ -108,7 +132,8 @@
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                 <label for="vehicle3"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
                 <button type="submit" class="btn btn-primary">Küldés</button>
-            </form>
+              </div>                
+          </form>
         </div>
         <!-- Bootstrap JavaScript és jQuery betöltése (opcionális) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
