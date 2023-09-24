@@ -11,27 +11,6 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Kérem, adja meg a felhasználói nevét:</h1>
-    <input type="text" id="nevInput">
-    <button id="ellenorzesGomb">Ellenőrzés</button>
-
-    <script>
-        // Ellenőrizzük, hogy a felhasználó megadta-e a nevét
-        function ellenorzes() {
-            var nevInput = document.getElementById("nevInput").value;
-
-            if (nevInput === "") {
-                alert("Kérem, adja meg a felhasználói nevét!");
-            } else {
-                alert("Üdvözöljük, " + nevInput + "!");
-                // További műveletek itt
-            }
-        }
-
-        // Az ellenőrzés gomb eseménykezelőjének hozzáadása
-        var ellenorzesGomb = document.getElementById("ellenorzesGomb");
-        ellenorzesGomb.addEventListener("click", ellenorzes);
-    </script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="fooldal.html">Főoldal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

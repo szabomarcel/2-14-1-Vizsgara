@@ -4,43 +4,37 @@ alert(valt1 + valt2)
 
 var kor = prompt("Hány éves vagy?")
 if(kor > 18){
-    alert("Akkor tudsz benészhetsz az oldalra!")
+    alert("Akkor beléphetsz az oldalra!")
 }
 else if( kor == 18){
-    alert("Jó hogy elérted ezt a kort és be tudsz nézni.")
+    alert("Jó hogy elérted ezt a kort és be tudsz nézni az oldalunkra.")
 }
 else{
-    alert("Sajnos elkel hagyd az oldalt!")
+    alert("Sajnos elkel hagyd ezt az oldalt!")
     ageInput.value = "";
 }
 
-var gepszam = Math.ceil(Math.random() * 10)
-var tipp = 0
-while(gepszam != tipp){
-    tipp = prompt()
-    if(gepszam > tipp){
-        alert("Nagyobb")
-    }else if(gepszam < tipp){
-        alert("Kisebb")
-    }else if(gepszam == tipp){
-        alert("Talált!")
-    }
+const a_input = document.getElementById("a_szam");
+const b_input = document.querySelector("#b_szam");
+const kijelzo = document.querySelector("#eredmeny");
+
+function osszead(){
+    a = parseFloat(a_input.value);
+    b = parseFloat(b_input.value);
+    kijelzo.innerHTML = "Összeadva: " + (a + b).toString();
 }
-
-/*var szavak = []
-var ujszo
-while(ujszo != ""){
-    ujszo = prompt()
-    if(ujszo != ""){
-        szavak.push(ujszo)
-    }
+function kivonas(){
+    a = parseFloat(a_input.value);
+    b = parseFloat(b_input.value);
+    kijelzo.innerHTML = "Kivonás: " + (a - b).toString();
 }
-szavak.sort()
-alert(szavak)
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const mysql = require('mysql');
-
-const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));*/
+function szorzas(){
+    a = parseFloat(a_input.value);
+    b = parseFloat(b_input.value);
+    kijelzo.innerHTML = "Szorzás: " + (a * b).toString();
+}
+function osztas(){
+    a = parseFloat(a_input.value);
+    b = parseFloat(b_input.value);
+    kijelzo.innerHTML = "Osztás: " + (a / b).toString();
+}
