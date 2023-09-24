@@ -20,7 +20,6 @@ const suly = 80.5; //Number
 const felnott = false; //Boolean
 const date = new Date('2020-10-01');
 
-
 const x = null;
 let y;
 
@@ -37,4 +36,17 @@ nev2 += 10;
 let szoveg = 'Hello';
 
 //console.log(szoveg + ' ' + nev2 + '!');
-console.log(`${szoveg} ${nev2}!!!!`);
+//console.log(`${szoveg} ${nev2}!!!!`);
+
+//console.log(szoveg.length);
+//console.log(szoveg.toLowerCase());
+//console.log(szoveg.substring(1, 5));
+let lista = 'alma, körte, banán';
+//console.log(lista.split(','));
+
+//date.setHours(4);
+date.setFullYear(2021);
+/*console.log(date.getdate());
+console.log(date.getFullYear());
+console.log(date.getMonth() + 1);*/
+console.log(date);
