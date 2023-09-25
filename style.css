@@ -1,7 +1,7 @@
 html{
     background-image: url(https://th.bing.com/th/id/R.9ffb17e153ee63841c2fe3b754f19062?rik=UKf5TpH7llEU9g&pid=ImgRaw&r=0);
     background-size: cover;
-    padding: 5px;
+    /*padding: 5px;*/
     box-sizing:  border-box;
     background-repeat: no-repeat;
 }

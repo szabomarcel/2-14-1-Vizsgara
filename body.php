@@ -3,11 +3,11 @@
         <?php 
             require_once("menu.php"); 
             switch ($menuItem) {
-                case "home":
-                    require_once("home.php");
+                case "fooldal":
+                    require_once("fooldal.php");
                     break;
-                case "szabomarcell":
-                    require_once("szabomarcell.php");
+                case "regisztracio":
+                    require_once("regisztracio.php");
                     break;
                 case "autocard":
                     require_once("autocard.php");

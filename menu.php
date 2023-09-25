@@ -6,13 +6,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="fooldal.html">Főoldal</a>
+                <a class="nav-link" href="index.php?menuItem=fooldal">Főoldal</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="regisztracio.html">Jegyvásárlás</a>
+                <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="atigazolasi hirek.html">Átigazolási hírek</a>
+                <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Napi kwiz</a>
@@ -21,7 +21,7 @@
                 <a class="nav-link" href="#">Mérkőzések</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="forraskodok.html">Forrás kódok</a>
+                <a class="nav-link" href="index.php?menuItem=forras">Forrás kódok</a>
             </li>
         </ul>
         <ul class="nav-item">
