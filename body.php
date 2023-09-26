@@ -9,12 +9,14 @@
                 case "regisztracio":
                     require_once("regisztracio.php");
                     break;
-                case "autocard":
-                    require_once("autocard.php");
+                case "atigazolas":
+                    require_once("atigazolas.php");
                     break;    
-                
+                case "forras":
+                    require_once("forraskod.php");
+                    break;
                 default:
-                    echo 'Üdvözöllek!';
+                    echo 'Üdvözöljük az oldalunkon!';
                     break;
             }
         ?>
