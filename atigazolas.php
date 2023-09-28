@@ -1,3 +1,4 @@
+<hr>
 <div class="container-fluid">       
       <div class="row">
           <div class="card" style="width:400px">
@@ -228,6 +229,7 @@
             <img src="https://m.blog.hu/fa/fantasztikus-cocacola/image/c64369b90692ae8d89c926710aafe87a.jpg" alt="Sponzor 3">
         </div>
     </main>
+    <hr>
     <footer>
         &COPY; Tasnádi Richárd és Szabó Marcell 2023.
     </footer>

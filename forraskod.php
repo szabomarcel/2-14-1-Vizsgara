@@ -1,3 +1,4 @@
+<hr>
 <div class="container-fluid">
         <h1 id="c">Eléretőségünk</h1>
         <div class="row">
