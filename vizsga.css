@@ -1,0 +1,303 @@
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+    --hatter: bottom, rgb(153, 169, 143) rgb(193, 208, 181), rgb(214, 232, 219), rgb(255,248,222);
+}
+
+html{
+    background-image: linear-gradient( 180deg, #618264, #79AC78, rgb(176, 217, 177), rgb(208, 231, 210));
+    padding: 10px;
+    bottom: auto;
+    box-sizing:  border-box;
+    background-repeat: no-repeat;
+}
+
+*, *:before, *:after{
+    /*box-sizing: inherit;*/
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+body{    
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    background:rgba(0,0,0,0.4);
+    border-radius: 12px;
+}
+
+section, header, footer{
+    background:rgba(0,0,0,0.6);
+    color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px;
+}
+
+section{
+    font-size: 1em;
+}
+
+footer{
+    border-radius: 12px;
+    margin-top:200px;
+    animation:animateHeart .9s infinite alternate}
+    @keyframes animateHeart{to{transform:scale(1.4)}
+}
+
+.gomb{
+    background:rgba(0,0,0,0.6);
+    /*font-size: 2em;*/
+    color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px;
+    border-radius: 12px;
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.service h4, .service p {
+    margin: 0;
+}
+
+.service.selected {
+    text-decoration: underline;
+}
+
+.service h4 {
+    color: #333;
+}
+
+h4{
+    text-align: center;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#c{
+    background-image: linear-gradient(to right, #618264, #79AC78, rgb(176, 217, 177),  #79AC78,#618264);
+    color: black;
+    text-align: center;
+    border-radius: 12px;
+}
+  
+a:visited {
+    color: rgb(76,75,22),;
+}
+  
+a:hover{
+    background:rgba(255,255,255,0.3);
+}
+a:active {
+    color: rgba(255,0,0,0.3);
+}
+
+input{
+    border: 0;
+    padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border:1px solid gray;
+    background:rgba(0,0,0,0.2);
+}
+
+nav, .logo{
+    flex: 1;
+}
+
+.toggleNav {
+    display: none;
+}
+
+.navbar {
+    background-color: rgba(255,0,0,0.6); /* Háttérszín */
+    border-bottom: 5px solid rgba(255,0,0,0.6); /* Alsó határ */
+    border-radius: 12px;
+}
+
+.navbar-brand {
+    color: rgba(1,200,0,0.6) !important; /* Cím szín */
+    font-weight: bold; /* Betű vastagság */
+    border-radius: 12px;
+    text-align: center;
+}
+
+.navbar-nav .nav-link .gomb1{
+    /*color: wheat; /* Menüpont szövegszín */
+    font-weight: bold; /* Betű vastagság */
+    border-radius: 12px;
+}
+
+.navbar-nav .nav-link:hover {
+    /*color: black; /* Hover állapot szövegszín */
+    border-radius: 12px;
+}
+
+#elrejtett-szoveg {
+    display: none; /* Az alapértelmezett állapotban a szöveg el van rejtve */
+    color: #c7c7c7; /* A rejtett szöveg színe (opcionális) */
+    font-size: 16px; /* A szöveg mérete (opcionális) */
+    font-weight: bold; /* A szöveg vastagsága (opcionális) */
+    border-radius: 12px;
+    text-align: center;
+}
+
+button, .logo, .submit{
+    background-image: linear-gradient(rgb(4, 13, 18), rgb(24, 61, 61), rgb(92, 131, 116)); /* Gomb háttérszíne */
+    color: white; /* Gomb szövegszíne */
+    padding: 10px 20px; /* Gomb belső térkitöltése */
+    border: none; /* Gomb kerete nélküli */
+    cursor: pointer; /* Mutató kurzor, amikor ráviszed a kurzort */
+    border-radius: 12px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: white; /* Gomb háttérszíne hover állapotban */
+    border-radius: 12px;
+    text-align: center;
+}
+.sponzorok{
+    display: flex; /* A tartalom vízszintes elrendezése */
+    justify-content: space-around; /* A tartalom középre igazítása és térközök az elemek között */
+    align-items: center; /* Az elemek középre igazítása függőlegesen */
+    padding: 20px; /* Külső térkitöltés az elem körül */    
+    color: white;    
+}
+
+.sponzorok img{
+    max-width: 100px; /* Maximális szélesség a logóknak */
+    height: auto; /* Automatikus magasság, hogy az arányok megmaradjanak */
+    margin: 10px; /* Térköz az egyes logók között */
+    text-align: center;
+}
+
+img{
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+hr{
+    background-color:rgba(255,255,255);
+    padding: 3px;
+}
+
+#lg2, #lg3, #lg6, #lg8, #lg12{
+    background-color: white;
+    border-radius: 12px;   
+}
+
+.card{
+    background-color: white;
+    margin: 10px auto;
+    float: left;    
+}
+
+/* Képek méretének testreszabása */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+#t{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+}
+
+#name {
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#age-verification {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#age-input {
+    width: 50px;
+}
+
+#content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link:hover:active{
+    background: white;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    transition: all 0.1;
+    color: #fff;
+}
+
+.btn:hover {
+    border-color: white;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}

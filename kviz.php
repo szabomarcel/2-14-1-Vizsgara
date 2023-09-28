@@ -1,67 +1,26 @@
+<h2><p align="center">Egy rövidke kvíz lenne a a focizásról.</p></h2>
 <hr>
-<div class="container-fluid">       
-    <div class="row">
-        <div class="col-lg-3">
-            <h3 id="lg3" align="center">Hírdetések egy adott témában.
-                <div class="container mt-5">
-                    <!-- Bootstrap Carousel létrehozása -->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Képek -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="kepek/kep1.png" alt="Kép 1" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="kepek/kep2.png" alt="Kép 2" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="kepek/kep3.png" alt="Kép 3" class="d-block w-100">
-                        </div>
-                    </div>                                    
-                    </div>
-                </div>
-                <p id="elrejtett-szoveg" align="center"><a href="https://www.tippmixpro.hu/">Ha akkar tippelni az adott mecsre az itt tuja megoldani...</a></p>
-                <button onclick="toggleSzoveg()">Tippelési lehetőségek egy adot oldalra</button>
-            </h3>
-        </div>
-        <div class="col-lg-6">
-            <h3 id="lg6" align="justify">Hírek a fociról napról napra.
-                
-            </h3>            
-        </div>
-        <div class="col-lg-3" align="justify">
-            <h3 id="lg3">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
-                <div class="ratio ratio-16x9">
-                    <video src="" controls></video>
-                </div>
-            </h3>
-        </div>
+<div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">kerdes</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">válasz 1</button>
+        <button class="btn">válasz 2</button>
+        <button class="btn">válasz 3</button>
+        <button class="btn">válasz 4</button>
+      </div>
     </div>
-</div>
-<hr>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Kezdés</button>
+      <button id="next-btn" class="next-btn btn hide">Következő kérdés</button>
+    </div>
+  </div>
 <!-- Bootstrap JavaScript fájl importálása (opcionális, ha használunk dropdown menüket vagy más Bootstrap komponenseket) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--<script>
-    $(function () {
-        $('.toggleNav').on('click', function () {
-            $('nav ul').toggleClass('open');
-        });
-    });
-</script>-->
-<script>
-    // JavaScript függvény a szöveg elrejtéséhez/megjelenítéséhez
-    function toggleSzoveg() {
-        var szoveg = document.getElementById("elrejtett-szoveg");
-        if (szoveg.style.display === "none") {
-            szoveg.style.display = "block";
-        } else {
-            szoveg.style.display = "none";
-        }
-    }
-</script>
+<hr>
 <main>
     <h2>Sponzorok</h2>
     <div class="sponzorok">
@@ -75,8 +34,7 @@
         <img src="https://m.blog.hu/fa/fantasztikus-cocacola/image/c64369b90692ae8d89c926710aafe87a.jpg" alt="Sponzor 3">
     </div>
 </main>
-<hr>
 <footer>
-&COPY; Tasnádi Richárd és Szabó Marcell 2023-2024 vizsga
+  &COPY; Tasnádi Richárd és Szabó Marcell 2023-2024 vizsga
 </footer>
-<!--<script src="program.js"></script>-->
+<script src="script.js"></script>
