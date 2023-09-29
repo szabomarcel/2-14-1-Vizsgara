@@ -92,24 +92,20 @@
                   8-20 characteres hosszú kérünk.
                 </span>
               </div>
-          <br>
-          <div class="form-group">
-              <label for="message">Üzenet:</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-          </div>
+          <br>      
           <h4>Mérközésekre a Jegyvásárlás</h4>
           <input type="checkbox" id="vehicle1" name="vehicle1" value="TE">
-          <label for="vehicle1" name="jegy"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+          <label for="vehicle1" name="jegy" align=center> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
           <input type="checkbox" id="vehicle2" name="vehicle2" value="AKADEMIA">
-          <label for="vehicle2" name="jegy"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+          <label for="vehicle2" name="jegy" align=center> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
           <input type="checkbox" id="vehicle3" name="vehicle3" value="DD">
-          <label for="vehicle3" name="jegy"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+          <label for="vehicle3" name="jegy" align=center> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
           <input type="checkbox" id="vehicle4" name="vehicle4" value="MTK">
-          <label for="vehicle4" name="jegy"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+          <label for="vehicle4" name="jegy" align=center> Újpest és MTK Budapest az ára 2100ft</label><br><br>
           <input type="checkbox" id="vehicle5" name="vehicle5" value="FC">
-          <label for="vehicle5" name="jegy"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+          <label for="vehicle5" name="jegy" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
           <input type="checkbox" id="vehicle6" name="vehicle6" value="TC">
-          <label for="vehicle6" name="jegy"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
+          <label for="vehicle6" name="jegy" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
           <button type="submit" class="btn btn-primary">Küldés</button>
         </div>                
       </form>
