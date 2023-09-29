@@ -1,5 +1,17 @@
 <form>
   <div class="container">
+    <?php 
+      if(isset($_POST["sugmit"])){
+        $name = $_POST["name"];
+        $email = $_POST["name"];
+        $date = $_POST["name"];
+        $jegyt = $_POST["name"];
+        $quantity = $_POST["name"];
+        $password = $_POST["name"];
+        $password2 = $_POST["name"];
+        $name = $_POST["name"];
+      }
+    ?>
       <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
       <h4>1. Következő időpont foglalása</h4>
       <form>
@@ -8,7 +20,7 @@
                 <label for="name" class="col-form-label">Nev: </label>
               </div>
               <div class="col-auto">
-                <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline">
+                <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="name">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -22,7 +34,7 @@
                 <label for="inputEmail" class="col-form-label">Email cim: </label>
               </div>
               <div class="col-auto">
-                <input type="email" id="inputEmail" class="form-control" aria-describedby="passwordHelpInline">
+                <input type="email" id="inputEmail" class="form-control" aria-describedby="passwordHelpInline" name="email" placeholder="email">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -36,13 +48,13 @@
               <label for="date" class="form-control" aria-describedby="dataHelpInline">Dátum:</label>
             </div>
             <div class="col-auto">
-              <input type="date" id="date" name="date" required><br>
+              <input type="date" id="date" name="date" placeholder="date" required><br>
             </div>
           </div>
           <br>
           <div class="row g-3 align-items-center">
             <div class="col-auto">
-              <label for="ticket-type">Jegy típusa:</label>
+              <label for="ticket-type" name="jegyt">Jegy típusa:</label>
               <select id="ticket-type" name="ticket-type">
                 <option value="egyedi">Egyedi jegy</option>
                 <option value="csoportos">Csoportos jegy</option>
@@ -50,7 +62,7 @@
             </div>
             <div class="col-auto">
               <label for="quantity">Mennyiség:</label>
-                    <input type="number" id="quantity" name="quantity" required><br>
+              <input type="number" id="quantity" name="quantity" placeholder="quantity" required><br>
             </div>
           </div>
           <br>
@@ -59,7 +71,7 @@
                 <label for="inputPassword6" class="col-form-label">Password</label>
               </div>
               <div class="col-auto">
-                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="password">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -68,23 +80,36 @@
               </div>
           </div>
           <br>
+          <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Írja be méegyszer password</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="password2">
+              </div>
+              <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                  8-20 characteres hosszú kérünk.
+                </span>
+              </div>
+          <br>
           <div class="form-group">
               <label for="message">Üzenet:</label>
               <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
           </div>
           <h4>Mérközésekre a Jegyvásárlás</h4>
           <input type="checkbox" id="vehicle1" name="vehicle1" value="TE">
-          <label for="vehicle1"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Akadenia">
-          <label for="vehicle2"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-          <label for="vehicle3"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
+          <label for="vehicle1" name="jegy"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="AKADEMIA">
+          <label for="vehicle2" name="jegy"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="DD">
+          <label for="vehicle3" name="jegy"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="MTK">
+          <label for="vehicle4" name="jegy"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+          <input type="checkbox" id="vehicle5" name="vehicle5" value="FC">
+          <label for="vehicle5" name="jegy"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+          <input type="checkbox" id="vehicle6" name="vehicle6" value="TC">
+          <label for="vehicle6" name="jegy"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
           <button type="submit" class="btn btn-primary">Küldés</button>
         </div>                
       </form>
