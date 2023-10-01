@@ -1,6 +1,6 @@
 <form>
   <div class="container">
-    <?php 
+    <?php
       if(isset($_POST["sugmit"])){
         $name = $_POST["name"];
         $email = $_POST["name"];
@@ -9,18 +9,18 @@
         $quantity = $_POST["name"];
         $password = $_POST["name"];
         $password2 = $_POST["name"];
-        $name = $_POST["name"];
+        $jegy = $_POST["jegy"];
       }
     ?>
       <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
       <h4>1. Következő időpont foglalása</h4>
-      <form>
+      <form class="" action="" method="post" autocomplete="off">
           <div class="row g-3 align-items-center">
               <div class="col-auto">
                 <label for="name" class="col-form-label">Nev: </label>
               </div>
               <div class="col-auto">
-                <input type="name" id="inputname" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="name">
+                <input type="name" id="name" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="name">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -34,7 +34,7 @@
                 <label for="inputEmail" class="col-form-label">Email cim: </label>
               </div>
               <div class="col-auto">
-                <input type="email" id="inputEmail" class="form-control" aria-describedby="passwordHelpInline" name="email" placeholder="email">
+                <input type="email" id="email" class="form-control" aria-describedby="passwordHelpInline" name="email" placeholder="email">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -55,7 +55,7 @@
           <div class="row g-3 align-items-center">
             <div class="col-auto">
               <label for="ticket-type" name="jegyt">Jegy típusa:</label>
-              <select id="ticket-type" name="ticket-type">
+              <select id="jegyt" name="ticket-type">
                 <option value="egyedi">Egyedi jegy</option>
                 <option value="csoportos">Csoportos jegy</option>
               </select><br>
@@ -71,7 +71,7 @@
                 <label for="inputPassword6" class="col-form-label">Password</label>
               </div>
               <div class="col-auto">
-                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="password">
+                <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="password">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -85,7 +85,7 @@
                 <label for="inputPassword6" class="col-form-label">Írja be méegyszer password</label>
               </div>
               <div class="col-auto">
-                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="password2">
+                <input type="password" id="password2" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="password2">
               </div>
               <div class="col-auto">
                 <span id="passwordHelpInline" class="form-text">
@@ -106,7 +106,7 @@
           <label for="vehicle5" name="jegy" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
           <input type="checkbox" id="vehicle6" name="vehicle6" value="TC">
           <label for="vehicle6" name="jegy" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
-          <button type="submit" class="btn btn-primary">Küldés</button>
+          <button type="submit" class="btn btn-primary">Regisztráció</button>
         </div>                
       </form>
   </div>

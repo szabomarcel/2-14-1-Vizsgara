@@ -32,7 +32,7 @@
         <div class="col-lg-3" align="justify">
             <h3 id="lg3">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
                 <div class="ratio ratio-16x9">
-                    <video src="" controls></video>
+                    <video src="y2mate.is - Funny Soccer Football Vines 2023 ● Goals l Skills l Fails-WKMoO62cuUI-720p-1696165512.mp4" controls></video>
                 </div>
             </h3>
         </div>

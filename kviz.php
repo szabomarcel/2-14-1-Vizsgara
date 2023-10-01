@@ -1,4 +1,4 @@
-<h2><p align="center">Egy rövidke kvíz lenne a a focizásról.</p></h2>
+<h2><p align="center">Egy rövidke kvíz lenne a focizásról.</p></h2>
 <hr>
 <div class="container">
     <div id="question-container" class="hide">
