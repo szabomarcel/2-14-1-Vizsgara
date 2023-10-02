@@ -12,26 +12,42 @@
     $password2 = mysqli_real_escape_string($conn, $_POST ['password']);
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
-    $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$password'";
+    $conn = new mysqli('localhost', 'root', 'root', 'regisztracio');
+    $select = "SELECT email FROM users WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
 
     if(mysqli_num_rows($result) > 0){
       $error[] = 'user already exit!';
+    }else{
+      if($password != $password2){
+        $error[] = 'passwor not mathcet!';
+      }else{
+        $insert = "INSERT INTO users(name, email, date, jegyt, quantity, password, password2, jegy) VALUES('$name','$email', '$date', '$jegyt', '$quantity', '$password', '$password2', '$jegy')";
+        mysqli_query($conn, $insert);
+        header('location: login_form.php');
+      }
     }
   }  
 ?>
 <form>
   <div class="container">
     <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
+    <?php
+    if(isset($error)){
+      foreach($error as $error){
+        echo '<span class="error-msg">'.$error.'</span>';
+      }
+    }
+    ?>
     <h4>1. Következő időpont foglalása</h4>
-    <form class="" action="" method="post" autocomplete="off">
+    <form action="user_db" method="post" autocomplete="off">
         <div class="row g-3 align-items-center">
             <div class="col-auto">
               <label for="name" class="col-form-label">Nev: </label>
             </div>
             <div class="col-auto">
-              <input type="name" id="name" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="name">
+              <input type="name" id="name" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="nev">
             </div>
             <div class="col-auto">
               <span id="passwordHelpInline" class="form-text">
@@ -59,7 +75,7 @@
             <label for="date" class="form-control" aria-describedby="dataHelpInline">Dátum:</label>
           </div>
           <div class="col-auto">
-            <input type="date" id="date" name="date" placeholder="date" required><br>
+            <input type="date" id="date" name="date" placeholder="datum" required><br>
           </div>
         </div>
         <br>
@@ -73,7 +89,7 @@
           </div>
           <div class="col-auto">
             <label for="quantity">Mennyiség:</label>
-            <input type="number" id="quantity" name="quantity" placeholder="quantity" required><br>
+            <input type="number" id="quantity" name="quantity" placeholder="mennyiseg" required><br>
           </div>
         </div>
         <br>
@@ -82,7 +98,7 @@
               <label for="inputPassword6" class="col-form-label">Password</label>
             </div>
             <div class="col-auto">
-              <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="password">
+              <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="jelszo">
             </div>
             <div class="col-auto">
               <span id="passwordHelpInline" class="form-text">
@@ -96,7 +112,7 @@
               <label for="inputPassword6" class="col-form-label">Írja be méegyszer password</label>
             </div>
             <div class="col-auto">
-              <input type="password" id="password2" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="password2">
+              <input type="password" id="password2" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="jelszo2">
             </div>
             <div class="col-auto">
               <span id="passwordHelpInline" class="form-text">
