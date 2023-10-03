@@ -13,7 +13,7 @@
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
     $conn = new mysqli('localhost', 'root', '', 'regisztracio');
-    $select = "SELECT * FROM user_form WHERE email = '".$email."' && password = '".$password."'";
+    $select = "SELECT * FROM users WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
 
@@ -29,8 +29,7 @@
     }else{
         $error[] = 'incorrect email or passord!';
     }
-  }  
-  $conn->close();
+  }    
 ?>
 <div action="user_db" method="post">
     <h3>Jelenkez be most.</h3>

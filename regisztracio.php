@@ -13,7 +13,7 @@
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
     $conn = new mysqli('localhost', 'root', '', 'regisztracio');
-    $select = "SELECT email FROM users WHERE email = '".$email."' && password = '".$password."'";
+    $select = "SELECT * FROM users WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
 
@@ -28,7 +28,6 @@
         header('location: login_form.php');
       }
     }
-    $conn->close();
   }  
 ?>
 <form>
