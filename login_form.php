@@ -12,7 +12,7 @@
     $password2 = mysqli_real_escape_string($conn, $_POST ['password']);
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
-    $conn = new mysqli('localhost', 'root', 'root', 'regisztracio');
+    $conn = new mysqli('localhost', 'root', '', 'regisztracio');
     $select = "SELECT * FROM user_form WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
@@ -30,9 +30,10 @@
         $error[] = 'incorrect email or passord!';
     }
   }  
+  $conn->close();
 ?>
 <div action="user_db" method="post">
-    <h3>login now</h3>
+    <h3>Jelenkez be most.</h3>
     <?php
     if(isset($error)){
       foreach($error as $error){
@@ -43,7 +44,7 @@
     <input type="email" name="email" required placeholder="enter your email">
     <input type="password" name="password" required placeholder="enter your password">
     <input type="submit" name="submit" value="login now" class="form-btn">
-    <p>don't have an account <a href="regisztracio.php">regisztáj most</a></p>
+    <p>Nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
 </div>
 <!-- Bootstrap JavaScript és jQuery betöltése (opcionális) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

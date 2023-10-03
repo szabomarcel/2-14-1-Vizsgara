@@ -12,7 +12,7 @@
     $password2 = mysqli_real_escape_string($conn, $_POST ['password']);
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
-    $conn = new mysqli('localhost', 'root', 'root', 'regisztracio');
+    $conn = new mysqli('localhost', 'root', '', 'regisztracio');
     $select = "SELECT email FROM users WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
@@ -23,11 +23,12 @@
       if($password != $password2){
         $error[] = 'passwor not mathcet!';
       }else{
-        $insert = "INSERT INTO users(name, email, date, jegyt, quantity, password, password2, jegy) VALUES('$name','$email', '$date', '$jegyt', '$quantity', '$password', '$password2', '$jegy')";
+        $insert = "INSERT INTO users(name, email, date, jegyt, quantity, password, password2, jegy) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         mysqli_query($conn, $insert);
         header('location: login_form.php');
       }
     }
+    $conn->close();
   }  
 ?>
 <form>
