@@ -6,9 +6,9 @@
                 case "fooldal":
                     require_once("fooldal.php");
                     break;
-                case "regisztracio":
+                /*case "regisztracio":
                     require_once("login_form.php");
-                    break;
+                    break;*/
                 case "atigazolas":
                     require_once("atigazolas.php");
                     break;   

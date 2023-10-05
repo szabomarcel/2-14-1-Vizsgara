@@ -14,7 +14,7 @@
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
     $conn = new mysqli('localhost', 'root', '', 'regisztracio');
-    $select = "SELECT * FROM users WHERE email = '".$email."' && password = '".$password."'";
+    $sql = "SELECT * FROM `users` WHERE email = '".$email."' && password = '".$password."'";
 
     $result = mysqli_query($conn, $select);
 

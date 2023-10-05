@@ -35,6 +35,54 @@
                     <video src="y2mate.is - Funny Soccer Football Vines 2023 ● Goals l Skills l Fails-WKMoO62cuUI-720p-1696165512.mp4" controls></video>
                 </div>
             </h3>
+            <?php
+            require_once('head.php');
+            require_once('menu.php');
+            @include 'config.php';
+            if(isset($_POST ['submit'])){
+                $id = mysqli_real_escape_string($conn, $_POST ['id']);
+                $name = mysqli_real_escape_string($conn, $_POST ['name']);
+                $email = mysqli_real_escape_string($conn, $_POST ['email']);
+                $date = mysqli_real_escape_string($conn, $_POST ['date']);
+                $jegyt = mysqli_real_escape_string($conn, $_POST ['jegyt']);
+                $quantity = mysqli_real_escape_string($conn, $_POST ['quantity']);
+                $password = mysqli_real_escape_string($conn, $_POST ['password']);
+                $password2 = mysqli_real_escape_string($conn, $_POST ['password']);
+                $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
+
+                $conn = new mysqli('localhost', 'root', '', 'regisztracio');
+                $sql = "SELECT * FROM `users` WHERE email = '".$email."' && password = '".$password."'";
+
+                $result = mysqli_query($conn, $select);
+
+                if(mysqli_num_rows($result) != 1){
+                    $row = mysqli_fetch_array($result);
+                    if($row['user_type'] == 'admin'){
+                            $_SESSION['admin_name'] = $row['name'];
+                            header('location: admin_page.php');
+                        }elseif($row['user_type'] == 'user'){
+                            $_SESSION['user_name'] = $row['name'];
+                            header('location: user_page.php');
+                        }
+                    }else{
+                        $error[] = 'incorrect email or passord!';
+                    }
+                }    
+                ?>
+                <div action="user_db" method="post">
+                    <h3>Itt tudsz be bejelentkezni.</h3>
+                    <?php
+                        if(isset($error)){
+                            foreach($error as $error){
+                                echo '<span class="error-msg">'.$error.'</span>';
+                            }
+                        }
+                    ?>
+                <input type="email" name="email" class="email" required placeholder="enter your email">
+                <input type="password" name="password" class="password" required placeholder="enter your password">
+                <input type="submit" name="submit" value="login now" class="form-btn">
+                <p>Nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
+            </div>
         </div>
     </div>
 </div>

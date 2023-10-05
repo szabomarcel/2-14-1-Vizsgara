@@ -8,9 +8,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=fooldal">Főoldal</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
-            </li>
+            </li>-->
             <li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
             </li>
