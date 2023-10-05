@@ -3,6 +3,7 @@
   require_once('menu.php');
   @include 'config.php';
   if(isset($_POST ['submit'])){
+    $id = mysqli_real_escape_string($conn, $_POST ['id']);
     $name = mysqli_real_escape_string($conn, $_POST ['name']);
     $email = mysqli_real_escape_string($conn, $_POST ['email']);
     $date = mysqli_real_escape_string($conn, $_POST ['date']);

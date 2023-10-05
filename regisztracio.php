@@ -3,6 +3,7 @@
   require_once('menu.php');
   @include 'config.php';
   if(isset($_POST ['submit'])){
+    $id = mysqli_real_escape_string($conn, $_POST ['id']);
     $name = mysqli_real_escape_string($conn, $_POST ['name']);
     $email = mysqli_real_escape_string($conn, $_POST ['email']);
     $date = mysqli_real_escape_string($conn, $_POST ['date']);
@@ -13,7 +14,7 @@
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
     $conn = new mysqli('localhost', 'root', '', 'regisztracio');
-    $select = "SELECT * FROM users WHERE ( name = '".$name."' && email = '".$email."' && date = '".$date."' && jegyt ='".$jegyt."' && quantity = '".$quantity."' && password = '".$password."' && password2 = '".$password2."' && jegy = '".$jegy."')";
+    $select = "SELECT * FROM users WHERE id = '".$id."' && name = '".$name."' && email = '".$email."' && date = '".$date."' && jegyt ='".$jegyt."' && quantity = '".$quantity."' && password = '".$password."' && password2 = '".$password2."' && jegy = '".$jegy."'";
 
     $result = mysqli_query($conn, $select);
 
