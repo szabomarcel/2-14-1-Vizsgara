@@ -24,7 +24,7 @@
       if($password != $password2){
         $error[] = 'passwor not mathcet!';
       }else{
-        $insert = "INSERT INTO users(name, email, date, jegyt, quantity, password, password2, jegy) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+        $insert = "INSERT INTO users(id, name, email, date, jegyt, quantity, password, password2, jegy) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         mysqli_query($conn, $insert);
         header('location: login_form.php');
       }
