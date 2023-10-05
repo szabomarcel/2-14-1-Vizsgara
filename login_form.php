@@ -44,7 +44,7 @@
     <input type="email" name="email" required placeholder="enter your email">
     <input type="password" name="password" required placeholder="enter your password">
     <input type="submit" name="submit" value="login now" class="form-btn">
-    <p>Nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
+    <p>Ha nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
 </div>
 <!-- Bootstrap JavaScript és jQuery betöltése (opcionális) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
