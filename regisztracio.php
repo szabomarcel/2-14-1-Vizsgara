@@ -13,7 +13,7 @@
     $jegy = mysqli_real_escape_string($conn, $_POST ['jegy']);
 
     $conn = new mysqli('localhost', 'root', '', 'regisztracio');
-    $select = "SELECT * FROM users WHERE email = '".$email."' && password = '".$password."'";
+    $select = "SELECT * FROM users WHERE ( name = '".$name."' && email = '".$email."' && date = '".$date."' && jegyt ='".$jegyt."' && quantity = '".$quantity."' && password = '".$password."' && password2 = '".$password2."' && jegy = '".$jegy."')";
 
     $result = mysqli_query($conn, $select);
 
@@ -30,7 +30,7 @@
     }
   }  
 ?>
-<form>
+<form action="regisztracio.php" method="post">
   <div class="container">
     <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
     <?php
@@ -160,4 +160,5 @@
 <footer>
     &COPY; Tasnádi Richárd és Szabó Marcell 2023.
 </footer>
-<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
