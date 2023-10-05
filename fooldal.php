@@ -2,23 +2,22 @@
 <div class="container-fluid">       
     <div class="row">
         <div class="col-lg-3">
-            <h3 id="lg3" align="center">Hírdetések egy adott témában.
+            <h3 id="lg3" align="center" style="font-size: 12px;">Hírdetések egy adott témában.
                 <div class="container mt-5">
                     <!-- Bootstrap Carousel létrehozása -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Képek -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="kepek/kep1.png" alt="Kép 1" class="d-block w-100">
+                            <img src="kepek/kep1.png" alt="Kép 1" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                        <img src="kepek/kep2.png" alt="Kép 2" class="d-block w-100">
+                            <img src="kepek/kep2.png" alt="Kép 2" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                        <img src="kepek/kep3.png" alt="Kép 3" class="d-block w-100">
+                            <img src="kepek/kep3.png" alt="Kép 3" class="d-block w-100">
                         </div>
                     </div>                                    
-                    </div>
                 </div>
                 <p id="elrejtett-szoveg" align="center"><a href="https://www.tippmixpro.hu/">Ha akkar tippelni az adott mecsre az itt tuja megoldani...</a></p>
                 <button onclick="toggleSzoveg()">Tippelési lehetőségek egy adot oldalra</button>
@@ -26,11 +25,24 @@
         </div>
         <div class="col-lg-6">
             <h3 id="lg6" align="justify">Hírek a fociról napról napra.
-                
+            <div id="lapozo" align="center" style="font-size: 12px;">
+                <button onclick="elozoOldal()">Előző</button>
+                <button onclick="kovetkezoOldal()">Következő</button>
+            </div>
+            <div id="szoveg" style="font-size: 14px;" align=center color=red>
+                <div class="szoveg-lapozo">
+                    <div class="szoveg-oldal">Első oldal tartalma</div>
+                    <div class="szoveg-oldal">Második oldal tartlma</div>
+                    <div class="szoveg-oldal">Harmadik oldal tartalma</div>
+                </div>
+            </div>
+            <br>
+            <p style="font-size: 12px;" align=center> A 2014-es szezonban épp ezen a napon rendezték az elmúlt két évtized legszomorúbb F1-es futamát, az esős Japán Nagydíjat, a versenyt, melynek végeredménye tulajdonképpen senkit nem érdekelt.
+                A 2014-es Japán Nagydíj egészen vasárnap helyi idő szerint délután fél ötig a szezon egyik csúcspontjának tűnt. Roppantul érdekfeszítő beszédtémáktól pezsgett a paddock, elég csak a nagy bejelentésre gondolni, miszerint Sebastian Vettel elhagyja a Red Bullt, a szabadedzésen először gördült a pályára Max Verstappen, ráadásul ott volt az állandó izgalom az időjárás miatt, mely azt is kérdésessé tette, vajon megrendezhetik-e a versenyt, s ha igen, akkor az eredeti időpontban kerülhet-e sor rá.</p>
             </h3>            
         </div>
-        <div class="col-lg-3" align="justify">
-            <h3 id="lg3">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
+        <div class="col-lg-3" align="center">
+            <h3 id="lg3" style="font-size: 18px;">Egy rövid videó ami be mutatja hogy hogyan játszanak a mérközésen. 
                 <div class="ratio ratio-16x9">
                     <video src="y2mate.is - Funny Soccer Football Vines 2023 ● Goals l Skills l Fails-WKMoO62cuUI-720p-1696165512.mp4" controls></video>
                 </div>
@@ -70,7 +82,7 @@
                 }    
                 ?>
                 <div action="user_db" method="post">
-                    <h3>Itt tudsz be bejelentkezni.</h3>
+                    <h3 style="font-size: 18px;">Itt tudsz be bejelentkezni.</h3>
                     <?php
                         if(isset($error)){
                             foreach($error as $error){
@@ -83,6 +95,14 @@
                 <input type="submit" name="submit" value="login now" class="form-btn">
                 <p>Nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
             </div>
+        </div>
+        <div class="col-lg-12">
+            <h3 id="lg3" align="center" style="font-size: 16px;">
+                <p style="text-align:left;">afasgg </p>
+                <p style="text-align:left;">agezwet</p>
+                <img src="kepek/basketball/letöltés.jpg" class="ball">
+                <p>adggghgdhgihgjgakkőgjhgihv</p>
+            </h3>
         </div>
     </div>
 </div>
@@ -125,6 +145,7 @@
 </main>
 <hr>
 <footer>
-&COPY; Tasnádi Richárd és Szabó Marcell 2023-2024 vizsga
+    &COPY; Tasnádi Richárd és Szabó Marcell 2023-2024 vizsga
 </footer>
+<script src="lapozas.js"></script>
 <!--<script src="program.js"></script>-->
