@@ -37,8 +37,10 @@
                 </div>
             </div>
             <br>
-            <p style="font-size: 12px;" align=center> A 2014-es szezonban épp ezen a napon rendezték az elmúlt két évtized legszomorúbb F1-es futamát, az esős Japán Nagydíjat, a versenyt, melynek végeredménye tulajdonképpen senkit nem érdekelt.
-                A 2014-es Japán Nagydíj egészen vasárnap helyi idő szerint délután fél ötig a szezon egyik csúcspontjának tűnt. Roppantul érdekfeszítő beszédtémáktól pezsgett a paddock, elég csak a nagy bejelentésre gondolni, miszerint Sebastian Vettel elhagyja a Red Bullt, a szabadedzésen először gördült a pályára Max Verstappen, ráadásul ott volt az állandó izgalom az időjárás miatt, mely azt is kérdésessé tette, vajon megrendezhetik-e a versenyt, s ha igen, akkor az eredeti időpontban kerülhet-e sor rá.</p>
+                <p style="font-size: 14px; text-align: justify; margin-left: 10px; margin-right: 10px;"> A 2014-es szezonban épp ezen a napon rendezték az elmúlt két évtized legszomorúbb F1-es futamát, az esős Japán Nagydíjat, a versenyt, melynek végeredménye tulajdonképpen senkit nem érdekelt.</p>
+                <img src="kepek/forma1/images.jpg" style="float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;" width="300" height="auto">
+                <p style="font-size: 14px; text-align: justify; margin-left: 10px; margin-right: 10px;">A 2014-es Japán Nagydíj egészen vasárnap helyi idő szerint délután fél ötig a szezon egyik csúcspontjának tűnt. Roppantul érdekfeszítő beszédtémáktól pezsgett a paddock, elég csak a nagy bejelentésre gondolni, miszerint Sebastian Vettel elhagyja a Red Bullt, a szabadedzésen először gördült a pályára Max Verstappen, ráadásul ott volt az állandó izgalom az időjárás miatt, mely azt is kérdésessé tette, vajon megrendezhetik-e a versenyt, s ha igen, akkor az eredeti időpontban kerülhet-e sor rá.</p>
+                <p style="font-size: 14px; text-align: justify; margin-left: 10px; margin-right: 10px;"></p>
             </h3>            
         </div>
         <div class="col-lg-3" align="center">
@@ -93,15 +95,21 @@
                 <input type="email" name="email" class="email" required placeholder="enter your email">
                 <input type="password" name="password" class="password" required placeholder="enter your password">
                 <input type="submit" name="submit" value="login now" class="form-btn">
-                <p>Nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
+                <p>Ha nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
             </div>
         </div>
         <div class="col-lg-12">
-            <h3 id="lg3" align="center" style="font-size: 16px;">
-                <p style="text-align:left;">afasgg </p>
-                <p style="text-align:left;">agezwet</p>
-                <img src="kepek/basketball/letöltés.jpg" class="ball">
-                <p>adggghgdhgihgjgakkőgjhgihv</p>
+            <h3 id="lg3" style="font-size: 15px; text-align:right;">
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A kosárlabda egy olyan labdajáték, amelyet két ötfős csapat játszik. Mindkét csapatnak az a célja, hogy a labdát az ellenfél kosarába dobja, valamint megakadályozza a másik csapatot a labda megszerzésében, illetve kosár elérésében.</p>
+                <img src="kepek/basketball/letöltés.jpg" style="float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;">
+                <p style="text-align: justify; margin-left: 10px;">Egy-egy kosár elérése után pontokat kapnak a csapatok. Egy kosár alapvetően két pontot ér. Ha távolról, a hárompontos vonalon túlról érik el, akkor három pontot, ha büntetődobásból szerzik, akkor csak egy pontot jegyeznek fel érte. A mérkőzést az a csapat nyeri meg, amelyik a mérkőzés végére több pontot ér el. Döntetlen eredmény nincs a kosárlabdában. Ha a mérkőzés végén egyenlő az állás, akkor hosszabbítás következik ahányszor csak szükséges a győztes eldöntéséhez.</p>
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">Ez alól egy kivétel van, ha a csapatok oda-visszavágó mérkőzést játszanak. Ebben az esetben az első találkozón lehet döntetlen az eredmény, mert a teljes végeredményt a két mérkőzésen elért pontok összegzésével kell megállapítani. Ugyanekkor előfordulhat, hogy a második mérkőzésen annak ellenére hosszabbítást kell játszani, hogy az eredmény nem egyenlő, de az összesített állás viszont igen.</p>
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A nők hatos, a férfiak hetes labdával játszanak. Utánpótlásversenyeken, tizennégy év alatt ötös labdát használnak. Tizenkét éves korig a gyűrű magassága is alacsonyabb lehet. Bár a kosárlabda elsősorban teremsport, de szabadtéri változatai is ismertek például az utcai kosárlabda, azaz a streetball, valamint a 3x3-as kosárlabda. Ez utóbbi az Olimpiai Játékok programjában is szerepel az öt-öt elleni játék mellett 2020-tól kezdődően, ami a 2020-as járványhelyzet miatt valójában 2021 lesz.</p>
+                <img src="kepek/basketball/images.jfif" style="float:left; margin-left: 10px; margin-bottom: 5px; margin-right: 10px;border: solid black 1px; padding: 2px;">
+                <p style="text-align: justify; margin-left: 10px;"><b><i>A játké története: </i></b></p>
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A kosárlabda egyik ősének tekinthető labdajátékot az amerikai bennszülöttek játszották. A maják és az aztékok változatában egy falra erősített fémgyűrűn kellett átütni a csapattagoknak egy golyót. A maják játéka kegyetlen volt: a vesztes csapatot feláldozták az isteneknek. A kosárlabdához hasonló játékokat már évszázadok óta játszanak; a legrégebbi ismert változata a <i style="color: red;">„pok-ta-pok”</i>, amelyet 3000 évvel ezelőtt a mexikói <a href="https://hu.wikipedia.org/wiki/Olm%C3%A9kok">olmékok</a> játszottak.</p>
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">játékot 1891-ben alakította ki a kanadai Dr. James Naismith az USA-beli YMCA iskolában (Massachusetts). Célja az volt, hogy felkeltse tanítványai érdeklődését a sport iránt. „A véletlen segített: egy, a terem sarkában álló őszibarackos kosárba dobta a labdát, amikor hívatták. Visszatérve látta, hogy tanítványai az unalmas gyakorlatok helyett a kosárba való dobálással próbálkoznak. Megtetszett neki az ötlet, és két héten belül elkészült a játék tervezete.”</p>
+                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">Naismith a játék megalkotásakor öt alapelvből építkezett: a játékot gömbölyű labdával, kézzel játsszák; a játékosok ne szaladhassanak a labdával; a játékosok mozgása a pályán ne legyen korlátozva; ne legyen durva érintkezés; a labdát vízszintesen elhelyezett kapuba, a játékosoknál magasabbra kelljen dobni.</p>
             </h3>
         </div>
     </div>
