@@ -2,7 +2,7 @@
 <div class="container-fluid">       
     <div class="row">
         <div class="col-lg-3">
-            <h3 id="lg3" align="center" style="font-size: 12px;">Hírdetések egy adott témában.
+            <h3 id="lg3" align="center" style="font-size: 18px;">Hírdetések egy adott témában.
                 <div class="container mt-5">
                     <!-- Bootstrap Carousel létrehozása -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -36,8 +36,11 @@
                     <div class="szoveg-oldal">Harmadik oldal tartalma</div>
                 </div>
             </div>
+            <a href="#forma1" style="text-align: justify; margin-left: 14%; margin-right: 10px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Forma1</a>
+            <a href="#kosar" style="text-align: justify; margin-left: 14%; margin-right: 10px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kosármérközések</a>
+            <a href="#ropi" style="text-align: justify; margin-left: 14%; margin-right: 10px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Röpimérközések</a>
             <br>
-                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">Forma 1-ről szóló dolgok.</p>
+                <p id="forma1" style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 30px"><b>Forma 1-ről szóló dolgok.</b></p>
                 <p style="font-size: 14px; text-align: justify; margin-left: 10px; margin-right: 10px;"> A 2014-es szezonban épp ezen a napon rendezték az elmúlt két évtized legszomorúbb F1-es futamát, az esős Japán Nagydíjat, a versenyt, melynek végeredménye tulajdonképpen senkit nem érdekelt.</p>
                 <img src="kepek/forma1/images.jpg" style="float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;" width="300" height="auto">
                 <p style="font-size: 14px; text-align: justify; margin-left: 10px; margin-right: 10px;">A 2014-es Japán Nagydíj egészen vasárnap helyi idő szerint délután fél ötig a szezon egyik csúcspontjának tűnt. Roppantul érdekfeszítő beszédtémáktól pezsgett a paddock, elég csak a nagy bejelentésre gondolni, miszerint Sebastian Vettel elhagyja a Red Bullt, a szabadedzésen először gördült a pályára Max Verstappen, ráadásul ott volt az állandó izgalom az időjárás miatt, mely azt is kérdésessé tette, vajon megrendezhetik-e a versenyt, s ha igen, akkor az eredeti időpontban kerülhet-e sor rá.</p>
@@ -96,12 +99,12 @@
                 <input type="email" name="email" class="email" required placeholder="enter your email">
                 <input type="password" name="password" class="password" required placeholder="enter your password">
                 <input type="submit" name="submit" value="login now" class="form-btn">
-                <p>Ha nincsen prófilod: <a href="regisztracio.php">Regisztáj most!</a></p>
+                <p>Ha nincsen prófilod: <a href="regisztracio.php" style=" background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;"">Regisztáj most!</a></p>
             </div>
         </div>
         <div class="col-lg-12">
             <h3 id="lg3" style="font-size: 15px; text-align:right;">
-                <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">Kosárlásról szóló dolgok.</p>
+                <p id="kosar" style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 30px;"><b>Kosárlásról szóló dolgok.</b></p>
                 <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A kosárlabda egy olyan labdajáték, amelyet két ötfős csapat játszik. Mindkét csapatnak az a célja, hogy a labdát az ellenfél kosarába dobja, valamint megakadályozza a másik csapatot a labda megszerzésében, illetve kosár elérésében.</p>
                 <img src="kepek/basketball/letöltés.jpg" style="float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;">
                 <p style="text-align: justify; margin-left: 10px;">Egy-egy kosár elérése után pontokat kapnak a csapatok. Egy kosár alapvetően két pontot ér. Ha távolról, a hárompontos vonalon túlról érik el, akkor három pontot, ha büntetődobásból szerzik, akkor csak egy pontot jegyeznek fel érte. A mérkőzést az a csapat nyeri meg, amelyik a mérkőzés végére több pontot ér el. Döntetlen eredmény nincs a kosárlabdában. Ha a mérkőzés végén egyenlő az állás, akkor hosszabbítás következik ahányszor csak szükséges a győztes eldöntéséhez.</p>
@@ -116,7 +119,7 @@
         </div>
         <div class="col-lg-12">
             <h3 id="lg3" style="font-size: 15px; text-align:right;">
-            <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">Röplabdázástól szóló dolgok.</p>
+                <p id="ropi" style="text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 30px;"><b>Röplabdázástól szóló dolgok.</b></p>
                 <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A röplabda csapatsport, amelyet két, hat-hat főből álló, egymástól egy magas hálóval elválasztott csapat játszik egy labdával, amit főleg kézzel és karral (ritkábban más testrészekkel) érintve tartanak mozgásban a pálya légterében. Mindkét csapat háromszor érintheti meg a labdát (ebből a szempontból a sáncérintés nem számít), mielőtt továbbítja azt a másik térfélre. Pontot a következő helyzetek érnek: ha a labda földet ér az ellenfél térfelén, ha valamelyik csapat a vonalon kívülre üti a labdát, ha az ellenfél hibázik (büntetésben részesül), vagy ha a labda fennakad a hálón. A röplabda igen aktív sport, különösen alkalmas rugalmas, gyors feladatok gyakorlására. Fejleszti a szem-kéz-koordinációt és az önuralmat is (ami ahhoz szükséges, hogy ne térjünk ki a felénk közeledő tárgyak – ez esetben a labda – útjából).</p>
                 <img src="kepek/vollayball/images.jpg" style="float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;">
                 <p style="text-align: justify; margin-left: 10px; margin-right: 10px;"><b><i>A játék története: </i></b></p>
@@ -128,6 +131,13 @@
                 <p style="text-align: justify; margin-left: 10px; margin-right: 10px;">A <a href="https://hu.wikipedia.org/wiki/Strandr%C3%B6plabda">strandröplabda</a> a kaliforniai Santa Monica tengerparti strandjairól indult világhódító útjára. A hobbisportból az 1950-es években vált szabályokkal rendelkező sport, amit az FIVB 1986-ban hitelesített. Nem sokkal ezután az 1996-os nyári olimpia programjába is bekerült. 1900-ig a labda nem speciálisan röplabdának készült, és a szabályok sem olyanok voltak, mint ahogy ma ismerjük. 1916-ig tartott az a folyamat, amelyben felfedezték a feladás és a lecsapás erejét, majd négy évvel ezután bevezették a három érintés szabályát, és az ütő-segédvonalat is felfestették. 1917-ben 21-ről 15-re csökkent a győzelmet jelentő pontmennyiség. Az amerikai expedíciós csapatok 1919-ben 16 000 röplabdát osztottak szét az alakulataik és a szövetségeseik között, ami nagyban hozzájárult a játék Egyesült Államokon kívüli elterjedéséhez.</p>
                 <p style="text-align: justify; margin-left: 10px; margin-right: 10px;"></p>
             </h3>
+        </div>
+        <div class="col-lg-12">
+            <h3 id="lg3" style="font-size: 15px; text-align:center;">
+                <a href="#forma1" style="text-align: left; margin-left: 14px; margin-right: 14px; font-size: 14px;  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;"">Forma1</a>
+                <a href="#kosar" style="text-align: center; margin-left: 14px; margin-right: 14px; font-size: 14px;  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;"">Kosármérközések</a>
+                <a href="#ropi" style="text-align: right; margin-left: 14px; margin-right: 14px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;"">Röpimérközések</a>
+            </h3>            
         </div>
     </div>
 </div>

@@ -1,8 +1,24 @@
 <hr>
+<div class="col-lg-12">
+  <h3 id="lg3" style="font-size: 15px; text-align:center;">
+    <a href="#VSC" style="text-align: left; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Debreceni VSC</a>
+    <a href="#VTK" style="text-align: center; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Diósgyőri VTK</a>
+    <a href="#FC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Ferencvárosi TC</a>
+    <a href="#TC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kisvárda FC</a>
+    <a href="#ZsFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Mezőkövesd-Zsóry FC</a>
+    <a href="#TE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kecskeméti TE</a>
+    <a href="#MTK" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">MTK Budapest</a>
+    <a href="#PAFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Puskás Akadémia FC</a>
+    <a href="#PFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Paks FC</a>
+    <a href="#UFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Újpest FC</a>
+    <a href="#ZTE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Zalaegerszegi TE</a>
+    <a href="#FFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Fehérvár FC</a>
+  </h3>            
+</div>
 <div class="container-fluid">       
       <div class="row">
           <div class="card" style="width:400px">
-            <h4 class="card-title">Debreceni VSC</h4>
+            <h4 class="card-title" id="VSC">Debreceni VSC</h4>
             <a href="kepek/csapatok/DVSC.png"><img class="card-img-top" src="kepek/csapatok/DVSC.png" alt="DVSC" title="Debreceni VSC"/></a>
             <div class="card-body">
               <p class="card-text">
@@ -16,7 +32,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Diósgyőri VTK</h4>
+            <h4 class="card-title" id="VTK">Diósgyőri VTK</h4>
             <a href="kepek/csapatok/DVTK.png"><img class="card-img-top" src="kepek/csapatok/DVTK.png" alt="DVTK" title="Diósgyőri VTK"></a>
             <div class="card-body">
               <p class="card-text">A Diósgyőri VTK (alapításkori név: Diósgyőr-Vasgyári Testgyakorlók Köre, később Diósgyőri Vasgyárak Testgyakorló Köre, ma DVTK, avagy Diósgyőri VTK) egy több sportág bajnokságában csapatot, versenyzőket indító sportklub Miskolcon. Az egykori sokszakosztályos egyesület az 1990-es évek elején szétesett, a 2000-es évektől épült újjá. A futballcsapat a kilencvenes években a Diósgyőri Football Club nevet viselte, és csak később, a klub újraindítása után vette fel újra a DVTK nevet.</p>
@@ -29,7 +45,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Ferencvárosi TC</h4>
+            <h4 class="card-title" id="TC">Ferencvárosi TC</h4>
             <a href="kepek/csapatok/FTC.png"><img class="card-img-top" src="kepek/csapatok/FTC.png" alt="FTC" title="Ferencvárosi TC"></a>
             <div class="card-body">
               <p class="card-text"><p class="card-text">A Ferencvárosi Torna Club, vagy röviden FTC budapesti sportegyesület és labdarúgócsapat Budapest IX. kerületében. 1899-es alapítása óta 34 alkalommal avatták magyar bajnokká, 24 alkalommal hódította el a Magyar Kupát, illetve egy alkalommal, 1965-ben az olasz Juventust legyőzve nyerte meg az Európa-liga és az UEFA-kupa elődjét, a Vásárvárosok kupáját. 1975-ben a második helyet szerezte meg a kupagyőztesek Európa-kupájában. 1995-ben első magyar csapatként a Bajnokok Ligája főtáblájára, 2004-ben az UEFA-kupa főtáblájára jutott, 2019-ben pedig az Európa-liga főtáblájára. 2020-ban egyedüli magyar csapatként második alkalommal is a Bajnokok Ligája főtáblájára jutott. Ezek alapján mind hazai és mind nemzetközi szinten a legtöbb sikert elérő magyar labdarúgócsapat.</p>
@@ -42,7 +58,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">kisvárda FC</h4>
+            <h4 class="card-title" id="FC">Kisvárda FC</h4>
             <a href="kepek/csapatok/kisvárda.png"><img class="card-img-top" src="kepek/csapatok/kisvárda.png" class="card-img-top" alt="KFC" title="kisvárda FC"></a>
             <div class="card-body">
               <p class="card-text">A Kisvárda FC Kisvárda labdarúgócsapata, mely jelenleg Kisvárda Master Good néven a magyar élvonalban szerepel. A klubot 1911-ben hozták létre KSE (Kisvárdai Sport Egyesület) néven, azóta szerepelt Kisvárda Vasas, Kisvárda SE, OSE-Várda és Várda SE néven is. A Kisvárda Master Good hazai mérkőzéseit Kisvárdán, a 2018. augusztus 11-én, a Ferencváros elleni mérkőzésen átadott Várkerti Stadionban játssza. A klubot 1911. november 8-án alapította Kisvárda Sport Egylet (KSE) néven a helyi állomásfőnök, községi tisztviselő, táblabíró, elemi iskolai tanító és telekkönyv-vezető. Kisvárda község vezetői a vásártér melletti pályát térítésmentesen a klubnak adományozták, míg a település kereskedői jelentős anyagi támogatást nyújtottak. A Spartacus SE segítségével 1953-ban megépült a Várkerti Sporttelep is. A klub többnyire a megyei osztályokban illetve a harmadosztályban szerepelt, az 1978-79-es szezont azonban a második vonalban töltötte a KSE, amikor is háromszor 20 csapat alkotta az NBII-t.</p>
@@ -54,7 +70,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Mezőkövesd-Zsóry FC</h4>
+            <h4 class="card-title" id="ZsFC">Mezőkövesd-Zsóry FC</h4>
             <a href="kepek/csapatok/kövesd.png"><img class="card-img-top" src="kepek/csapatok/kövesd.png" alt="MZSFC" title="Mezőkövesd-Zsóry FC"></a>
             <div class="card-body">
               <p class="card-text">A Mezőkövesdi SE (szponzorált nevén, a felnőtt csapat: Mezőkövesd Zsóry FC) magyar labdarúgóklub Mezőkövesd városából. Jelenleg az NB I-ben szerepel. A megalakulást követően az első két évben a járási bajnokságban szerepelt a kövesdi csapat, meg is nyerte a kiírásokat, de az osztályozókon nem sikerült kiharcolni a feljebb jutást, egészen az 1977–78-as szezonig. A következő évet tehát már a megyei I-ben kezdhették az MMSE labdarúgói, az akkor elkészült, vadonatúj sporttelepen, amely azóta is a klub otthona. A megyei első osztályban zömmel a középmezőnyben végeztek a kövesdiek, az 1990-es években azonban már sorozatban jöttek a dobogós helyezések is, míg végre az 1995–96-os szezonban sikerült az első helyen végezni.</p>
@@ -66,7 +82,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Kecskeméti TE</h4>
+            <h4 class="card-title" id="TE">Kecskeméti TE</h4>
             <a href="kepek/csapatok/KTE.png"><img class="card-img-top" src="kepek/csapatok/KTE.png" alt="KTE" title="Kecskeméti TE"></a>
             <div class="card-body">
               <p class="card-text">A Kecskeméti Testedző Egyesület egy magyar labdarúgócsapat, mely 1911-ben alakult. Az egyesület és labdarúgó szakosztálya közel fennállása során hosszú ideig nem tudott a másodosztálynál feljebb lépni, azonban a 2007/2008-as szezonban – első kecskeméti csapatként – megszerezte az NB II – Keleti Csoportjának bajnoki címét, azóta sorban az 5. 10. 12. 5. 7. illetve a 10. helyen végzett az élvonalban. 2011-ben megnyerte a Magyar kupát és 2012-ben második lett a Ligakupa sorozatban. 2015-ben licenc hiány miatt az MLSZ a megyei bajnokságba sorolta vissza. A klub a 2021–2022-es magyar labdarúgó-bajnoki másodosztályban friss feljutóként második lett, így a 2022-23-as szezonban újra az élvonalban játszhatott, és ért el újoncként ezüstérmes helyezést.</p>
@@ -79,7 +95,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">MTK Budapest</h4>
+            <h4 class="card-title" id="MTK">MTK Budapest</h4>
             <a href="kepek/csapatok/MTK.png"><img class="card-img-top" src="kepek/csapatok/MTK.png" alt="MTK" title="MTK Budapest"></a>
             <div class="card-body">
               <p class="card-text">Az MTK (Magyar Testgyakorlók Köre) Budapest magyar, ezen belül budapesti labdarúgócsapat. Az MTK a 20. század elejétől fogva a budapesti nagy klubok egyikeként mindig meghatározó szerepet játszott a magyar labdarúgásban. A kék-fehér színekben játszó alakulat mind a bajnoki, mind a kupaaranyérmek számát tekintve a Ferencvárosi TC után és az Újpest FC előtt a második legeredményesebb szereplője az 1901 óta működő magyar labdarúgó-bajnokságnak.</p>
@@ -92,7 +108,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Puskás Akadémia FC</h4>
+            <h4 class="card-title" id="PAFC">Puskás Akadémia FC</h4>
             <a href="kepek/csapatok/PAFC.png"><img class="card-img-top" src="kepek/csapatok/PAFC.png" alt="PAFC" title="Puskás Akadémia FC"></a>
             <div class="card-body">
               <p class="card-text">A Puskás Akadémia FC (korábban Videoton-Puskás Akadémia) egy felcsúti székhelyű labdarúgóklub. Bár független egyesület, 2012-ig a Videoton második csapata volt. Először a 2013–2014-es szezonban szerepelt az NB I-ben, 2017 óta újra ebben a bajnokságban játszik. Történetének eddigi legjobb eredménye egy-egy második hely a bajnokságban (2020–2021) és a kupában is (2017–2018).</p>
@@ -104,7 +120,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Paks FC</h4>
+            <h4 class="card-title" id="PFC">Paks FC</h4>
             <a href="kepek/csapatok/PFC.png"><img class="card-img-top" src="kepek/csapatok/PFC.png" alt="PFC" title="Paks FC"></a>
             <div class="card-body">
               <p class="card-text">A Paksi FC jelenleg a magyar labdarúgó-bajnokság első osztályában szerepel. Első szezonja az NB I-ben, a 2006-07-es volt. Azóta rendszeres tagjai a bajnokságnak. A csapat legnagyobb sikere, hogy 2011-ben megnyerte a Ligakupát, valamint a 2010-11 NB I-es bajnokságban ezüstérmes lett. 1952. november 28-án arra ösztönözte a labdarúgást szeretőket, hogy megalakítsák a Paksi Kinizsi Sportkört. Ennek alapítói: Rödlmeier János, Bán Péter, Bohner István, Judi János és Ambrus Ödön. A terv megvalósításához nagyban hozzájárult a Paksi Konzervgyár anyagi támogatása Kródi József segítségével, aki meghatározó személyisége volt a paksi labdarúgásnak.</p>
@@ -117,7 +133,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Újpest FC</h4>
+            <h4 class="card-title"id="UFC">Újpest FC</h4>
             <a href="kepek/csapatok/UTE.png"><img class="card-img-top" src="kepek/csapatok/UTE.png" alt="UFC" title="Újpest FC" ></a>
             <div class="card-body">
               <p class="card-text">Az Újpest FC a második legrégebben alapított magyar sportegyesület labdarúgócsapata, melynek székhelye, Budapest IV. kerülete, tehát Újpest. A lila-fehérben szereplő csapat 20-szoros magyar bajnok, 21-szeres magyar bajnoki második helyezett, 18-szoros magyar bajnoki harmadik helyezett, 11-szeres magyar kupagyőztes, 6-szoros kupadöntős, 3-szoros magyar Szuperkupa-győztes, Nemzetek Tornája-győztes, 2-szeres KK-győztes.
@@ -132,7 +148,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Zalaegerszegi TE</h4>
+            <h4 class="card-title" id="ZTE">Zalaegerszegi TE</h4>
             <a href="kepek/csapatok/zte.png"><img class="card-img-top" src="kepek/csapatok/zte.png" alt="ZTE" title="Zalaegerszegi TE"></a>
             <div class="card-body">
               <p class="card-text">A Zalaegerszegi TE (ZTE) 1920-ban alakult meg. A csapat színe először fekete–fehér, majd zöld-fehér volt, a kék-fehér színösszeállítást a hetvenes évek végétől használja.
@@ -147,7 +163,7 @@
             </div>
           </div>
           <div class="card" style="width:400px">
-            <h4 class="card-title">Fehérvár FC</h4>
+            <h4 class="card-title" id="FFC">Fehérvár FC</h4>
             <a href="kepek/csapatok/Fehervar.png"><img class="card-img-top" src="kepek/csapatok/Fehervar.png" alt="FFC" title="Fehérvár FC"/></a>
             <div class="card-body">
               <p class="card-text">A Fehérvár FC Székesfehérvár első számú labdarúgóklubja, amely a magyar élvonalban szerepel. 1941-ben Székesfehérvári Vadásztölténygyár SK néven alapították. A csapat színei Székesfehérvár színei, vagyis a piros és a sötétkék. Hazai mérkőzéseit a Sóstói Stadionban játssza.
@@ -160,7 +176,22 @@
               <p class="card-text"><b>Vezetőedző: </b>Bartosz Grzelak</p>
             </div>
           </div>
-          </div>
+          <div class="col-lg-12">
+            <h3 id="lg3" style="font-size: 15px; text-align:center;">
+            <a href="#VSC" style="text-align: left; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Debreceni VSC</a>
+    <a href="#VTK" style="text-align: center; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Diósgyőri VTK</a>
+    <a href="#FC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Ferencvárosi TC</a>
+    <a href="#TC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kisvárda FC</a>
+    <a href="#ZsFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Mezőkövesd-Zsóry FC</a>
+    <a href="#TE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kecskeméti TE</a>
+    <a href="#MTK" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">MTK Budapest</a>
+    <a href="#PAFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Puskás Akadémia FC</a>
+    <a href="#PFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Paks FC</a>
+    <a href="#UFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Újpest FC</a>
+    <a href="#ZTE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Zalaegerszegi TE</a>
+    <a href="#FFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Fehérvár FC</a>
+            </h3>            
+          </div>          
       </div> 
     </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
