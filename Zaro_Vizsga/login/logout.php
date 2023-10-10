@@ -1,8 +1,5 @@
+<h1>Kilépés</h1>
 <?php
-    @include 'config.php';
-    session_start();
-    session_unset();
-    session_destroy();
-
-    header('location: login_form.php')
+   session_destroy();
+   header("Location: index.php");;
 ?>

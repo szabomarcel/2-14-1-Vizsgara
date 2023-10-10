@@ -1,158 +1,32 @@
 <?php
-      if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
-        $pass1 = filter_input(INPUT_POST, "InputPassword");
-        $pass2 = filter_input(INPUT_POST, "InputPassword2");
-        /*$emailcim = filter_input(INPUT_POST, "emailcim");
-        $orokbedogado_neve = filter_input(INPUT_POST, "orokbefogado_neve");
-        $igazolvanyszam = filter_input(INPUT_POST, "igazolvanyszam");*/
-        $name = htmlspecialchars(filter_input(INPUT_POST, "username"));
-        var_dump($pass1, $pass2, $emailcim, $orokbedogado_neve, $igazolvanyszam);
-        if($pass1 != $pass2){
-            echo '<p>Nem egyezik meg a jelszó</p>';
-        }else{
-            //-- regisztráció inditása
-            $db -> register($name, $pass1, $emailcim, $orokbedogado_neve, $igazolvanyszam);
-            header("Location: index.php"); // Átvált a nyitólapra.
-        }
+   // var_dump($ussername, $password);
+   if (filter_input(INPUT_POST, 'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
+    // -- A kapott adatok feldolgozása;
+    $username = htmlspecialchars(filter_input(INPUT_POST, 'username'));
+    $password = htmlspecialchars(filter_input(INPUT_POST, 'InputPassword'));
+    $db->login($username, $password);        
+    if($username == 'Lajos' && $password == 'Lajos'){
+       $_SESSION['login'] = true;
+       $_SESSION['username'] = 'Lajos'; // változó érték
+       $_SESSION['password'] = 'Lajos';
     }
+}
 ?>
 <div class="container">
-    <form action="#" method="post">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Felhasználói név: </label>
-          <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" >
-          <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <!--<div class="mb-3">
-          <label for="emailcim" class="form-label">Emailcim: </label>
-          <input type="emailcim" class="form-control" id="emailcim" name="emailcim">
-        </div>
-        <div class="mb-3">
-          <label for="orokbefogado_neve" class="form-label">Örökbefogado neve: </label>
-          <input type="orokbefogado_neve" class="form-control" id="orokbefogado_neve" name="orokbefogado_neve">
-        </div>
-        <div class="mb-3">
-          <label for="igazolvanyszam" class="form-label">Igazolvanyszam: </label>
-          <input type="igazolvanyszam" class="form-control" id="igazolvanyszam" name="igazolvanyszam">
-        </div>-->
-        <div class="mb-3">
-          <label for="InputPassword" class="form-label">Jelszó: </label>
-          <input type="password" class="form-control" id="InputPassword" name="InputPassword">
-        </div>
-        <div class="mb-3">
-          <label for="InputPassword2" class="form-label">Jelszó: </label>
-          <input type="password" class="form-control" id="InputPassword2" name="InputPassword2">
-        </div>
-        <button type="submit" class="btn btn-primary" name="regisztraciosAdatok" value="true">Regisztáció</button>
-    </form>
+  <form action="#" method="post">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Felhasználói név: </label>
+        <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" >
+        <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="InputPassword" name="InputPassword">
+      </div>
+      <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>
+      <a href="index.php?menu=regisztracio">Regisztáció</a>
+  </form>
 </div>
-<!--<form action="regisztracio.php" method="post">
-  <div class="container">
-    <h1 class="mt-5">Kapcsolatfelvételi űrlap</h1>
-    /*<?php
-    /*if(isset($error)){
-      foreach($error as $error){
-        echo '<span class="error-msg">'.$error.'</span>';
-      }
-    }*/
-    ?>*/
-    <h4>1. Következő időpont foglalása</h4>
-    <form action="user_db" method="post" autocomplete="off">
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="name" class="col-form-label">Nev: </label>
-            </div>
-            <div class="col-auto">
-              <input type="name" id="name" class="form-control" aria-describedby="nameHelpInline" name="name" placeholder="nev">
-            </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                8-20 characteres hosszú kérünk.
-              </span>
-            </div>
-        </div>
-        <br>
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputEmail" class="col-form-label">Email cim: </label>
-            </div>
-            <div class="col-auto">
-              <input type="email" id="email" class="form-control" aria-describedby="passwordHelpInline" name="email" placeholder="email">
-            </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                8-20 characteres hosszú kérünk.
-              </span>
-            </div>
-        </div>
-        <br>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="date" class="form-control" aria-describedby="dataHelpInline">Dátum:</label>
-          </div>
-          <div class="col-auto">
-            <input type="date" id="date" name="date" placeholder="datum" required><br>
-          </div>
-        </div>
-        <br>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="ticket-type" name="jegyt">Jegy típusa:</label>
-            <select id="jegyt" name="ticket-type">
-              <option value="egyedi">Egyedi jegy</option>
-              <option value="csoportos">Csoportos jegy</option>
-            </select><br>
-          </div>
-          <div class="col-auto">
-            <label for="quantity">Mennyiség:</label>
-            <input type="number" id="quantity" name="quantity" placeholder="mennyiseg" required><br>
-          </div>
-        </div>
-        <br>
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">Password</label>
-            </div>
-            <div class="col-auto">
-              <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline" name="password" placeholder="jelszo">
-            </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                8-20 characteres hosszú kérünk.
-              </span>
-            </div>
-        </div>
-        <br>
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">Írja be méegyszer password</label>
-            </div>
-            <div class="col-auto">
-              <input type="password" id="password2" class="form-control" aria-describedby="passwordHelpInline" name="password2" placeholder="jelszo2">
-            </div>
-            <div class="col-auto">
-              <span id="passwordHelpInline" class="form-text">
-                8-20 characteres hosszú kérünk.
-              </span>
-            </div>-->
-        <!--<br>      
-        <h4>Mérközésekre a Jegyvásárlás</h4>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="TE">
-        <label for="vehicle1" name="jegy" align=center> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="AKADEMIA">
-        <label for="vehicle2" name="jegy" align=center> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="DD">
-        <label for="vehicle3" name="jegy" align=center> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-        <input type="checkbox" id="vehicle4" name="vehicle4" value="MTK">
-        <label for="vehicle4" name="jegy" align=center> Újpest és MTK Budapest az ára 2100ft</label><br><br>
-        <input type="checkbox" id="vehicle5" name="vehicle5" value="FC">
-        <label for="vehicle5" name="jegy" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
-        <input type="checkbox" id="vehicle6" name="vehicle6" value="TC">
-        <label for="vehicle6" name="jegy" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
-        <button type="submit" class="btn btn-primary">Regisztráció</button>
-      </div>                
-    </form>
-</div>-->
 <!-- Bootstrap JavaScript és jQuery betöltése (opcionális) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -176,5 +50,4 @@
 <footer>
     &COPY; Tasnádi Richárd és Szabó Marcell 2023.
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script> 

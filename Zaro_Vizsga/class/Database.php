@@ -6,7 +6,7 @@ class Database{
     }
     public function login($name, $pass) {
         //-- jelezzük a végrehajtandó SQL parancsot
-        $stmt = $this->db->prepare('SELECT * FROM `users` WHERE users.name LIKE ?;');
+        $stmt = $this->db->prepare('SELECT * FROM `regisztracio` WHERE users.name LIKE ?;');
         //-- leküldjük a végrehajtáshoz szükséges adatok
         $stmt -> bind_param("s", $name);
         if($stmt ->execute()){
@@ -34,10 +34,10 @@ class Database{
     
     public function register($name, $pass) {
         //$password = password_hash($pass, PASSWORD_BCRYPT);
-        $stmt = $this->db->prepare('INSERT INTO `users`(`name`, `password`) VALUES(?,?);') ;
+        $stmt = $this->db->prepare('INSERT INTO `regisztracio`(`name`, `password`) VALUES(?,?);') ;
         $stmt->bind_param("ss", $name, $pass);
         if($stmt->execute()){
-            $_SESSION['login'] = true;
+            $_SESSION['login_form'] = true;
             header("Location: index.php");
         }
     }
