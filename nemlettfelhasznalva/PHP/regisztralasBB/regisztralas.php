@@ -15,7 +15,7 @@
     <input type="text" name="name" id="name" placeholder="Name" />
     <label id="icon" for="email"><i class="fa fa-phone fa-fw"></i></label>
     <input type="text" name="phone" id="phone" placeholder="Phone" />
-    <label id="icon" for="email"><i class="fa fa-envelope fa-fw"></i></label>
+    <label id="icon" for="email"><i class="fa fa-envelope fa-fw"></i></label> 
     <input type="text" name="email" id="email" placeholder="Email" />    
     <label id="icon" for="pass"><i class="fa fa-key fa-fw"></i></label>
     <input type="password" name="pass" id="pass" placeholder="Password" />

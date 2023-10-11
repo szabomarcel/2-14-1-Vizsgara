@@ -16,7 +16,7 @@ function checkForEmptyFields(e){
     var msg = "The following fields can't be empty: ";
     if (fieldList.length > 0){
         for (i = 0; i < fieldlist.length; i++){
-            msg += fieldList[i].id + ","
+            msg += fieldList[i].id + "," 
         }
         errorArea.innerHTML = "<p>" + msg + "</p>";
         errorArea.innerName = "visible";

@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Close the database connection
     $conn->close();
-
+ 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Assuming you have a database connection
         $db_host = "localhost";

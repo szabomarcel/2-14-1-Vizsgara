@@ -13,6 +13,6 @@ if(isset($_GET["id"])){
     $sql = "SELECT FROM clients WHERE id=$id";
     $connection -> query($sql);
 }
-header("location: registralas.php");
+header("location: registralas.php"); 
 exit;
 ?>

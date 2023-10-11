@@ -13,7 +13,7 @@ $email = "";
 $phone = "";
 $address = "";
 
-$errorMessage = "";
+$errorMessage = ""; 
 $successMessage = "";
 
 if($_SERVER['REQUEST_METHOD'] == 'GET'){

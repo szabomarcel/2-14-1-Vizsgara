@@ -13,7 +13,7 @@
     <?php
     $servername ="localhost";
     $username = "rool";
-    $password = "";
+    $password = ""; 
     $database = "focistak";
     //Craete connaction
     $connection = new mysqli($servername, $username, $password, $database);
