@@ -6,6 +6,6 @@
     require_once ("class/Database.php");
     require_once ("layout/menu.php");
 
-    $db = new Database("localhost", "root", "", "regisztracio");    
+    $db = new Database("localhost", "root", "", "users");    
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
 ?>    
