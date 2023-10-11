@@ -4,7 +4,7 @@
     if(isset($_POST['submit'])){
         $errors = array();
         $true = true;
-        if(empty($_POST['username'])){
+        if(empty($_POST['username'])){ 
             $true = false;
             array_push($errors, "A felhasználnév üres");
         }

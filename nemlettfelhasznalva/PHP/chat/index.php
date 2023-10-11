@@ -3,7 +3,7 @@
     if(!empty($_SESSION['username'])){
         header('location: home.php');
     }
-    else{
+    else{ 
         session_start();
     }
     $db = new mysqli("localhost", "root", "", "youtube");

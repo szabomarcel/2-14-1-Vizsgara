@@ -10,5 +10,5 @@
 
         echo '<img src"image/' . $image . '"/>' . $username . ' - ' . $logs . ' ' . $time . '<br>';
     }
-    $db -> close();
+    $db -> close(); 
 ?>

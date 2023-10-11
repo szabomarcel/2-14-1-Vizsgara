@@ -8,7 +8,7 @@
         $time = date("h:i");
 
         $sql = "INSERT INTO logs(username, logs, image, Date) VALUES('$username', '$logs, '$time')";
-        mysqli_query($db, $sql);
+        mysqli_query($db, $sql); 
     }
     mysqli_close($db);
 ?>

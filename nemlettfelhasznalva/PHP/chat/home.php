@@ -11,7 +11,7 @@
     <title>Document</title>
     <script src="jq.js"></script>
     <script>
-        $(function(){
+        $(function(){ 
             setInterval(refresh, 1000);
         });
         function refresh(){
