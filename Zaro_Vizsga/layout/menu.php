@@ -12,9 +12,12 @@
                 <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
             </li>-->
             <?php
-                if($_SESSION['login']){
+                if($_SESSION['login']){                    
                     echo '<li class="nav-item">
                             <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?menuItem=felhasznalo">Felhasznalo részére</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?menuItem=kwiz">Napi kwiz</a>

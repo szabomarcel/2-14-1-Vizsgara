@@ -20,7 +20,10 @@
                     break;    
                 case "foci":
                     require_once("#.php");
-                    break;  
+                    break;
+                case "felhasznalo":
+                    require_once("felhasznalo.php");
+                    break;      
                 case "forras":
                     require_once("login/forraskod.php");
                     break;
