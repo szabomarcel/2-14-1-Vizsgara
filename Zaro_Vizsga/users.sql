@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2023. Okt 12. 13:50
+-- Létrehozás ideje: 2023. Okt 12. 18:21
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 -- Tábla szerkezet ehhez a táblához `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -36,7 +35,7 @@ CREATE TABLE `users` (
   `mennyiseg` varchar(200) NOT NULL,
   `igazolvany` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL,
-  `password2` varchar(200) NOT NULL,
+  `gender` varchar(200) NOT NULL,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

@@ -14,7 +14,7 @@
             echo '<p>Nem egyezik meg a jelszó</p>';
         }else{
             //-- regisztráció inditása
-            $db -> register($name, $pass1, $emailcim, $orokbedogado_neve, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg, $name);
+            $db -> register($name, $pass1, $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
             header("Location: index.php"); // Átvált a nyitólapra.
         }
     }
@@ -22,12 +22,12 @@
 <div class="container">
   <form action="regisztracio.php" method="post">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label" style="color:white;">Felhasználói név: </label>
-      <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" required>
+      <label for="username" class="form-label" style="color:white;">Felhasználói név: </label>
+      <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" autocomplete="username" required>
     </div>
     <div class="mb-3">
-      <label for="emailcim" class="form-label" style="color:white;">Emailcim: </label>
-      <input type="email" class="form-control" id="emailcim" name="emailcim" placeholder="Emailcím" required>
+      <label for="email" class="form-label" style="color:white;">Emailcim: </label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
     </div>
     <div class="mb-3">
       <label for="igazolvanyszam" class="form-label" style="color:white;">Igazolvanyszam: </label>
@@ -37,37 +37,37 @@
     <div class="row">
       <div class="mb-3 col-6">
         <label for="InputPassword" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." required>
+        <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
       </div>
       <div class="mb-3 col-6">
         <label for="InputPassword2" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="InputPassword2" name="InputPassword2" placeholder="8-20 characteres hosszú jelszó." required>          
+        <input type="password" class="form-control" id="InputPassword2" name="InputPassword2" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line2" required>          
       </div>
     </div>  
     <div align="justify;">
       <h4>Mérközésekre a Jegyvásárlás</h4>
-      <input type="radio" id="vehicle1" name="gender" value="TE">
-      <label for="vehicle1" name="jegy" align=center> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
-      <input type="radio" id="vehicle2" name="gender" value="AKADEMIA">
-      <label for="vehicle2" name="jegy" align=center> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
-      <input type="radio" id="vehicle3" name="gender" value="DD">
-      <label for="vehicle3" name="jegy" align=center> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-      <input type="radio" id="vehicle4" name="gender" value="MTK">
-      <label for="vehicle4" name="jegy" align=center> Újpest és MTK Budapest az ára 2100ft</label><br><br>
-      <input type="radio" id="vehicle5" name="gender" value="FC">
-      <label for="vehicle5" name="jegy" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
-      <input type="radio" id="vehicle6" name="gender" value="TC">
-      <label for="vehicle6" name="jegy" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
+      <input type="radio" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
+      <label for="FORM_ELEMENT" name="gender" align=center> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+      <input type="radio" id="gender" name="gender" value="Puskás Akadémia és Paks az ára 2300ft" autocomplete="on">
+      <label for="gender" name="gender" align=center> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+      <input type="radio" id="gender" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft" autocomplete="on">
+      <label for="gender" name="gender" align=center> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+      <input type="radio" id="gender" name="gender" value="Újpest és MTK Budapest az ára 2100ft" autocomplete="on">
+      <label for="gender" name="gender" align=center> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+      <input type="radio" id="gender" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft" autocomplete="on">
+      <label for="gender" name="gender" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+      <input type="radio" id="gender" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft" autocomplete="on">
+      <label for="gender" name="gender" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
     </div>
     <div>
       <input type="checkbox" name="programing">
-      <label>Te egy robot vagy?</label>
+      <label for="FORM_ELEMENT" name="gender">Te egy robot vagy?</label>
     </div>
     <br>
     <div class="row g-3 align-items-center">
       <div class="mb-3 col-4" align="right">
-        <label for="ticket-type" name="jegyt" style="color:white;">Jegy típusa:</label>
-        <select id="jegyt" name="ticket-type">
+        <label for="jegyt" name="jegyt" style="color:white;">Jegy típusa:</label>
+        <select id="jegyt" name="jegyt">
           <option value="egyedi">Egyedi jegy</option>
           <option value="csoportos">Csoportos jegy</option>
         </select><br>
