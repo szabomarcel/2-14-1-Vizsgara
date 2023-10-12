@@ -6,6 +6,6 @@
     require_once("layout/body.php");
     require_once ("layout/menu.php");
     require_once './class/Database.php';
-    $db = new mysqli("localhost", "root", "", "users");    
+    $db = new mysqli("localhost", "root", "", "regisztracio");    
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
 ?>    

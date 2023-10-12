@@ -12,8 +12,8 @@
                 <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
             </li>-->
             <?php
-                /*if($_SESSION['login']){                    
-                    /*echo '<li class="nav-item">
+                if($_SESSION['login']){                    
+                    echo '<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'atigazolas'?' active ': '') .'" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
                         </li>
                         <li class="nav-item">
@@ -30,9 +30,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'logout'?' active ': '') .'" href="index.php?menuItem=logout">Kijelentkezés</a>
-                        </li>';*/
-                /*}else{
-                    /*echo '
+                        </li>';
+                }else{
+                    echo '
                         <li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'vendeg'?' active ': '') .'" href="index.php?menuItem=vendeg">Vendeg</a>
                         </li>'
@@ -42,7 +42,7 @@
                         .'<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'register'?' active ': '') .'" href="index.php?menuItem=register">Regisztráció</a>
                         </li>';
-                }*/
+                }
             ?>
             <!--<li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>

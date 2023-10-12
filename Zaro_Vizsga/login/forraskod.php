@@ -6,7 +6,7 @@
                 <button type="submit" ><i class="gomb1 container-fluid"><a href="Youtube linkek.docx">Forráskódok Szabó Marcelltől részéről</a></i></button>
             </div>
             <div class="col-lg-3">
-                <li class="logo"><a href="https://github.com/szabomarcel/2-14-1-Vizsgara" ><i class="fab fa-github">Szabó Marcell github oldala</i></a></li>
+                <li class="logo"><a href="https://github.com/szabomarcel/2-14-1-Vizsgara/tree/main/Zaro_Vizsga" ><i class="fab fa-github">Szabó Marcell github oldala</i></a></li>
             </div>
             <div class="col-lg-3">
                 <button type="submit" ><i class="gomb1 container-fluid"><a href="#">Forráskódok Tasnádi Richárdtól részéről</a></i></button>
