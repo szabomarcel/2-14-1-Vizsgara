@@ -301,3 +301,13 @@ button {
 .hide {
     display: none;
 }
+
+.kozepre, #mennyiseg{
+    text-align: center;
+}
+#jegyt{
+    text-align: right;
+}
+#date{
+    text-align: left;
+}

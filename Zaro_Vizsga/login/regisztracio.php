@@ -44,20 +44,20 @@
         <input type="password" class="form-control" id="InputPassword2" name="InputPassword2" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line2" required>          
       </div>
     </div>  
-    <div align="justify;">
+    <div class="kozepre">
       <h4>Mérközésekre a Jegyvásárlás</h4>
-      <input type="radio" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
-      <label for="FORM_ELEMENT" name="gender" align=center> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
-      <input type="radio" id="gender" name="gender" value="Puskás Akadémia és Paks az ára 2300ft" autocomplete="on">
-      <label for="gender" name="gender" align=center> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
-      <input type="radio" id="gender" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft" autocomplete="on">
-      <label for="gender" name="gender" align=center> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-      <input type="radio" id="gender" name="gender" value="Újpest és MTK Budapest az ára 2100ft" autocomplete="on">
-      <label for="gender" name="gender" align=center> Újpest és MTK Budapest az ára 2100ft</label><br><br>
-      <input type="radio" id="gender" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft" autocomplete="on">
-      <label for="gender" name="gender" align=center> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
-      <input type="radio" id="gender" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft" autocomplete="on">
-      <label for="gender" name="gender" align=center> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
+      <input type="checkbox" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
+      <label for="gender" name="gender"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+      <input type="checkbox" id="vehicle2" name="gender" value="Puskás Akadémia és Paks az ára 2300ft" autocomplete="on">
+      <label for="gender" name="gender"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+      <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft" autocomplete="on">
+      <label for="gender" name="gender"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+      <input type="checkbox" id="vehicle4" name="gender" value="Újpest és MTK Budapest az ára 2100ft" autocomplete="on">
+      <label for="gender" name="gender"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+      <input type="checkbox" id="vehicle5" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft" autocomplete="on">
+      <label for="gender" name="gender"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+      <input type="checkbox" id="vehicle6" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft" autocomplete="on">
+      <label for="gender" name="gender"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
     </div>
     <div>
       <input type="checkbox" name="programing">
@@ -65,18 +65,18 @@
     </div>
     <br>
     <div class="row g-3 align-items-center">
-      <div class="mb-3 col-4" align="right">
+      <div class="mb-3 col-4">
         <label for="jegyt" name="jegyt" style="color:white;">Jegy típusa:</label>
         <select id="jegyt" name="jegyt">
           <option value="egyedi">Egyedi jegy</option>
           <option value="csoportos">Csoportos jegy</option>
         </select><br>
       </div>
-      <div class="mb-3 col-4" align="center">
+      <div class="mb-3 col-4">
         <label for="mennyiseg" style="color:white;" pattern="[1-100]{1}" required>Mennyiség: </label>
         <input type="number" id="mennyiseg" name="mennyiseg" placeholder="mennyiseg" required><br>
       </div>
-      <div class="mb-3 col-4" align="left">
+      <div class="mb-3 col-4">
           <div class="mb-3 col-auto">
             <label for="date" class="form-control" aria-describedby="dataHelpInline" required>Dátum:</label>
             <input type="date" id="date" name="date" placeholder="datum" required><br>
