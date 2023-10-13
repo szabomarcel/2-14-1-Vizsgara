@@ -26,6 +26,13 @@ body{
     border-radius: 12px;
 }
 
+.container img:hover {
+    background-color: yellow;
+    width: 200px; /* Például a kép szélességét növeljük egérmutatás esetén */
+    opacity: 1; /* Például a kép átlátszóságát csökkentjük */
+    transform: scale(2.2); /* Például a képet 110%-ra nagyítjuk */
+}
+
 section, header, footer{
     background:rgba(0,0,0,0.6);
     color: aquamarine;
@@ -302,9 +309,9 @@ button {
     display: none;
 }
 
-.kozepre, #mennyiseg{
+/*.kozepre, #mennyiseg{
     text-align: center;
-}
+}*/
 #jegyt{
     text-align: right;
 }
