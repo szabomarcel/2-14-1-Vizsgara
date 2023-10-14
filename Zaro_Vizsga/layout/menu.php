@@ -12,7 +12,7 @@
                 <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
             </li>-->
             <?php
-                if($_SESSION['login']){                    
+                if (isset($yourArray['login'])){                    
                     echo '<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'atigazolas'?' active ': '') .'" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
                         </li>

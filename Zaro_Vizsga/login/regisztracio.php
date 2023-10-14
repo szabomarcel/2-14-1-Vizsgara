@@ -1,5 +1,5 @@
 <?php
-      if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
+      if(isset($_POST["regisztraciosAdatok"])){
         $pass1 = filter_input(INPUT_POST, "InputPassword");
         $pass2 = filter_input(INPUT_POST, "InputPassword2");
         $emailcim = filter_input(INPUT_POST, "emailcim");        
