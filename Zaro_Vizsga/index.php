@@ -1,5 +1,5 @@
 <?php
-    header('Content-Type; text/html; charset=UTF-8');
+    header('Content-Type: text/html; charset=UTF-8');
     session_start(); //-- munkamenet adatainak tárolására $_SESSION[]
     $menuItem = filter_input(INPUT_GET, "menuItem",FILTER_SANITIZE_SPECIAL_CHARS);
     require_once("layout/head.php");

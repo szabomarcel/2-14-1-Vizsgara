@@ -20,7 +20,7 @@
     }
 ?>
 <div class="container">
-  <form action="regisztracio.php" method="post">
+  <form action="index.php" method="post">
     <div class="mb-3">
       <label for="username" class="form-label" style="color:white;">Felhasználói név: </label>
       <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" autocomplete="username" required>
