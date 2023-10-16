@@ -47,21 +47,21 @@
     <div class="kozepre">
       <h4>Mérközésekre a Jegyvásárlás</h4>
       <input type="checkbox" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
-      <label for="gender" name="gender"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
+      <label for="vehicle1" name="vehicle1"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
       <input type="checkbox" id="vehicle2" name="gender" value="Puskás Akadémia és Paks az ára 2300ft" autocomplete="on">
-      <label for="gender" name="gender"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
+      <label for="vehicle2" name="vehicle2"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
       <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft" autocomplete="on">
-      <label for="gender" name="gender"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+      <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
       <input type="checkbox" id="vehicle4" name="gender" value="Újpest és MTK Budapest az ára 2100ft" autocomplete="on">
-      <label for="gender" name="gender"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
+      <label for="vehicle4" name="vehicle4"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
       <input type="checkbox" id="vehicle5" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft" autocomplete="on">
-      <label for="gender" name="gender"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
+      <label for="vehicle5" name="vehicle5"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
       <input type="checkbox" id="vehicle6" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft" autocomplete="on">
-      <label for="gender" name="gender"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
+      <label for="vehicle6" name="vehicle6"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
     </div>
     <div>
       <input type="checkbox" name="programing">
-      <label for="FORM_ELEMENT" name="gender">Te egy robot vagy?</label>
+      <label for="prog" name="programing" id="programing">Te egy robot vagy?</label>
     </div>
     <br>
     <div class="row g-3 align-items-center">

@@ -28,8 +28,7 @@
         <label for="exampleInputPassword1" class="form-label">Jelszó</label>
         <input type="password" class="form-control" id="InputPassword" minlength="1" placeholder="Jelszó" name="InputPassword">
       </div>
-      <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>
-      <a href="index.php?menu=regisztracio">Regisztáció</a>
+      <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>      
   </form>
 </div>
 <!-- Bootstrap JavaScript és jQuery betöltése (opcionális) -->
