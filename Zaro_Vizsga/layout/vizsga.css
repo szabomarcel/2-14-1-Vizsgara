@@ -318,3 +318,27 @@ button {
 #date{
     text-align: left;
 }
+
+/* Tablet nézet */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Mobiltelefon nézet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

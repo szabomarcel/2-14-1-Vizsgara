@@ -1,20 +1,20 @@
 <?php
       if(isset($_POST["regisztraciosAdatok"])){
-        $pass1 = filter_input(INPUT_POST, "InputPassword");
+        $pass1 = filter_input(INPUT_POST, "password");
         $pass2 = filter_input(INPUT_POST, "InputPassword2");
-        $emailcim = filter_input(INPUT_POST, "emailcim");        
+        $email = filter_input(INPUT_POST, "email");        
         $gender = filter_input(INPUT_POST, "gender");
         $jegyt = filter_input(INPUT_POST, "jegyt");
         $date = filter_input(INPUT_POST, "date");
         $mennyiseg = filter_input(INPUT_POST, "mennyiseg");
-        $igazolvanyszam = filter_input(INPUT_POST, "igazolvanyszam");
+        $igazolvanyszam = filter_input(INPUT_POST, "igazolvany");
         $name = htmlspecialchars(filter_input(INPUT_POST, "username"));
-        var_dump($pass1, $pass2, $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg, $name);
+        var_dump($pass1, $pass2, $email, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 != $pass2){
             echo '<p>Nem egyezik meg a jelszó</p>';
         }else{
             //-- regisztráció inditása
-            $db -> register($name, $pass1, $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
+            $db -> register($name, $pass1, $email, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
             header("Location: index.php"); // Átvált a nyitólapra.
         }
     }
@@ -30,14 +30,14 @@
       <input type="email" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
     </div>
     <div class="mb-3">
-      <label for="igazolvanyszam" class="form-label" style="color:white;">Igazolvanyszam: </label>
-      <input type="text" class="form-control" id="igazolvanyszam" name="igazolvanyszam" placeholder="123456AB" pattern="[1-9]{1}[0-9]{5}[A-Za-z]{2}" required>
+      <label for="igazolvany" class="form-label" style="color:white;">Igazolvanyszam: </label>
+      <input type="text" class="form-control" id="igazolvany" name="igazolvany" placeholder="123456AB" pattern="[1-9]{1}[0-9]{5}[A-Za-z]{2}" required>
     </div>
     <br>
     <div class="row">
       <div class="mb-3 col-6">
-        <label for="InputPassword" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
+        <label for="password" class="form-label" style="color:white;">Jelszó: </label>
+        <input type="password" class="form-control" id="password" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
       </div>
       <div class="mb-3 col-6">
         <label for="InputPassword2" class="form-label" style="color:white;">Jelszó: </label>
@@ -60,8 +60,8 @@
       <label for="vehicle6" name="vehicle6"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
     </div>
     <div>
-      <input type="checkbox" name="programing">
-      <label for="prog" name="programing" id="programing">Te egy robot vagy?</label>
+      <input type="checkbox" id="vehicle7" name="gender">
+      <label for="vehicle7" name="vehicle7">Te egy robot vagy?</label>
     </div>
     <br>
     <div class="row g-3 align-items-center">

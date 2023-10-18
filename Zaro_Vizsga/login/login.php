@@ -3,7 +3,7 @@
   //-- A kapott adatok feldolgozása    
   $username = htmlspecialchars(filter_input(INPUT_POST, 'username'));
   $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
-  $email = filter_input(INPUT_POST, "emailcim", FILTER_VALIDATE_EMAIL);
+  $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
   $db->login($email, $username, $pass1);
   if ($db->login($email, $username, $pass1)) {
     $_SESSION['login'] = true;
@@ -16,17 +16,17 @@
   <form action="#" method="post">
       <div class="col-md-4">
         <div class="mb-2">
-          <label for="emailcim" class="form-label">Email cím</label>
-          <input type="email" class="form-control" id="emailcim" name="emailcim" minlength="1" placeholder="Emailcím" aria-describedby="emailHelp">
+          <label for="exampleInputEmail1" class="form-label">Email cím</label>
+          <input type="email" class="form-control" id="email" name="email" minlength="1" placeholder="Emailcím" aria-describedby="emailHelp">
         </div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Felhasználói név: </label>
+        <label for="exampleInputName1" class="form-label">Felhasználói név: </label>
         <input type="text" class="form-control" id="username" name="username" minlength="1" placeholder="Név" aria-describedby="usernameHelp" >
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Jelszó</label>
-        <input type="password" class="form-control" id="InputPassword" minlength="1" placeholder="Jelszó" name="InputPassword">
+        <label for="exampleIpassword1" class="form-label">Jelszó</label>
+        <input type="password" class="form-control" id="password" minlength="1" placeholder="Jelszó" name="password">
       </div>
       <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>      
   </form>
