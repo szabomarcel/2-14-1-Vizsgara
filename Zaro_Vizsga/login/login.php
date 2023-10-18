@@ -16,17 +16,17 @@
   <form action="index.php" method="post">
       <div class="col-md-4">
         <div class="mb-2">
-          <label for="exampleInputEmail1" class="form-label">Email cím</label>
-          <input type="email" class="form-control" id="email" name="email" minlength="1" placeholder="Emailcím" aria-describedby="emailHelp">
+        <label for="email" class="form-label" style="color:white;">Emailcim: </label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
         </div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputName1" class="form-label">Felhasználói név: </label>
-        <input type="text" class="form-control" id="username" name="username" minlength="1" placeholder="Név" aria-describedby="usernameHelp" >
+      <label for="username" class="form-label" style="color:white;">Felhasználói név: </label>
+      <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" autocomplete="username" required>
       </div>
       <div class="mb-3">
-        <label for="exampleIpassword1" class="form-label">Jelszó</label>
-        <input type="password" class="form-control" id="password" minlength="1" placeholder="Jelszó" name="password">
+      <label for="password" class="form-label" style="color:white;">Jelszó: </label>
+        <input type="password" class="form-control" id="password" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
       </div>
       <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>      
   </form>
