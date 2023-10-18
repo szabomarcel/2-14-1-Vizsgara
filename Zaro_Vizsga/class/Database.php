@@ -5,7 +5,7 @@ class Database {
         $this->db = new mysqli($host, $user, $pass, $db);
     }
     public function login($email, $username, $pass) {
-        $stmt = $this->db->prepare('SELECT  `email`, `name`, `password` FROM `users` WHERE users.name');
+        $stmt = $this->db->prepare('SELECT `email`, `name`, `password` FROM `regisztracio` WHERE `users`');
         $stmt->bind_param("sss", $username, $email, $pass);
         if ($stmt->execute()) {
             $stmt->store_result();
@@ -18,10 +18,10 @@ class Database {
         }
         $stmt->close();
     }
-    public function register($name, $pass1 , $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg) {
+    public function register($name, $pass1, $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg) {
         //$password = password_hash($pass, PASSWORD_BCRYPT);
-        $stmt = $this->db->prepare('INSERT INTO `users`(`name`, `password`, `email`, `igazolvanyszam`, `gender`, `jegyt`, `date`, mennyiseg) VALUES(?,?,?,?,?,?,?,?);') ;
-        $stmt->bind_param("ssssssss", $name, $pass1 , $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
+        $stmt = $this->db->prepare('INSERT INTO `users`(`name`, `password`, `email`, `igazolvany`, `gender`, `jegyt`, `date`, `mennyiseg`) VALUES(?,?,?,?,?,?,?,?);') ;
+        $stmt->bind_param("ssssssss", $name, $pass1, $emailcim, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
         if ($stmt->execute()) {
             //echo $stmt->affected_rows();
             $_SESSION['login'] = true;

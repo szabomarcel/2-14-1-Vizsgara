@@ -57,7 +57,7 @@
                 <a class="nav-link" href="index.php?menuItem=foci">Mini Játék focival kapcsolatos</a>
             </li>-->
             <li class="nav-item">
-                <a class="nav-link <?php echo ($menu == 'forras'?' active' : '');?>" href="index.php?menuItem=forras">Forrás kódok</a>
+                <a class="nav-link <?php echo ($menuItem == 'forras'?' active' : '');?>" href="index.php?menuItem=forras">Forrás kódok</a>
             </li>
         </ul>
     </div>

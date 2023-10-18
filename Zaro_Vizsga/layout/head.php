@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <!--<link href="style.css" rel="stylesheet">-->
     <link href="layout/vizsga.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="pele-focilabda.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="pele-focilabda.svg">
-    <link rel="icon" type="image/png" sizes="16x16" href="pele-focilabda.svg">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="pele-focilabda.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="pele-focilabda.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="pele-focilabda.jpg">
 </head>

@@ -7,14 +7,14 @@
         $jegyt = filter_input(INPUT_POST, "jegyt");
         $date = filter_input(INPUT_POST, "date");
         $mennyiseg = filter_input(INPUT_POST, "mennyiseg");
-        $igazolvanyszam = filter_input(INPUT_POST, "igazolvany");
+        $igazolvany = filter_input(INPUT_POST, "igazolvany");
         $name = htmlspecialchars(filter_input(INPUT_POST, "username"));
-        var_dump($pass1, $pass2, $email, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg, $name);
+        var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 != $pass2){
             echo '<p>Nem egyezik meg a jelszó</p>';
         }else{
             //-- regisztráció inditása
-            $db -> register($name, $pass1, $email, $igazolvanyszam, $gender, $jegyt, $date, $mennyiseg);
+            $db -> register($name, $pass1, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg);
             header("Location: index.php"); // Átvált a nyitólapra.
         }
     }
