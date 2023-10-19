@@ -8,7 +8,7 @@
         $date = filter_input(INPUT_POST, "date");
         $mennyiseg = filter_input(INPUT_POST, "mennyiseg");
         $igazolvany = filter_input(INPUT_POST, "igazolvany");
-        $name = htmlspecialchars(filter_input(INPUT_POST, "username"));
+        $name = htmlspecialchars(filter_input(INPUT_POST, "name"));
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 != $pass2){
             echo '<p>Nem egyezik meg a jelszó</p>';
@@ -22,8 +22,8 @@
 <div class="container">
   <form action="index.php" method="post">
     <div class="mb-3">
-      <label for="username" class="form-label" style="color:white;">Felhasználói név: </label>
-      <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" autocomplete="username" required>
+      <label for="name" class="form-label" style="color:white;">Felhasználói név: </label>
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>
     </div>
     <div class="mb-3">
       <label for="email" class="form-label" style="color:white;">Emailcim: </label>
@@ -37,7 +37,7 @@
     <div class="row">
       <div class="mb-3 col-6">
         <label for="password" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="password" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
+        <input type="password" class="form-control" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
       </div>
       <div class="mb-3 col-6">
         <label for="InputPassword2" class="form-label" style="color:white;">Jelszó: </label>
@@ -48,15 +48,15 @@
       <h4>Mérközésekre a Jegyvásárlás</h4>
       <input type="checkbox" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
       <label for="vehicle1" name="vehicle1"> Kecskemeti TE és Mezökövesd az ára 2000ft</label><br><br>
-      <input type="checkbox" id="vehicle2" name="gender" value="Puskás Akadémia és Paks az ára 2300ft" autocomplete="on">
+      <input type="checkbox" id="vehicle2" name="gender" value="Puskás Akadémia és Paks az ára 2300ft">
       <label for="vehicle2" name="vehicle2"> Puskás Akadémia és Paks az ára 2300ft</label><br><br>
-      <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft" autocomplete="on">
+      <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft">
       <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-      <input type="checkbox" id="vehicle4" name="gender" value="Újpest és MTK Budapest az ára 2100ft" autocomplete="on">
+      <input type="checkbox" id="vehicle4" name="gender" value="Újpest és MTK Budapest az ára 2100ft">
       <label for="vehicle4" name="vehicle4"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
-      <input type="checkbox" id="vehicle5" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft" autocomplete="on">
+      <input type="checkbox" id="vehicle5" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft">
       <label for="vehicle5" name="vehicle5"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
-      <input type="checkbox" id="vehicle6" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft" autocomplete="on">
+      <input type="checkbox" id="vehicle6" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft">
       <label for="vehicle6" name="vehicle6"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
     </div>
     <div>
