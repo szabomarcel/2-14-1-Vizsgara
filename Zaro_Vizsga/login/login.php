@@ -1,13 +1,13 @@
 <?php
    if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)) {
   //-- A kapott adatok feldolgozása    
-  $username = htmlspecialchars(filter_input(INPUT_POST, 'username'));
+  $name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
   $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
   $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
-  $db->login($email, $username, $pass1);
-  if ($db->login($email, $username, $pass1)) {
+  $db->login($email, $name, $pass1);
+  if ($db->login($email, $name, $pass1)) {
     $_SESSION['login'] = true;
-    $_SESSION['username'] = '';
+    $_SESSION['name'] = '';
     $_SESSION['password'] = '';
   }
 } 
@@ -21,12 +21,12 @@
         </div>
       </div>
       <div class="mb-3">
-      <label for="username" class="form-label" style="color:white;">Felhasználói név: </label>
-      <input type="text" class="form-control" id="username" name="username" aria-describedby="usernameHelp" placeholder="Név" autocomplete="username" required>
+      <label for="name" class="form-label" style="color:white;">Felhasználói név: </label>
+      <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>
       </div>
       <div class="mb-3">
       <label for="password" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="password" name="InputPassword" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
+        <input type="password" class="form-control" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
       </div>
       <button type="submit" class="btn btn-primary" name="belepesiAdatok" value="true">Belépés</button>      
   </form>

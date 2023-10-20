@@ -28,7 +28,7 @@
                     require_once("login/forraskod.php");
                     break;
                 case "login":
-                    require_once("login1.php");
+                    require_once("login/login.php");
                     break;
                 case "logout":
                     require_once("login/logout.php");
@@ -37,7 +37,7 @@
                     require_once("login/vendeg.php");
                     break;  
                 case "register":
-                    require_once("regisztracio1.php");
+                    require_once("login/regisztracio.php");
                     break;  
                 default:
                     require_once('fooldal.php');
