@@ -22,7 +22,7 @@
                     require_once("#.php");
                     break;
                 case "felhasznalo":
-                    require_once("felhasznalo.php");
+                    require_once("login/felhasznalo.php");
                     break;      
                 case "forras":
                     require_once("login/forraskod.php");
