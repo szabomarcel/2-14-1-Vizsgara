@@ -17,11 +17,10 @@
 ?>    
 <body>
 <?php
-    $menuItem = filter_input(INPUT_GET, "menuItem",FILTER_SANITIZE_SPECIAL_CHARS);
+    $menuItem = filter_input(INPUT_GET, "menuItem", FILTER_SANITIZE_SPECIAL_CHARS);
     require_once("layout/head.php");
     require_once("layout/body.php");
     require_once ("layout/menu.php");
 ?>    
 <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>    
-<script src="./js/menhely.js"></script>    
 </body>

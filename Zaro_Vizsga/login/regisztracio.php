@@ -1,5 +1,6 @@
 <?php
-      if(isset($_POST["regisztraciosAdatok"])){
+      if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
+        $error = false;
         $pass1 = filter_input(INPUT_POST, "password");
         $pass2 = filter_input(INPUT_POST, "InputPassword2");
         $email = filter_input(INPUT_POST, "email");        
@@ -10,24 +11,24 @@
         $igazolvany = filter_input(INPUT_POST, "igazolvany");
         $name = htmlspecialchars(filter_input(INPUT_POST, "name"));
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
-        if($pass1 != $pass2){
-            echo '<p>Nem egyezik meg a jelszó</p>';
+        if($pass1 == $pass2){
+          echo '<p>Nem egyezik meg a jelszó</p>';
         }else{
-            //-- regisztráció inditása
-            $db -> register($pass1, $pass2, $email, $mennyiseg, $igazolvany, $gender, $jegyt, $date, $name);
-            header("Location: index.php"); // Átvált a nyitólapra.
+          //-- regisztráció inditása
+          $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
+          header("Location: index.php"); // Átvált a nyitólapra.
         }
     }
 ?>
-<div class="container">
-  <form action="#" method="post">
+<div class="col-8 mt-4 mx-auto">
+  <form action="index.php" method="post" class="row needs-validation" novalidate>
     <div class="mb-3">
       <label for="name" class="form-label" style="color:white;">Felhasználói név: </label>
       <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>
     </div>
     <div class="mb-3">
       <label for="email" class="form-label" style="color:white;">Emailcim: </label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="email" pattern="@[A-Za-z0-9 -]+\-[a-z]{2,}" autocomplete="email" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="email" pattern="@[A-Za-z0-9]{2,}" autocomplete="email" required>
     </div>
     <div class="mb-3">
       <label for="igazolvany" class="form-label" style="color:white;">Igazolvanyszam: </label>
