@@ -14,20 +14,20 @@
             echo '<p>Nem egyezik meg a jelszó</p>';
         }else{
             //-- regisztráció inditása
-            $db -> register($name, $pass1, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg);
+            $db -> register($pass1, $pass2, $email, $mennyiseg, $igazolvany, $gender, $jegyt, $date, $name);
             header("Location: index.php"); // Átvált a nyitólapra.
         }
     }
 ?>
 <div class="container">
-  <form action="index.php" method="post">
+  <form action="#" method="post">
     <div class="mb-3">
       <label for="name" class="form-label" style="color:white;">Felhasználói név: </label>
       <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>
     </div>
     <div class="mb-3">
       <label for="email" class="form-label" style="color:white;">Emailcim: </label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="email" pattern="@[A-Za-z0-9 -]+\-[a-z]{2,}" autocomplete="email" required>
     </div>
     <div class="mb-3">
       <label for="igazolvany" class="form-label" style="color:white;">Igazolvanyszam: </label>
@@ -37,11 +37,11 @@
     <div class="row">
       <div class="mb-3 col-6">
         <label for="password" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>
+        <input type="password" class="form-control" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" pattern="[a-zA-Z0-9]{8,}" required>
       </div>
       <div class="mb-3 col-6">
         <label for="InputPassword2" class="form-label" style="color:white;">Jelszó: </label>
-        <input type="password" class="form-control" id="InputPassword2" name="InputPassword2" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line2" required>          
+        <input type="password" class="form-control" id="InputPassword2" name="InputPassword2" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line2" pattern="[a-zA-Z0-9]{8,}" required>          
       </div>
     </div>  
     <div class="kozepre">
@@ -86,7 +86,6 @@
     <button type="submit" class="btn btn-primary" name="regisztraciosAdatok" value="true">Regisztáció</button>
   </form>
 </div>
-</form>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

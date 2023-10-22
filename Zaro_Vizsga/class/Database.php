@@ -18,10 +18,10 @@ class Database {
         }
         $stmt->close();
     }
-    public function register($pass1, $pass2, $emailcim, $mennyiseg, $igazolvanyszam, $gender, $jegyt, $date, $name) {
+    public function register($pass1, $pass2, $email, $mennyiseg, $igazolvany, $gender, $jegyt, $date, $name) {
         //$password = password_hash($pass, PASSWORD_BCRYPT);
         $stmt = $this->db->prepare('SELECT `regisztracio` FROM `users` WHERE `name`, `email`, `jegyt`, `mennyiseg`, `igazolvany`, `password`, `gender`, `date`) VALUES(?,?,?,?,?,?,?,?);'); //'INSERT INTO `users`(`name`, `password`, `email`, `igazolvany`, `gender`, `jegyt`, `date`, `mennyiseg`
-        $stmt->bind_param("ssssssss", $pass1, $pass2, $emailcim, $mennyiseg, $igazolvanyszam, $gender, $jegyt, $date, $name);
+        $stmt->bind_param("sssssssss", $pass1, $pass2, $email, $mennyiseg, $igazolvany, $gender, $jegyt, $date, $name);
         if ($stmt->execute()) {
             //echo $stmt->affected_rows();
             $_SESSION['login'] = true;
