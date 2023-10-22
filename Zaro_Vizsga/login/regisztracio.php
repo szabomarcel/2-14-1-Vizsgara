@@ -12,11 +12,11 @@
         $name = htmlspecialchars(filter_input(INPUT_POST, "name"));
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 == $pass2){
-          echo '<p>Nem egyezik meg a jelszó</p>';
-        }else{
           //-- regisztráció inditása
           $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
           header("Location: index.php"); // Átvált a nyitólapra.
+        }else{
+          echo '<p>Nem egyezik meg a jelszó</p>';
         }
     }
 ?>
