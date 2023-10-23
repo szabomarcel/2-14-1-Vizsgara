@@ -13,15 +13,15 @@
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 == $pass2){
           //-- regisztráció inditása
-          $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
           header("Location: index.php"); // Átvált a nyitólapra.
+          $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
         }else{
           echo '<p>Nem egyezik meg a jelszó</p>';
         }
     }
 ?>
 <div class="col-8 mt-4 mx-auto">
-  <form action="index.php" method="post" class="row needs-validation" novalidate>
+  <form action="#" method="post" class="row needs-validation" novalidate>
     <div class="mb-3">
       <label for="name" class="form-label" style="color:white;">Felhasználói név: </label>
       <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>
