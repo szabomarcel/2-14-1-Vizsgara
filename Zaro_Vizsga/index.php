@@ -12,7 +12,7 @@
     header('Content-Type: text/html; charset=UTF-8');
     session_start(); //-- munkamenet adatainak tárolására $_SESSION[]
     require_once './class/Database.php';
-    $db = new mysqli("localhost", "root", "", "regisztracio");    
+    $db = new Database("localhost", "root", "", "regisztracio");    
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
 ?>    
 <body>

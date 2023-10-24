@@ -1,6 +1,6 @@
 <?php
       if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
-        $error = false;
+        $id = filter_input(INPUT_POST, "id");
         $pass1 = filter_input(INPUT_POST, "password");
         $pass2 = filter_input(INPUT_POST, "InputPassword2");
         $email = filter_input(INPUT_POST, "email");        
@@ -13,8 +13,8 @@
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 == $pass2){
           //-- regisztráció inditása
-          header("Location: index.php"); // Átvált a nyitólapra.
           $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
+          header("Location: index.php"); // Átvált a nyitólapra.
         }else{
           echo '<p>Nem egyezik meg a jelszó</p>';
         }
