@@ -13,7 +13,7 @@
         var_dump($pass1, $pass2, $email, $igazolvany, $gender, $jegyt, $date, $mennyiseg, $name);
         if($pass1 == $pass2){
           //-- regisztráció inditása
-          $db -> register($pass1, $pass2, $email, $gender, $jegyt, $date, $mennyiseg, $igazolvany, $name);
+          $db -> register($id, $name, $email, $jegyt, $mennyiseg, $igazolvany, $pass1, $gender, $date);
           header("Location: index.php"); // Átvált a nyitólapra.
         }else{
           echo '<p>Nem egyezik meg a jelszó</p>';

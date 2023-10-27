@@ -7,8 +7,8 @@
   $db->login($email, $name, $pass1);
   if ($db->login($email, $name, $pass1)) {
     $_SESSION['login'] = true;
-    $_SESSION['name'] = '';
-    $_SESSION['password'] = '';
+    //$_SESSION['name'] = '';
+    //$_SESSION['password'] = '';
   }
 } 
 ?>
