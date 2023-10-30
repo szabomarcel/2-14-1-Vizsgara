@@ -20,7 +20,13 @@
                     break;     
                 case "foci":
                     require_once("#.php");
-                    break;     
+                    break;    
+                case "tabella":
+                    require_once("tabella.php");
+                    break;          
+                case "gollovolista":
+                    require_once("gollovolista.php");
+                    break;         
                 case "forras":
                     require_once("forraskod.php");
                     break;

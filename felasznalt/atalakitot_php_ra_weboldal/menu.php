@@ -24,6 +24,12 @@
                 <a class="nav-link" href="index.php?menuItem=foci">Mini Játék focival kapcsolatos</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="index.php?menuItem=tabella">Tabella</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?menuItem=gollovolista">Góllövő Lista</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=forras">Forrás kódok</a>
             </li>
         </ul>
