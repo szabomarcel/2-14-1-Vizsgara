@@ -1,5 +1,6 @@
 <?php
-   if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)) {
+  /*if(isset($_POST[INPUT_POST. "'belepesiAdatok'". FILTER_VALIDATE_BOOLEAN . FILTER_NULL_ON_FAILURE]))*/
+  if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
   //-- A kapott adatok feldolgozása    
   $name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
   $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
@@ -10,10 +11,30 @@
     //$_SESSION['name'] = '';
     //$_SESSION['password'] = '';
   }
-} 
+}
+/*if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['belepesiAdatok'])) {
+  $belepesiAdatok = filter_var($_POST['belepesiAdatok'], FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
+  
+  if ($belepesiAdatok !== null && $belepesiAdatok !== false) {
+    //-- A kapott adatok feldolgozása    
+    $name = htmlspecialchars($_POST['name'] ?? '');
+    $pass1 = htmlspecialchars($_POST['password'] ?? '');
+    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+
+    if ($email && $name && $pass1) {
+      $login_successful = $db->login($email, $name, $pass1);
+      if ($login_successful) {
+        session_start();
+        $_SESSION['login'] = true;
+        //$_SESSION['name'] = '';
+        //$_SESSION['password'] = '';
+      }
+    }
+  }
+}*/
 ?>
 <div class="container">
-  <form action="index.php" method="post">
+  <form action="#" method="post">
       <div class="col-md-4">
         <div class="mb-2">
         <label for="email" class="form-label" style="color:white;">Emailcim: </label>
