@@ -1,5 +1,5 @@
 <h1>Kilépés</h1>
 <?php
-   session_destroy();
-   header("Location: index.php");;
+   $_SESSION['login']==false;
+   header("Location: index.php");
 ?>

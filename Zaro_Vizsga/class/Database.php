@@ -4,9 +4,9 @@ class Database {
     public function __construct($host, $name, $pass1, $db) {
         $this->db = new mysqli($host, $name, $pass1, $db);
     }
-    public function login($email, $name, $pass1) {
-        $stmt = $this->db->prepare('SELECT `email`, `name`, `password` FROM `regisztracio` WHERE `users`');
-        $stmt->bind_param("sss", $email, $name, $pass1);
+    public function login($name) {
+        $stmt = $this->db->prepare("SELECT `email`, `name`, `password` FROM `users` WHERE `name` = ?");
+        $stmt->bind_param("s", $name, );
         if ($stmt->execute()) {
             $stmt->store_result();
             if ($stmt->num_rows > 0) {

@@ -12,7 +12,7 @@
                 <a class="nav-link" href="index.php?menuItem=regisztracio">Jegyvásárlás</a>
             </li>-->
             <?php
-                if (isset($yourArray['login'])){                    
+                if (isset($_SESSION['login'])){                    
                     echo '<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'atigazolas'?' active ': '') .'" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
                         </li>
@@ -43,6 +43,7 @@
                             <a class="nav-link'. ($menuItem == 'register'?' active ': '') .'" href="index.php?menuItem=register">Regisztráció</a>
                         </li>';
                 }
+                var_dump($_SESSION['login']);
             ?>
             <!--<li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
