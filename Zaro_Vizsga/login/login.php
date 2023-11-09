@@ -2,9 +2,9 @@
   /*if(isset($_POST[INPUT_POST. "'belepesiAdatok'". FILTER_VALIDATE_BOOLEAN . FILTER_NULL_ON_FAILURE]))*/
   if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
   //-- A kapott adatok feldolgozása    
+  $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
   $name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
   $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
-  $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
   $db->login($name);
   if ($db->login($name)) {
     $_SESSION['login'] = true;

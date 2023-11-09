@@ -6,7 +6,7 @@ class Database {
     }
     public function login($name) {
         $stmt = $this->db->prepare("SELECT `email`, `name`, `password` FROM `users` WHERE `name` = ?");
-        $stmt->bind_param("s", $name, );
+        $stmt->bind_param("s", $name);
         if ($stmt->execute()) {
             $stmt->store_result();
             if ($stmt->num_rows > 0) {
