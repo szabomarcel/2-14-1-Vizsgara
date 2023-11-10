@@ -1,5 +1,5 @@
 <?php
-      if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
+      if(filter_input(INPUT_POST, "regisztraciosAdatok", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_FAILURE)){
         $id = filter_input(INPUT_POST, "id");
         $pass1 = filter_input(INPUT_POST, "password");
         $pass2 = filter_input(INPUT_POST, "InputPassword2");

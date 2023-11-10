@@ -12,8 +12,10 @@
     header('Content-Type: text/html; charset=UTF-8');
     session_start(); //-- munkamenet adatainak tárolására $_SESSION[]
     require_once './class/Database.php';
-    $db = new Database("localhost", "root", "", "regisztracio");    
+    $db = new Database("localhost", "root", "", "regisztracio");        
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
+    /*require_once './layout/head.php';
+    $menuItem = filter_input(INPUT_GET, "menu");*/
 ?>    
 <body>
 <?php

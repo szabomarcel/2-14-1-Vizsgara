@@ -13,7 +13,7 @@
             </li>-->
             <?php
                 //session_start();
-                $menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
+                //$menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
                 if ($_SESSION['login']){                    
                     echo '<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'atigazolas'?' active ': '') .'" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
@@ -34,8 +34,7 @@
                             <a class="nav-link'. ($menuItem == 'logout'?' active ': '') .'" href="index.php?menuItem=logout">Kijelentkezés</a>
                         </li>';
                 }else{
-                    echo '
-                        <li class="nav-item">
+                    echo '<li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'vendeg'?' active ': '') .'" href="index.php?menuItem=vendeg">Vendeg</a>
                         </li>'
                         .'<li class="nav-item">

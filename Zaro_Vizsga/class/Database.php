@@ -1,16 +1,17 @@
 <?php
 class Database {
     private $db = null;
+    public $error = false;
     public function __construct($host, $name, $pass1, $db) {
         $this->db = new mysqli($host, $name, $pass1, $db);
     }
     public function login($name) {
-        $stmt = $this->db->prepare("SELECT `email`, `name`, `password` FROM `users` WHERE `name` = ?");
+        $stmt = $this->db->prepare('SELECT regisztracio FROM users WHERE `name` = ?');
         $stmt->bind_param("s", $name);
         if ($stmt->execute()) {
             $stmt->store_result();
             if ($stmt->num_rows > 0) {
-                $_SESSION['login'] = true;
+                $_SESSION['login'] == true;
                 header("Location: index.php");
             } else {
                 echo "Nem megfelelő bejelentkezési adat!"; 
