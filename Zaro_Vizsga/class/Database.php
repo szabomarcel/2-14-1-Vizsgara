@@ -5,19 +5,28 @@ class Database {
     public function __construct($host, $name, $pass1, $db) {
         $this->db = new mysqli($host, $name, $pass1, $db);
     }
-    public function login($name) {
-        $stmt = $this->db->prepare('SELECT regisztracio FROM users WHERE `name` = ?');
+    public function login($name, $pass) {
+        //-- jelezzük a végrehajtandó SQL parancsot
+        $stmt = $this->db->prepare('SELECT * FROM users WHERE users.name LIKE ?;');
+        //-- elküldjük a végrehajtáshoz szükséges adatokat
         $stmt->bind_param("s", $name);
         if ($stmt->execute()) {
-            $stmt->store_result();
-            if ($stmt->num_rows > 0) {
-                $_SESSION['login'] == true;
-                header("Location: index.php");
+            //-- sikeres végrehajtás után lekérjük az adatokat
+            $result = $stmt->get_result();
+            $row = $result->fetch_assoc();
+            if ($pass == $row['password']) {
+                //-- felhasználónév és jelszó helyes
+                $_SESSION['user'] = $row;
+                $_SESSION['login'] = true;
             } else {
-                echo "Nem megfelelő bejelentkezési adat!"; 
+                $_SESSION['username'] = '';
+                $_SESSION['login'] = false;
             }
+            // Free result set
+            $result->free_result();
+            header("Location:index.php");
         }
-        $stmt->close();
+        return false;
     }
     public function register($id, $name, $email, $jegyt, $mennyiseg, $igazolvany, $pass1, $gender, $date) {
         

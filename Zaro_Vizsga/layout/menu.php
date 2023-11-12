@@ -44,7 +44,7 @@
                             <a class="nav-link'. ($menuItem == 'register'?' active ': '') .'" href="index.php?menuItem=register">Regisztráció</a>
                         </li>';
                 }
-                var_dump($_SESSION['login']);
+                //var_dump($_SESSION['login']);
             ?>
             <!--<li class="nav-item">
                 <a class="nav-link" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
