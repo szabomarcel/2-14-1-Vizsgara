@@ -91,6 +91,42 @@ h4{
     font-weight: bold;
 }
 
+h3 a {
+    text-align: left; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+    font-size: 14px; 
+    color: black;
+    background-size: 200% 100%; 
+    background-position: -100%; 
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 30px;
+    margin-right: 10px; font-size: 30px
+}
+h3 a:hover {
+    color: black;
+}
+
+/*.forma1{
+    text-align: justify; margin-left: 10px; margin-right: 10px; font-size: 30px;
+}*/
+
+div .kat a {
+    text-align: justify; 
+    margin-left: 14%; 
+    margin-right: 10px; 
+    font-size: 14px; 
+    /*background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); */
+    background-size: 200% 100%; 
+    background-position: -100%; 
+    transition: all 0.3s ease-in-out
+}
+
+h3 div video{
+    font-size: 18px;
+}
+
 #c{
     background-image: linear-gradient(to right, #618264, #79AC78, rgb(176, 217, 177),  #79AC78,#618264);
     color: black;
@@ -198,6 +234,11 @@ img{
     width: auto;
     height: auto;
     border-radius: 12px;
+}
+
+h3 img{
+    text-align: justify; margin-left: 10px;
+    float:right; margin-right: 10px; margin-bottom: 5px; margin-left: 10px; border: solid black 1px; padding: 2px;
 }
 
 hr{

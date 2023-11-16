@@ -31,6 +31,12 @@
                             <a class="nav-link'. ($menuItem == 'foci'?' active ': '') .'" href="index.php?menuItem=foci">Mini Játék focival kapcsolatos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link'. ($menuItem == 'foci'?' active ': '') .'" href="index.php?menuItem=gol">Góllövések</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link'. ($menuItem == 'foci'?' active ': '') .'" href="index.php?menuItem=tabella">Tabella</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link'. ($menuItem == 'logout'?' active ': '') .'" href="index.php?menuItem=logout">Kijelentkezés</a>
                         </li>';
                 }else{

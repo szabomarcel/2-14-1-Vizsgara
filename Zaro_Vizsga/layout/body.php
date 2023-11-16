@@ -36,6 +36,12 @@
                 case "vendeg":
                     require_once("login/vendeg.php");
                     break;  
+                case "tabella":
+                    require_once("login/tabella.php");
+                    break;      
+                case "gol":
+                    require_once("login/gollovolista.php");
+                    break;  
                 case "register":
                     require_once("login/regisztracio.php");
                     break;  

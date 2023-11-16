@@ -42,4 +42,8 @@ class Database {
             echo '<p>Rögzítés sikertelen!</p>';
         }
     }
+    public function valasztos() {
+        $result = $this->db->query("SELECT * FROM `focistanevek`");
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
 }

@@ -2,18 +2,27 @@
 <div class="container-fluid">  
   <div class="col-lg-12">
     <h3 id="lg3" style="font-size: 15px; text-align:center;">
-      <a href="#SZD" style="text-align: left; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Debreceni VSC</a>
-      <a href="#SZA" style="text-align: center; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Diósgyőri VTK</a>
-      <a href="#DZSB" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Ferencvárosi TC</a>
-      <a href="#TC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kisvárda FC</a>
-      <a href="#ZsFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Mezőkövesd-Zsóry FC</a>
-      <a href="#TE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Kecskeméti TE</a>
-      <a href="#MTK" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">MTK Budapest</a>
-      <a href="#PAFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Puskás Akadémia FC</a>
-      <a href="#PFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Paks FC</a>
-      <a href="#UFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Újpest FC</a>
-      <a href="#ZTE" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Zalaegerszegi TE</a>
-      <a href="#FFC" style="text-align: right; margin-left: 5px; margin-right: 5px; font-size: 14px; background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50% ); background-size: 200% 100%; background-position: -100%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: all 0.3s ease-in-out;">Fehérvár FC</a>
+      <a href="#SZD">1.Szoboszlai_Dominik</a>
+      <a href="#SZA">2.Szalai_Ádám</a>
+      <a href="#DZSB">3.Dzsudzsal_Balázs</a>
+      <a href="#PF">4.Puskás_Ferenc</a>
+      <a href="#NA">5.Nagy_Ádám</a>
+      <a href="#MS">6.Mátrai_Sándor</a>
+      <a href="#SK">7.Sándor_Károly</a>
+      <a href="#SF">8.Sipos_Ferenc</a>
+      <a href="#FM">9.Fenyvesi_Máté</a>
+      <a href="#AF">10.Albert_Flórián</a>
+      <a href="#LA">11.Lang_Ádám</a>
+      <a href="#KZS">12.Kálmár_Zsolt</a>
+      <a href="#KM">13.Kata_Mihály</a>
+      <a href="#BE">14.Botka_Endre</a>
+      <a href="#FA">15.Fiola_Attila</a>
+      <a href="#KM">16.Kerkesz_Milos</a>
+      <a href="#BF">17.Bene_Ferenc</a>
+      <a href="#HK">18.Horvath_Krisztofer</a>
+      <a href="#BL">19.Bálint_László</a>
+      <a href="#VV">20.Vanczák_Vilmos</a>
+      <a href="#GI">21.Garaba_Imre</a>
     </h3>            
   </div>     
   <div class="row">
