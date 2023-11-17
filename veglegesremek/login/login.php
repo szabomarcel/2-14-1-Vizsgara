@@ -43,33 +43,33 @@
 
           <!-- Email bemenet -->
           <div class="form-outline mb-4">
-            <label class="form-label" for="form3Example3" id="email" name="email" placeholder="email" autocomplete="email" required>Email cím megadás: </label>
-            <input type="email" id="form3Example3" class="form-control form-control-lg"
+            <label class="form-label" for="email" id="email" name="email" placeholder="email" autocomplete="email" required>Email cím megadás: </label>
+            <input type="email" id="email" class="form-control form-control-lg"
               placeholder="Enter a valid email address" />
           </div>
 
           <!-- Felhasználói név bemenet -->
           <div class="form-outline mb-4">
-            <label class="form-label" for="form3Example3" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>Feljazsnálói név: </label>
-            <input type="name" id="form3Example3" class="form-control form-control-lg"
+            <label class="form-label" for="name" id="name" name="name" aria-describedby="nameHelp" placeholder="name" autocomplete="name" required>Feljazsnálói név: </label>
+            <input type="text" id="name" class="form-control form-control-lg"
               placeholder="Enter a valid name address" />
           </div>
 
           <!-- Jelszó bemenet -->
           <div class="form-outline mb-3">
-            <label class="form-label" for="form3Example4" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>Jelszó: </label>
-            <input type="password" id="form3Example4" class="form-control form-control-lg"
+            <label class="form-label" for="password" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>Jelszó: </label>
+            <input type="password" id="password" class="form-control form-control-lg"
               placeholder="Enter password" />
           </div>
 
           <div class="d-flex justify-content-between align-items-center">
             <!-- Checkbox -->
-            <div class="form-check mb-0">
+            <!--<div class="form-check mb-0">
               <input class="form-check-input me-2" type="checkbox" value="true" id="form2Example3" />
               <label class="form-check-label" for="form2Example3">
                 Remember me
               </label>
-            </div>
+            </div>-->
             <a href="#!" class="text-body">Forgot password?</a>
           </div>
 
