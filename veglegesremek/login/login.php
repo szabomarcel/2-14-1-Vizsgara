@@ -7,7 +7,7 @@
   $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
   //$db->login($name);
   if ($db->login($name, $pass1)) {
-    $_SESSION['login'] !== false;
+    $_SESSION['login'] = true;
     //$_SESSION['name'] = '';
     //$_SESSION['password'] = '';
   }
