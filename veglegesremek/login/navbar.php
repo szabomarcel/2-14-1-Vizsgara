@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="index.php?menuItem=fooldal">Főoldal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
                 //session_start();
                 //$menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
                 echo '<li class="nav-item">
-                        <a class="nav-link'. ($menuItem == 'felhasznalo'?' active ': '') .'" href="index.php?menuItem=fooldal">Felhasznalo részére</a>
+                        <a class="nav-link'. ($menuItem == 'felhasznalo'?' active ': '') .'" href="index.php?menuItem=fooldal">Főoldal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link'. ($menuItem == 'atigazolas'?' active ': '') .'" href="index.php?menuItem=atigazolas">Átigazolási hírek</a>
@@ -43,7 +43,8 @@
             ?>
         </ul>        
     </div>
-    <form class="d-flex" role="search">
+    <i class="fi fi-rr-user"></i>					
+    <form class="d-flex" role="search">        
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>

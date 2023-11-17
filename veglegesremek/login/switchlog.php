@@ -1,5 +1,5 @@
 <?php
-if ($login_register==="register") {
+if ($menuItem==="register") {
     require_once './login/registration.php';
 } else {
     require_once './login/login.php';

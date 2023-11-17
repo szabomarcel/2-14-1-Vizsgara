@@ -45,21 +45,21 @@
           <div class="form-outline mb-4">
             <input type="email" id="form3Example3" class="form-control form-control-lg"
               placeholder="Enter a valid email address" />
-            <label class="form-label" for="form3Example3">Email cím megadás: </label>
+            <label class="form-label" for="form3Example3" id="email" name="email" placeholder="email" autocomplete="email" required>Email cím megadás: </label>
           </div>
 
-          <!-- Felhasználói név -->
+          <!-- Felhasználói név bemenet -->
           <div class="form-outline mb-4">
-            <input type="email" id="form3Example3" class="form-control form-control-lg"
-              placeholder="Enter a valid email address" />
-            <label class="form-label" for="form3Example3">Feljazsnálói név: </label>
+            <input type="name" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Enter a valid name address" />
+            <label class="form-label" for="form3Example3" id="name" name="name" aria-describedby="nameHelp" placeholder="Név" autocomplete="name" required>Feljazsnálói név: </label>
           </div>
 
           <!-- Jelszó bemenet -->
           <div class="form-outline mb-3">
             <input type="password" id="form3Example4" class="form-control form-control-lg"
               placeholder="Enter password" />
-            <label class="form-label" for="form3Example4">Jelszó: </label>
+            <label class="form-label" for="form3Example4" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>Jelszó: </label>
           </div>
 
           <div class="d-flex justify-content-between align-items-center">
@@ -70,12 +70,12 @@
                 Remember me
               </label>
             </div>
-            <a href="#!" class="text-body">Forgot password?</a>
+            <a href="index.php?menu=register" class="text-body">Forgot password?</a>
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
             <button type="button" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              style="padding-left: 2.5rem; padding-right: 2.5rem;" name="belepesiAdatok" value="true">Login</button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="index.php?menu=register"
                 class="link-danger">Register</a></p>
           </div>
