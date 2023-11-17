@@ -19,7 +19,7 @@ class Database {
                 $_SESSION['user'] = $row;
                 $_SESSION['login'] = true;
             } else {
-                $_SESSION['username'] = '';
+                $_SESSION['name'] = '';
                 $_SESSION['login'] = false;
             }
             // Free result set
