@@ -5,12 +5,12 @@
     $db = new Database("localhost", "root", "", "regisztracio");        
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
     require_once("layout/head.php");
-    $menuItem = filter_input(INPUT_GET, "navbar");
+    $menuItem = filter_input(INPUT_GET, "menuItem");
+    //$menuItem = filter_input(INPUT_GET, "menuItem", FILTER_SANITIZE_SPECIAL_CHARS);
     $regisztracio = filter_input(INPUT_GET, "switchlog");
 ?>    
 <body>
 <?php
-    $menuItem = filter_input(INPUT_GET, "menuItem", FILTER_SANITIZE_SPECIAL_CHARS);
     if($_SESSION['login']){
         require_once("login/navbar.php");
         require_once ("layout/menu.php");
@@ -19,5 +19,5 @@
         require_once ("login/switchlog.php");
     }
 ?>    
-<script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>    
+<!--<script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>-->
 </body>

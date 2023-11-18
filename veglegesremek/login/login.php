@@ -1,6 +1,6 @@
 <?php
-  /*if(isset($_POST[INPUT_POST. "'belepesiAdatok'". FILTER_VALIDATE_BOOLEAN . FILTER_NULL_ON_FAILURE]))*/
-  if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
+/*if(isset($_POST[INPUT_POST. "'belepesiAdatok'". FILTER_VALIDATE_BOOLEAN . FILTER_NULL_ON_FAILURE]))*/
+if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
   //-- A kapott adatok feldolgozása    
   //$email = htmlspecialchars(filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL));
   $name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
@@ -21,7 +21,7 @@
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <form>
+        <form action="#" method="post">
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
             <p class="lead fw-normal mb-0 me-3">Sign in with</p>
             <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -74,7 +74,7 @@
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="button" class="btn btn-primary btn-lg" name="belepesiAdatok" value="true" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg" name="belepesiAdatok" value="true" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="index.php?switchlog=register" class="link-danger">Register</a></p>
           </div>
         </form>

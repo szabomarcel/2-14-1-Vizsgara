@@ -3,7 +3,14 @@ class Database {
     private $db = null;
     public $error = false;
     public function __construct($host, $name, $pass1, $db) {
-        $this->db = new mysqli($host, $name, $pass1, $db);
+        try {
+            $this->db = new mysqli($host, $name, $pass1, $db);
+            $this->db->set_charset("utf8");
+        } catch (Exception $exc) {
+            $this->error = true;
+            echo '<p>Az adatbázis nem elérhető!</p>';
+            exit();
+        }
     }
     public function login($name, $pass) {
         //-- jelezzük a végrehajtandó SQL parancsot
@@ -16,10 +23,10 @@ class Database {
             $row = $result->fetch_assoc();
             if ($pass == $row['password']) {
                 //-- felhasználónév és jelszó helyes
-                $_SESSION['user'] = $row;
+                $_SESSION['name'] = $row;
                 $_SESSION['login'] = true;
             } else {
-                $_SESSION['name'] = '';
+                $_SESSION['username'] = '';
                 $_SESSION['login'] = false;
             }
             // Free result set
