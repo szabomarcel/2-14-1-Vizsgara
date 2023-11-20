@@ -51,6 +51,13 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="form-outline mb-4">
+                      <!--<label for="igazolvany" class="form-label" style="color:white;">Igazolvanyszam: </label>-->
+                      <input type="text" class="form-control form-control-lg" id="igazolvany" name="igazolvany" placeholder="123456AB" pattern="[1-9]{1}[0-9]{5}[A-Za-z]{2}" required>
+                      <label class="form-label" for="form3Example8">Írja be az igazolvány számát</label>
+                    </div>
+
                     <div class="row">
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
@@ -68,15 +75,9 @@
                       </div>
                     </div>
 
-                    <div class="form-outline mb-4">
-                      <!--<label for="igazolvany" class="form-label" style="color:white;">Igazolvanyszam: </label>-->
-                      <input type="text" class="form-control form-control-lg" id="igazolvany" name="igazolvany" placeholder="123456AB" pattern="[1-9]{1}[0-9]{5}[A-Za-z]{2}" required>
-                      <label class="form-label" for="form3Example8">Írja be az igazolvány számát</label>
-                    </div>
+                    <div class="justify-content-start align-items-center mb-4 py-2">
 
-                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                      <h6 class="mb-0 me-4">Gender: </h6>
+                      <h6 class="mb-0 me-4">Melyik mérközésre szeretnél menni: </h6>
 
                         <div class="form-check form-check-inline mb-0 me-4">
                           <input type="checkbox" id="vehicle1" name="gender" value="Kecskemeti TE és Mezökövesd az ára 2000ft">
@@ -94,23 +95,18 @@
                         </div>
 
                         <div class="form-check form-check-inline mb-0">
-                          <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft">
-                          <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+                          <input type="checkbox" id="vehicle4" name="gender" value="Újpest és MTK Budapest az ára 2100ft">
+                          <label for="vehicle4" name="vehicle4"> Újpest és MTK Budapest az ára 2100ft</label><br><br>
                         </div>
 
                         <div class="form-check form-check-inline mb-0">
-                          <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft">
-                          <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+                          <input type="checkbox" id="vehicle5" name="gender" value="Fehérvár FC és Zalaegerszeg az ára 1900ft">
+                          <label for="vehicle5" name="vehicle5"> Fehérvár FC és Zalaegerszeg az ára 1900ft</label><br><br>
                         </div>
 
                         <div class="form-check form-check-inline mb-0">
-                          <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft">
-                          <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
-                        </div>
-
-                        <div class="form-check form-check-inline mb-0">
-                          <input type="checkbox" id="vehicle3" name="gender" value="Diósgyőri VTK és Debreceni VSC az ára 2500ft">
-                          <label for="vehicle3" name="vehicle3"> Diósgyőri VTK és Debreceni VSC az ára 2500ft</label><br><br>
+                          <input type="checkbox" id="vehicle6" name="gender" value="Ferencvárosi TC és Kisvárda az ára 2100ft">
+                          <label for="vehicle6" name="vehicle6"> Ferencvárosi TC és Kisvárda az ára 2100ft</label><br><br>
                         </div>
 
                     </div>
@@ -123,10 +119,10 @@
                         </select>
                       </div>
                       <div class="col-md-6 mb-4">                    
-                          <div class="mb-3 col-auto">
-                            <!--<label for="date" class="form-control" aria-describedby="dataHelpInline" required>Dátum:</label>-->
-                            <input type="date" id="date" name="date" placeholder="datum" required><br>
-                          </div>             
+                        <div class="mb-3 col-auto">
+                          <!--<label for="date" class="form-control" aria-describedby="dataHelpInline" required>Dátum:</label>-->
+                          <input type="date" id="date" name="date" placeholder="datum" required><br>
+                        </div>             
                       </div>
                     </div>
                     <div class="d-flex justify-content-end pt-3">

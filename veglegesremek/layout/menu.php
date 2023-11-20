@@ -42,8 +42,7 @@
                 require_once("./login/regisztracio.php");
                 break;*/
             default:
-                require_once('./layout/fooldal.php');
-                break;
+            require_once('./layout/fooldal.php');
         }            
     ?>    
 </body>

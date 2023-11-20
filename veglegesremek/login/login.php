@@ -1,16 +1,14 @@
 <?php
-/*if(isset($_POST[INPUT_POST. "'belepesiAdatok'". FILTER_VALIDATE_BOOLEAN . FILTER_NULL_ON_FAILURE]))*/
-if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)){
-  //-- A kapott adatok feldolgozása    
-  //$email = htmlspecialchars(filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL));
-  $name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
-  $pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
-  //$db->login($name);
-  if ($db->login($name, $pass1)) {
-    $_SESSION['login'] = true;
-    //$_SESSION['name'] = '';
-    //$_SESSION['password'] = '';
-  }
+if (filter_input(INPUT_POST,'belepesiAdatok',FILTER_VALIDATE_BOOLEAN,FILTER_NULL_ON_FAILURE)) {
+//-- A kapott adatok feldolgozása required   
+$name = htmlspecialchars(filter_input(INPUT_POST, 'username'));
+$pass1 = htmlspecialchars(filter_input(INPUT_POST, 'InputPassword'));
+
+if ($db->login($name, $pass1)) {
+  $_SESSION['login'] = true;
+}else{
+  echo'Helytelen felhasználónév/jelszó';
+}
 }
 ?>
 <section class="vh-100">
@@ -21,22 +19,22 @@ if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NU
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+          <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+          
+          <button type="button" class="btn btn-primary btn-floating mx-1">
+            <i class="fab fa-linkedin-in"></i>
+          </button>
+        </div>
+        
         <form action="#" method="post">
-          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-            <button type="button" class="btn btn-primary btn-floating mx-1">
-              <i class="fab fa-facebook-f"></i>
-            </button>
-
-            <button type="button" class="btn btn-primary btn-floating mx-1">
-              <i class="fab fa-twitter"></i>
-            </button>
-
-            <button type="button" class="btn btn-primary btn-floating mx-1">
-              <i class="fab fa-linkedin-in"></i>
-            </button>
-          </div>
-
           <div class="divider d-flex align-items-center my-4">
             <p class="text-center fw-bold mx-3 mb-0">Or</p>
           </div>
@@ -75,7 +73,7 @@ if (filter_input(INPUT_POST,'belepesiAdatok', FILTER_VALIDATE_BOOLEAN, FILTER_NU
 
           <div class="text-center text-lg-start mt-4 pt-2">
             <button type="submit" class="btn btn-primary btn-lg" name="belepesiAdatok" value="true" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="index.php?switchlog=register" class="link-danger">Register</a></p>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="index.php?register=register" class="link-danger">Register</a></p>
           </div>
         </form>
       </div>

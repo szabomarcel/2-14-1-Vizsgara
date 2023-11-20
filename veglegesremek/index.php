@@ -7,7 +7,7 @@
     require_once("layout/head.php");
     $menuItem = filter_input(INPUT_GET, "menuItem");
     //$menuItem = filter_input(INPUT_GET, "menuItem", FILTER_SANITIZE_SPECIAL_CHARS);
-    $regisztracio = filter_input(INPUT_GET, "switchlog");
+    $regisztracio = filter_input(INPUT_GET, "register");
 ?>    
 <body>
 <?php
