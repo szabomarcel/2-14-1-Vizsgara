@@ -1,13 +1,11 @@
 <?php
 if (filter_input(INPUT_POST,'belepesiAdatok',FILTER_VALIDATE_BOOLEAN,FILTER_NULL_ON_FAILURE)) {
 //-- A kapott adatok feldolgozása required   
-$name = htmlspecialchars(filter_input(INPUT_POST, 'username'));
-$pass1 = htmlspecialchars(filter_input(INPUT_POST, 'InputPassword'));
+$name = htmlspecialchars(filter_input(INPUT_POST, 'name'));
+$pass1 = htmlspecialchars(filter_input(INPUT_POST, 'password'));
 
 if ($db->login($name, $pass1)) {
-  $_SESSION['login'] = true;
-}else{
-  echo'Helytelen felhasználónév/jelszó';
+  $_SESSION['login'] !== true;
 }
 }
 ?>
@@ -39,24 +37,17 @@ if ($db->login($name, $pass1)) {
             <p class="text-center fw-bold mx-3 mb-0">Or</p>
           </div>
 
-          <!-- Email bemenet -->
-          <div class="form-outline mb-4">
-            <label class="form-label" for="email" id="email" name="email" placeholder="email" autocomplete="email" required>Email cím megadás: </label>
-            <input type="email" id="email" class="form-control form-control-lg"
-              placeholder="Enter a valid email address" />
-          </div>
-
           <!-- Felhasználói név bemenet -->
           <div class="form-outline mb-4">
-            <label class="form-label" for="name" id="name" name="name" aria-describedby="nameHelp" placeholder="name" autocomplete="name" required>Feljazsnálói név: </label>
-            <input type="text" id="name" class="form-control form-control-lg"
+            <label class="form-label" for="name" aria-describedby="nameHelp" autocomplete="name" >Feljazsnálói név: </label>
+            <input type="text" id="name" name="name" class="form-control form-control-lg" required
               placeholder="Enter a valid name address" />
           </div>
 
           <!-- Jelszó bemenet -->
           <div class="form-outline mb-3">
-            <label class="form-label" for="password" id="password" name="password" placeholder="8-20 characteres hosszú jelszó." autocomplete="address-line1" required>Jelszó: </label>
-            <input type="password" id="password" class="form-control form-control-lg"
+            <label class="form-label" for="password"  autocomplete="address-line1">Jelszó: </label>
+            <input type="password" id="password" name="password" class="form-control form-control-lg" required
               placeholder="Enter password" />
           </div>
 
@@ -72,7 +63,7 @@ if ($db->login($name, $pass1)) {
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="submit" class="btn btn-primary btn-lg" name="belepesiAdatok" value="true" style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg" name="belepesiAdatok" style="padding-left: 2.5rem; padding-right: 2.5rem;" value="true">Login</button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="index.php?register=register" class="link-danger">Register</a></p>
           </div>
         </form>

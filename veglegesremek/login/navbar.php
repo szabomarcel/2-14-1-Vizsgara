@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!--fixed-top-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--fixed-top-->
     <a class="navbar-brand" href="index.php?menuItem=fooldal">Főoldal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -7,7 +7,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <?php
                 //session_start();
-                //$menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
+                $menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
                 echo '<li class="nav-item">
                         <a class="nav-link'. ($menuItem == 'felhasznalo'?' active ': '') .'" href="index.php?menuItem=fooldal">Főoldal</a>
                     </li>
