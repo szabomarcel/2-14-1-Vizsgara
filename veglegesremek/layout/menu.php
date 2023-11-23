@@ -20,9 +20,6 @@
             case "felhasznalo":
                 require_once("./login/felhasznalo.php");
                 break;      
-            case "forras":
-                require_once("./login/forraskod.php");
-                break;
             case "login":
                 require_once("./login/login.php");
                 break;
