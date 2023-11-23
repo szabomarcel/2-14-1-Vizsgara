@@ -4,41 +4,21 @@ if (filter_input(INPUT_POST, "Adatmodositas", FILTER_VALIDATE_BOOL, FILTER_NULL_
     var_dump($adatok);
     $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
     $name = htmlspecialchars(filter_input(INPUT_POST, "name"));
-    $tipus = filter_input(INPUT_POST, "tipusSelect");
-    $gyartasiev = filter_input(INPUT_POST, "gyartasiev");
-    $megjegyzes = filter_input(INPUT_POST, "megjegyzes");
-    $nyilvantartasban = filter_input(INPUT_POST, "nyilvantartasban");
-    $ar = filter_input(INPUT_POST, "ar");
-    if ($db->setKivalasztotttorlottfocista($id))if ($db->setKivalasztotttorlottfocista($id, $name, $email, $jegyt, $igazolvany, $pass1, $gende, $date)) {
+    $email = filter_input(INPUT_POST, "email");
+    $jegyt = filter_input(INPUT_POST, "jegyt");
+    $pass1 = filter_input(INPUT_POST, "password");
+    $gender = filter_input(INPUT_POST, "gender");
+    $date = filter_input(INPUT_POST, "date");
+    if ($db->setKivalasztotttorlottfocista($id, $name, $email, $jegyt, $igazolvany, $pass1, $gender, $date)){
         echo '<p>Az adatok módosítása sikeres</p>';
         header("Location: index.php?menu=home");
     } else {
         echo '<p>Az adatok módosítása sikertelen!</p>';
     }
 }else{
-    $adatok = $db->getKivalasztotttorlottfocista($id);
+    //$adatok = $db->getKivalasztotttorlottfocista($id);
 }
-$adatok = $db->getKivalasztotttorlottfocista($id);
-
-if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_FAILURE)) {
-    $adatok = $_POST;
-    var_dump($adatok);
-    $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
-    $name = htmlspecialchars(filter_input(INPUT_POST, "name"));
-    $tipus = filter_input(INPUT_POST, "tipusSelect");
-    $gyartasiev = filter_input(INPUT_POST, "gyartasiev");
-    $megjegyzes = filter_input(INPUT_POST, "megjegyzes");
-    $nyilvantartasban = filter_input(INPUT_POST, "nyilvantartasban");
-    $ar = filter_input(INPUT_POST, "ar");
-    if ($db->setKivalasztotttorlottfocista($id)) {
-        echo '<p>Az adatok módosítása sikeres</p>';
-        header("Location: index.php?menu=home");
-    } else {
-        echo '<p>Az adatok módosítása sikertelen!</p>';
-    }
-} else {
-    $adatok = $db->getKivalasztotttorlottfocista($id);
-}
+//$adatok = $db->getKivalasztotttorlottfocista($id);
 ?>
 <section class="text-center text-lg-start">
 <!-- Jumbotron -->
@@ -67,24 +47,18 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <label for="markaneve" class="form-label">Márka neve</label>
-                            <input type="text" class="form-control" name="markaneve" id="markaneve" value="<?php echo $adatok['markaneve']; ?>">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" value="<?php echo $adatok['email']; ?>">
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <label for="markaneve" class="form-label">Márka neve</label>
-                            <input type="text" class="form-control" name="markaneve" id="markaneve" value="<?php echo $adatok['markaneve']; ?>">
-                        </div>
-
-                        <!-- Checkbox -->
-                        <div class="form-check d-flex justify-content-center mb-4">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                            <label class="form-check-label" for="form2Example33">Subscribe to our newsletter</label>
+                            <label for="jegyt" class="form-label">jegyt</label>
+                            <input type="text" class="form-control" name="jegyt" id="jegyt" value="<?php echo $adatok['jegyt']; ?>">
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4">Módosítás</button>
+                        <button type="submit" class="btn btn-primary btn-block mb-4" value="1" name="Adatmodositas">Módosítás</button>
                     </form>
                 </div>
             </div>

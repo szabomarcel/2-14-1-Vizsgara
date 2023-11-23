@@ -1,5 +1,4 @@
-<main id="main">  
-  <section id="hero-slider" class="hero-slider">
+<section id="hero-slider" class="hero-slider">
     <div class="container-md" data-aos="fade-in">
       <div class="row">
         <div class="col-12">
@@ -56,7 +55,7 @@
       <div class="row g-5">
         <div class="col-lg-4">
           <div class="post-entry-1 lg">
-            <a href="kepek/jatekosok/Szoboszlai_Dominik.jpg"><img src="kepek/jatekosok/Szoboszlai_Dominik.jpg" alt="" class="img-fluid"></a>
+            <a href="kepek/jatekosok/Szoboszlai_Dominik.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><img src="kepek/jatekosok/Szoboszlai_Dominik.jpg" alt="" class="img-fluid"><i class="bi bi-zoom-in"></i></a>
             <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
             <h2><a href="kepek/jatekosok/Szoboszlai_Dominik.jpg">11 Work From Home Part-Time Jobs You Can Do Now</a></h2>
             <p class="mb-4 d-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium dignissimos</p>
@@ -157,7 +156,7 @@
 
       <div class="row">
         <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" data-aos="fade-right">
-          <img src="kepek/foci/letöltés (1).jpg"  alt="">
+          <img src="kepek/foci/letöltés (1).jpg" alt="" style="width: 900px; height: auto;">
         </div>
 
         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
@@ -193,7 +192,7 @@
 
       <div class="section-header d-flex justify-content-between align-items-center mb-5">
         <h2>Forma 1-ről</h2>
-        <div><a href="category.html" class="more">További tudno valók</a></div>
+        <div><a href="category.html" class="more">További tudni valók</a></div>
       </div>
 
       <div class="row">

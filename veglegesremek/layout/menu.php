@@ -11,9 +11,6 @@
             case "kwiz":
                 require_once("./login/kviz.php");
                 break;     
-            case "csapat":
-                require_once("./login/csapatok.php");
-                break;    
             case "foci":
                 require_once("#.php");
                 break;
@@ -25,19 +22,7 @@
                 break;
             case "logout":
                 require_once("./login/logout.php");
-                break;          
-            /*case "vendeg":
-                require_once("./login/vendeg.php");
-                break;*/  
-            case "tabella":
-                require_once("./login/tabella.php");
-                break;      
-            case "gol":
-                require_once("./login/gollovolista.php");
-                break;  
-            /*case "register":
-                require_once("./login/regisztracio.php");
-                break;*/
+                break;                       
             default:
             require_once('./layout/fooldal.php');
         }            
