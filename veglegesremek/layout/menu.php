@@ -20,9 +20,9 @@
             case "login":
                 require_once("./login/login.php");
                 break;
-            case "logout":
-                require_once("./login/logout.php");
-                break;                       
+            case 'logout':
+                require_once './login/logout.php';
+                break;                   
             default:
             require_once('./layout/fooldal.php');
         }            
