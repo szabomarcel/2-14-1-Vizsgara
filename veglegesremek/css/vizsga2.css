@@ -7,3 +7,85 @@
       margin-right: 0;
     }
 }
+
+/* Contact Section Styles */
+.contact {
+  background-color: #f8f9fa; /* Set your desired background color */
+  padding: 80px 0;
+}
+
+.container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #343a40; /* Set your desired text color */
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #6c757d; /* Set your desired text color */
+}
+
+.info-container {
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #007bff; /* Set your desired icon color */
+}
+
+.info-item h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #343a40; /* Set your desired text color */
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #6c757d; /* Set your desired text color */
+}
+
+/* Contact Form Styles */
+.php-email-form {
+  background-color: #ffffff; /* Set your desired background color */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.php-email-form input,
+.php-email-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Set your desired input border color */
+  border-radius: 4px;
+}
+
+.php-email-form button {
+  background-color: #007bff; /* Set your desired button color */
+  color: #ffffff; /* Set your desired button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.php-email-form button:hover {
+  background-color: #0056b3; /* Set your desired button hover color */
+}
+
+/* Adjust responsive styles as needed */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}

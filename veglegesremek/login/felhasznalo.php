@@ -29,7 +29,7 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
     $pass1 = filter_input(INPUT_POST, "password");
     $gender = filter_input(INPUT_POST, "gender");
     $date = filter_input(INPUT_POST, "date");
-    if ($db->setKivalasztotttorlottkerekpar($bicikli_id)) {
+    if ($db->setKivalasztotttorlottfocista($bicikli_id)) {
         echo '<p>Az adatok módosítása sikeres</p>';
         header("Location: index.php?menu=home");
     } else {
@@ -46,34 +46,37 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
         <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="card cascading-right" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
             <div class="card-body p-5 shadow-5 text-center">
-                <h2 class="fw-bold mb-5">Felhasználó száméra módositható adatok</h2>
+                <h2 class="fw-bold mb-5">Felhasználó számára módositható adatok</h2>
                     <form>
                         <!-- 2 column grid layout with text inputs for the first and last names -->
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <div class="form-outline">
-                                    <label for="neve" class="form-label">Név</label>
+                                    <label for="neve" class="form-label">Név módosítás:</label>
                                     <input type="text" class="form-control" name="neve" id="neve" value="<?php echo $adatok['neve']; ?>">
                                 </div>
                             </div>
                             <div class="col-md-6 mb-4">
+                              <label for="jegyt" class="form-label">Jegy módosítás:</label>
                                 <div class="form-outline">
-                                    <label for="jegyt" class="form-label">Jegy</label>
-                                    <input type="text" class="form-control" name="jegyt" id="jegyt" value="<?php echo $adatok['jegyt']; ?>">
+                                  <select id="jegyt" name="jegyt" required>
+                                    <option value="egyedi" value="<?php echo $adatok['jegyt']; ?>" required>Egyedi jegy</option>
+                                    <option value="csoportos" value="<?php echo $adatok['jegyt']; ?>" required>Csoportos jegy</option>
+                                  </select>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email módosítás:</label>
                             <input type="email" class="form-control" name="email" id="email" value="<?php echo $adatok['email']; ?>">
                         </div>
 
-                        <!-- Password input -->
+                        <!-- Date input -->
                         <div class="form-outline mb-4">
-                            <label for="jegyt" class="form-label">jegyt</label>
-                            <input type="text" class="form-control" name="jegyt" id="jegyt" value="<?php echo $adatok['jegyt']; ?>">
+                            <label for="date" class="form-label">Dátum módosítás:</label>
+                            <input type="date" class="form-control" name="date" id="date" value="<?php echo $adatok['date']; ?>">
                         </div>
 
                         <!-- Submit button -->                        
@@ -97,38 +100,38 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
           <div class="col-lg-4">
             <h3 class="footer-heading">About ZenBlog</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab, perspiciatis beatae autem deleniti voluptate nulla a dolores, exercitationem eveniet libero laudantium recusandae officiis qui aliquid blanditiis omnis quae. Explicabo?</p>
-            <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+            <p><a href="#" class="footer-link-more">Learn More</a></p>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
-              <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Single Post</a></li>
-              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
-              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+              <li><a href="index.php?menuItem=fooldal"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Blog</a></li>
+              <li><a href="atigazolas.php"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Single Post</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> About us</a></li>
+              <li><a href="index.php?menuItem=felhasznalo"><i class="bi bi-chevron-right"></i> Contact</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Categories</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Business</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Culture</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Sport</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Food</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Politics</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Celebrity</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Startups</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Travel</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Business</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Culture</a></li>
+              <li><a href="index.php?menuItem=atigazolas"><i class="bi bi-chevron-right"></i> Sport</a></li>
+              <li><a href="https://www.tippmixpro.hu/"><i class="bi bi-chevron-right"></i> Tipmixek</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Politics</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Celebrity</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Startups</a></li>
+              <li><a href="#"><i class="bi bi-chevron-right"></i> Travel</a></li>
             </ul>
           </div>
           <div class="col-lg-4">
-            <h3 class="footer-heading">Recent Posts</h3>
+            <h3 class="footer-heading">Sponzotok</h3>
             <ul class="footer-links footer-blog-entry list-unstyled">
               <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-1.jpg" alt="" class="img-fluid me-3">
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://www.ramasoft.hu/sites/default/files/otpbankuj.jpg" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>5 Great Startup Tips for Female Founders</span>
@@ -136,8 +139,8 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
                 </a>
               </li>
               <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-2.jpg" alt="" class="img-fluid me-3">
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10-vczcq-X0uTIXAssLdQwhn5lF6lS9txtA&usqp=CAU" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</span>
@@ -145,8 +148,8 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
                 </a>
               </li>
               <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-3.jpg" alt="" class="img-fluid me-3">
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmtpa6n-uqJ8fh6K6asMbj09pJIVRW4_WbHi2gt1Uw_aDpYcMS28iwqVctukueMRQMc8&usqp=CAU" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>Life Insurance And Pregnancy: A Working Mom’s Guide</span>
@@ -154,8 +157,26 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
                 </a>
               </li>
               <li>
-                <a href="single-post.html" class="d-flex align-items-center">
-                  <img src="assets/img/post-sq-4.jpg" alt="" class="img-fluid me-3">
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7-bFaDw03ySD6_qkuc09iEUdb01XDAXHqQ&usqp=CAU" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://feelinglucky.hu/wp-content/uploads/unibet-logo.png" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                    <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img src="https://m.blog.hu/fa/fantasztikus-cocacola/image/c64369b90692ae8d89c926710aafe87a.jpg" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
                     <span>How to Avoid Distraction and Stay Focused During Video Calls?</span>
@@ -172,22 +193,22 @@ if (filter_input(INPUT_POST, "Egyszarvu", FILTER_VALIDATE_BOOL, FILTER_NULL_ON_F
         <div class="row justify-content-between">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <div class="copyright">
-              © Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved
+              © Copyright <strong><span>Szabó Marcell és Tasnádi Richárd</span></strong>. Készítetette
             </div>
             <div class="credits">
               <!-- All the links in the footer should remain intact. -->
               <!-- You can delete the links only if you purchased the pro version. -->
               <!-- Licensing information: https://bootstrapmade.com/license/ -->
               <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="#">BootstrapMade</a>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+          <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="github"><i class="bi bi-github"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>

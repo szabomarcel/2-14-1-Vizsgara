@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $menuItem; ?></title>
+    <title>Fotball</title>
     <!-- Bootstrap CSS -->
     <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JS (popper.js is required for dropdowns) -->
@@ -16,7 +16,7 @@
     <link href="css/login.css" rel="stylesheet">
     <link href="css/register.css" rel="stylesheet">
     <link href="assets/css/variables.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">    
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
