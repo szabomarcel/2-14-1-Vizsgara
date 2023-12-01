@@ -382,7 +382,7 @@
           <div class="col-md-6">
             <div class="info-item  d-flex align-items-center">
               <div>
-                <h3>Helyszín</h3>
+                <h3>Helyszín:</h3>
                 <p>Burgunia utca, Debrecen, 4023</p>
                 <i class="icon bi bi-map flex-shrink-0"></i>
               </div>
@@ -409,7 +409,7 @@
           <div class="col-md-6">
             <div class="info-item  d-flex align-items-center">
               <div>
-                <h3>Nytva tartás</h3>
+                <h3>Nytva tartás:</h3>
                 <div>
                   <strong>Hétfőtől - Péntekig:</strong> 8AM - 15PM; <br>
                   <strong>Szombat és vasárnap:</strong> Zárva

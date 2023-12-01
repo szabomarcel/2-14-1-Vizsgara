@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top"> <!--fixed-top-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary"> <!--fixed-top-->
     <a class="navbar-brand" href="index.php?menuItem=fooldal"><img src="kepek/pele-focilabda.svg" alt="pele-focilabda.svg" style="width: 30px; height: 30px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse navbar-dark bg-secondary   " id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand" >
             <?php
                 //session_start();
-                $menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
+                //$menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
                 echo '<li class="nav-item navbar navbar-light bg-light">
                         <a class="nav-link'. ($menuItem == 'felhasznalo'?' active ': '') .'"href="index.php?menuItem=fooldal">Főoldal</a>
                     </li>
@@ -26,7 +26,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
                             <li>
-                                <a class="nav-link navbar navbar-black bg-light'. ($menuItem == 'felhasznalo'?' active ': '') .'"href="index.php?menuItem=felhasznalo">Profilom <img src="kepek/navbar/profile.png" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
+                                <a class="nav-link navbar navbar-black bg-light' . ($menuItem == 'felhasznalo'?' active' : '') .'"href="index.php?menuItem=felhasznalo">Profilom <img src="kepek/navbar/profile.png" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
                             </li>
                             <li>
                                 <a class="nav-link navbar navbar-light bg-light' . ($menuItem == 'logout'?' active' : '') .'"href="index.php?menuItem=logout">Kijelentkezés <img src="kepek/navbar/logout.png" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>

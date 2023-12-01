@@ -84,8 +84,42 @@
 }
 
 /* Adjust responsive styles as needed */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .container {
     width: 90%;
+  }
+}*/
+
+@media screen and  (min-width: 600px) {
+  /*body{
+      background-color: blanchedalmond;
+      width: 90%;
+      border: blue solid thin;
+      border-radius: 50px;
+  }*/
+  .container {
+    width: 90%;
+  }
+}
+@media screen and  (min-width: 780px) {
+  /*body{
+      background-color: blue;        
+      width: 90%;
+      border: blue solid thin;
+      border-radius: 50px;
+  }*/
+  .container {
+    width: 90%;
+  }
+}
+@media screen and  (min-width: 992px) {
+  /*body{
+      background-color: blanchedalmond;
+      width: 100%;
+      border: blue solid thin;
+      border-radius: 50px;
+  }*/
+  .container {
+    width: 100%;
   }
 }
