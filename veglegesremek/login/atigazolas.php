@@ -92,135 +92,180 @@
             <li data-filter=".filter-design">Design</li>
           </ul><!-- End Projects Filters -->
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/DVSC.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/DVSC1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Remodeling 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/DVSC.png" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/DVSC.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Debreceni Vasutas Sport Club</p></h4>
+                  <p class="card-text"><b>Becenév: </b> Loki</p>
+                  <p class="card-text"><b>Székhely: </b> Debrecen, Magyarország</p>
+                  <p class="card-text"><b>Alapítva: </b> 1902. március 12.</p>
+                  <p class="card-text"><b>Stadion: </b> Nagyerdei stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b> Srdjan Blagojevic(Szerb)</p>
+                  <a href="kepek/csapatok/DVSC1.png" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/DVSC1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/DVTK.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/DVTK1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Construction 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/DVTK.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/DVTK.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4 class="card-text"><p class="card-text"><b>Teljes csapatnév: </b>Diósgyőri VTK</p></h4>                  
+                  <p class="card-text"><b>Becenév: </b>Diók</p>
+                  <p class="card-text"><b>Székhely: </b>Miskolc, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1910. február 6</p>
+                  <p class="card-text"><b>Stadion: </b>DVTK-stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Kuznyecov Szergej(Ukrán/Magyar)</p>  
+                  <a href="kepek/csapatok/DVTK1.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/DVTK1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/fehervar.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/fehervar1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Repairs 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/fehervar.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/fehervar.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Fehérvár FC</p></h4>
+                  <p class="card-text"><b>Becenév: </b>Vidi, Videoton</p>
+                  <p class="card-text"><b>Székhely: </b>Székesfehérvár, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1941</p>
+                  <p class="card-text"><b>Stadion: </b>Sóstói Stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Bartosz Grzelak</p>
+                  <a href="kepek/csapatok/fehervar1.png" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/fehervar1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/FTC.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/FTC1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Design 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/FTC.png" title="Repairs 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/FTC.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4 class="card-text"><p class="card-text"><b>Teljes csapatnév: </b>Ferencvárosi Torna Club</p></h4>                  
+                  <p class="card-text"><b>Becenév: </b> FTC, Fradi,Zöld Sasok, zöld-fehérek</p>
+                  <p class="card-text"><b>Székhely: </b> Budapest IX. kerület, Magyarország</p>
+                  <p class="card-text"><b>Alapítva: </b> 1899. május 3.</p>
+                  <p class="card-text"><b>Stadion: </b> Groupama Aréna</p>
+                  <p class="card-text"><b>Vezetőedző: </b> Dejan Stankovic(Szerb)</p>
+                  <a href="kepek/csapatok/DVTK1.png" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/DVTK1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/kisvarda.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/kisvarda1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Remodeling 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/kisvarda.png" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/kisvarda.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Kisvárda Master Good</p></h4>
+                  <p class="card-text"><b>Székhely: </b>Kisvárda, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1911</p>
+                  <p class="card-text"><b>Stadion: </b>Várkerti Stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Mátyus János</p>
+                  <a href="kepek/csapatok/kisvarda1.png" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/kisvarda1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/kovesd.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/kovesd1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Construction 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/kovesd.png" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/kovesd.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Mezőkövesd Zsóry Futball Club</p></h4>                  
+                  <p class="card-text"><b>Székhely: </b>Mezőkövesd, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1975. január 31.</p>
+                  <p class="card-text"><b>Stadion: </b>Városi stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Kuttor Attila</p>
+                  <a href="kepek/csapatok/kovesd1.png" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/kovesd1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/KTE.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/KTE1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Repairs 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/KTE.png" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/KTE.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Kecskeméti Testedző Egyesület</p></h4>
+                  <p class="card-text"><b>Becenév: </b>Kecskemét, Lila-fehérek, KTE</p>
+                  <p class="card-text"><b>Székhely: </b>Kecskemét, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1911. június 11.</p>
+                  <p class="card-text"><b>Stadion: </b>Széktói Stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Szabó István</p>
+                  <a href="kepek/csapatok/KTE1.png" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/KTE1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/MTK.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/MTK1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Design 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/MTK.png" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/MTK.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Magyar Testgyakorlók Köre Budapest</p></h4>
+                  <p class="card-text"><b>Becenév: </b>MTK</p>
+                  <p class="card-text"><b>Székhely: </b>Budapest, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1888. november 16.</p>
+                  <p class="card-text"><b>Stadion: </b>Új Hidegkuti Nándor Stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Horváth Dávid</p>
+                  <a href="kepek/csapatok/MTK1.png" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/MTK1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/PAFC.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/PAFC1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Remodeling 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/PAFC.png" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/PAFC.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Puskás Akadémia FC</p></h4>
+                  <p class="card-text"><b>Székhely: </b>Felcsút, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>2005</p>
+                  <p class="card-text"><b>Stadion: </b>Pancho Aréna</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Hornyák Zsolt</p>
+                  <a href="kepek/csapatok/PAFC1.png" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/PAFC1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/PFC.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/PFC1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Construction 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/PFC.png" title="Construction 3" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/PFC.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Paksi Futball Club</p></h4>
+                  <p class="card-text"><b>Becenév: </b>Atomváros</p>
+                  <p class="card-text"><b>Székhely: </b>Paks, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1952. november 28.</p>
+                  <p class="card-text"><b>Stadion: </b>Fehérvári úti stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Bognár György</p>
+                  <a href="kepek/csapatok/PFC1.png" title="Construction 3" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/PFC1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="kepek/csapatok/UTE.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item navbar-light bg-warning">
+              <div class="portfolio-content h-100 navbar-dark bg-secondary">
+                <img src="kepek/csapatok/UTE1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Repairs 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/UTE.png" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/UTE.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Újpest Football Club</p></h4>                  
+                  <p class="card-text"><b>Becenév </b>UTE, lila-fehérek</p>
+                  <p class="card-text"><b>Székhely: </b>Budapest, Magyarország</p>
+                  <p class="card-text"><b>Alapítva: </b>1885. június 16.</p>
+                  <p class="card-text"><b>Stadion: </b>Szusza Ferenc Stadion</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Nebojsa Vignjevic(Szerb)</p>
+                  <a href="kepek/csapatok/UTE1.png" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/UTE1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="UpConstructor/portfolio-content h-100">
-                <img src="kepek/csapatok/zte.png" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction navbar-dark bg-secondary">
+              <div class="portfolio-content h-100 navbar-light bg-warning">
+                <img src="kepek/csapatok/zte1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Design 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="kepek/csapatok/zte.png" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="kepek/csapatok/zte.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4><p class="card-text"><b>Teljes csapatnév: </b>Zalaegerszegi Torna Egylet Football Club</p></h4>
+                  <p class="card-text"><b>Becenév: </b>Zete</p>
+                  <p class="card-text"><b>Székhely: </b>Zalaegerszeg, Magyarország</p>
+                  <p class="card-text"><b>Alapítva </b>1920</p>
+                  <p class="card-text"><b>Stadion: </b>ZTE Aréna</p>
+                  <p class="card-text"><b>Vezetőedző: </b>Boér Gábor</p>
+                  <a href="kepek/csapatok/zte1.png" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="kepek/csapatok/zte1.png" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Projects Item -->

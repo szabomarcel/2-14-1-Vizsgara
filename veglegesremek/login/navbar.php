@@ -26,10 +26,10 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
                             <li>
-                                <a class="nav-link navbar navbar-black bg-light' . ($menuItem == 'felhasznalo'?' active' : '') .'"href="index.php?menuItem=felhasznalo">Profilom <img src="kepek/navbar/profile.png" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
+                                <a class="nav-link navbar navbar-black bg-light' . ($menuItem == 'felhasznalo'?' active' : '') .'"href="index.php?menuItem=felhasznalo">Profilom <img src="kepek/navbar/profile.png" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
                             </li>
                             <li>
-                                <a class="nav-link navbar navbar-light bg-light' . ($menuItem == 'logout'?' active' : '') .'"href="index.php?menuItem=logout">Kijelentkezés <img src="kepek/navbar/logout.png" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
+                                <a class="nav-link navbar navbar-light bg-light' . ($menuItem == 'logout'?' active' : '') .'"href="index.php?menuItem=logout">Kijelentkezés <img src="kepek/navbar/logout.png" height="25" alt="Black and White Portrait of a Man" loading="lazy"/></a>
                             </li>
                         </ul>
                     </div>';

@@ -2,6 +2,27 @@
     margin-right: -50px;
 }
 
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover stílus (amikor az egeret visszük a link fölé) */
+a:hover {
+  color: greenyellow;
+  text-decoration: none; /* Például húzzuk alá a linket */
+}
+
+/* Látogatott linkek stílusa */
+a:visited {
+  color: wheat;
+  text-decoration: none;
+}
+
 @media (max-width: 991.98px) {
     .cascading-right {
       margin-right: 0;
@@ -123,3 +144,73 @@
     width: 100%;
   }
 }
+
+/*.portfolio-item {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}*/
+
+/*.portfolio-item:hover {
+  transform: scale(1.05);
+}*/
+
+.portfolio-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio-info {
+  padding: 20px;
+}
+
+.portfolio-info p {
+  margin: 0;
+}
+
+.portfolio-info h4 {
+  margin-bottom: 10px;
+}
+
+.portfolio-info a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.portfolio-info a:hover {
+  color: #f8f9fa; /* Bootstrap light color */
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+/*.card {
+  background: 180deg, #618264, #79AC78, rgb(176, 217, 177);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+}*/
+/*.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}*/
+/*.card h2 {
+  color: #283747;
+  font-size: 24px;
+  margin-bottom: 10px;
+}*/
+/*.card p {
+  color: #283747;
+  font-size: 16px;
+  line-height: 1.6;
+}*/
