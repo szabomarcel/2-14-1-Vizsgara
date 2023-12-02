@@ -6,8 +6,6 @@
     <div class="collapse navbar-collapse navbar-dark bg-secondary   " id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-brand" >
             <?php
-                //session_start();
-                //$menuItem = isset($_GET['menuItem']) ? $_GET['menuItem'] : '';
                 echo '<li class="nav-item navbar navbar-light bg-light">
                         <a class="nav-link'. ($menuItem == 'felhasznalo'?' active ': '') .'"href="index.php?menuItem=fooldal">Főoldal</a>
                     </li>
