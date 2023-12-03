@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotball</title>
+    <title>Football</title>
     <!-- Bootstrap CSS -->
     <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JS (popper.js is required for dropdowns) -->
