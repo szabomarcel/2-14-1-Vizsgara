@@ -1,4 +1,3 @@
-<body>
 <!--<div class="container">-->
     <?php 
         switch ($menuItem) {
@@ -26,5 +25,3 @@
             default:
             require_once('./layout/fooldal.php');
         }            
-    ?>    
-</body>
