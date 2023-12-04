@@ -1,6 +1,7 @@
 <?php
     header('Content-Type: text/html; charset=UTF-8');
     session_start(); //-- munkamenet adatainak tárolására $_SESSION[]
+    ob_start();
     require_once './class/Database.php';
     $db = new Database("localhost", "root", "", "regisztracio");        
     if(!isset($_SESSION['login'])) {$_SESSION['login'] = false;}
